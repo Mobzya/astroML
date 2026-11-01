@@ -1,0 +1,24 @@
+[
+  {
+    "id": "L01",
+    "requested_url": "https://articles.adsabs.harvard.edu/pdf/1986ApJ...304....1P",
+    "resolved_url": "https://articles.adsabs.harvard.edu/pdf/1986ApJ...304....1P",
+    "sha256": "c6f90f7574780f7ee58d6d3e6f78f376207dbc32e57dcc45ec7ad6a829cbb155",
+    "bytes": 407854,
+    "pages": 5,
+    "retrieved_date_utc": "2026-11-01",
+    "redistributed_full_text": false,
+    "reading_scope": "Main text pp.1-5 sections I-III; page1 visually checked; figure captions read"
+  },
+  {
+    "id": "L02",
+    "requested_url": "https://arxiv.org/pdf/astro-ph/9702194v1",
+    "resolved_url": "https://arxiv.org/pdf/astro-ph/9702194v1",
+    "sha256": "fe451260e1975cc5154e629aa57e44b4d64d73bdf0c678409dd82d371e62e3ce",
+    "bytes": 328965,
+    "pages": 16,
+    "retrieved_date_utc": "2026-11-01",
+    "redistributed_full_text": false,
+    "reading_scope": "arXiv v1 sections1-4 pp.1-8; captions1-6 pp.11-16; page5 and figure1 visually checked; other figure contours not numerically verified"
+  }
+]
