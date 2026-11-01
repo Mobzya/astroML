@@ -141,5 +141,8 @@
       ],
       "acceptance": "Каждый вывод имеет источник/код/данные/verifier; научный итог не зависит от знака эффекта; личные задания ученику; собственная автоматизация приостановлена после передачи"
     }
-  ]
+  ],
+  "target_session_minutes": 120,
+  "checkpoint_interval_minutes": 20,
+  "continue_sequential_ready_tasks_within_session": true
 }

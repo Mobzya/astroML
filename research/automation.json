@@ -14,5 +14,7 @@
   "status_note": "Creation and enablement confirmed; no scheduled research iteration has executed yet. A null scheduler next_run_time is not treated as a run acknowledgement.",
   "durable_state_repository": "https://github.com/Mobzya/astroML",
   "task_queue": "research/task_queue.json",
-  "instructions": "research/AUTONOMOUS_RESEARCH.md"
+  "instructions": "research/AUTONOMOUS_RESEARCH.md",
+  "target_session_minutes": 120,
+  "continue_sequential_ready_tasks_within_session": true
 }
