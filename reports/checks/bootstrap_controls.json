@@ -1,0 +1,11 @@
+{
+  "repeat_byte_identical": {
+    "observations.csv": true,
+    "truth.json": true,
+    "masks.csv": true,
+    "fits.json": true,
+    "illustration.png": true
+  },
+  "corrupt_file_rejected": true,
+  "archive_files_checked": 12
+}

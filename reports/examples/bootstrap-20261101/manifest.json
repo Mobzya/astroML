@@ -1,0 +1,24 @@
+{
+  "run_id": "bootstrap-20261101",
+  "purpose": "synthetic_smoke_not_evaluation",
+  "independent_sources": 1,
+  "seed": 20261101,
+  "truth_available_to_inference": false,
+  "git_sha": "dccbb14211d4b3ad7027ea610bf6f2b6249da5a6",
+  "git_dirty": false,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "runtime_seconds": 0.7021699459999127,
+  "sha256": {
+    "fits.json": "897c63e490d76174913b391435c0b03b35ca4e3b369d72d51d09f23900c8a9e5",
+    "illustration.png": "f87c447a5e3e904a558ba06ceccb041d6a56946566b193c95c30877e39b79f38",
+    "masks.csv": "48435b69c0b4d1acc7363507c23f07c729ab395773433f36cec5e8ba1e8abdc3",
+    "observations.csv": "483c144bd49a75c6c974d5c98eb703b6efb3e49e8873f8375019c644c80f9bcb",
+    "truth.json": "2f07132bb10a2461df14c6a670df1c538199207053f1aa933d01472d7802a9af"
+  }
+}
