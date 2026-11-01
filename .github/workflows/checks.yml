@@ -15,3 +15,4 @@ jobs:
       - run: python -m pytest -q
       - run: python scripts/smoke.py --output artifacts/ci-smoke
       - run: python scripts/verify_smoke.py artifacts/ci-smoke
+      - run: python scripts/check_physics_literature.py --output artifacts/physics-literature-check.json

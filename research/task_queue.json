@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "LIT-01",
-  "next_task_id": "LIT-01",
+  "current_task_id": null,
+  "next_task_id": "LIT-02",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -20,19 +20,23 @@
     },
     {
       "id": "LIT-01",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Прочитать первичные работы Paczynski 1986 и Wozniak/Paczynski 1997; сверить PSPL и blending с постановкой проекта",
       "depends_on": [
         "AUTO-SETUP"
       ],
       "artifacts": [
         "research/reading_notes/L01_L02_physics.md",
-        "research/literature_matrix.csv"
+        "research/literature_matrix.csv",
+        "research/reading_notes/source_access.json",
+        "reports/lit01_2026-11-01.md",
+        "reports/checks/literature_physics_2026-11-01.json"
       ],
       "acceptance": "Точные DOI/версии и прочитанные страницы; формулы, допущения, известные эффекты и открытые вопросы; недоступные части явно отмечены",
       "next_action": "Открыть первоисточники из handoff, прочитать физическую модель и blending-разделы, записать собственные проверяемые заметки. Не выполнять statistical evaluation",
       "started_at_utc": "2026-11-01T19:18:00Z",
-      "checkpoint": "Первоисточники прочитаны в записанном охвате, заметки и metadata сохранены. Осталось выполнить численный physics checker на clean commit и сохранить отчёт; evaluation не открывалась."
+      "checkpoint": "Прочитанный охват и заметки сохранены; geometry/scaling checks PASS на clean commit 1cf7b5d; результат в reports/lit01_2026-11-01.md. Ни evaluation, ни thresholds не использовались.",
+      "completed_date_utc": "2026-11-01"
     },
     {
       "id": "LIT-02",
@@ -45,7 +49,8 @@
         "research/reading_notes/L03_L04_likelihood.md",
         "research/literature_matrix.csv"
       ],
-      "acceptance": "Вывод полного Gaussian log likelihood; Cholesky/logdet; ограничения оценки covariance и риск поглощения сигнала; ссылки на реально прочитанные разделы"
+      "acceptance": "Вывод полного Gaussian log likelihood; Cholesky/logdet; ограничения оценки covariance и риск поглощения сигнала; ссылки на реально прочитанные разделы",
+      "next_action": "Прочитать полную статью Hogg 2010 (или конкретные доступные разделы), затем GPML chapters2/4/5; составить вывод Gaussian likelihood и перечень предпосылок practical covariance без truth. Отмечать реальный охват чтения."
     },
     {
       "id": "LIT-03",
