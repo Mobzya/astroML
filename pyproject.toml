@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astroml-microlensing-research"
+version = "0.1.0"
+description = "Reproducible study of microlensing detection under missing observations and noise"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2,<3", "scipy>=1.14,<2", "matplotlib>=3.9,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.8,<1"]
+physics-check = ["MulensModel>=3,<4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+

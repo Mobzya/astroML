@@ -1,0 +1,15 @@
+id,title,url,reading_status,checked_date,read_scope,relevance,next_action
+L01,Gravitational microlensing by the galactic halo,https://doi.org/10.1086/164140,from_handoff_unverified,,none,PSPL physics,Read original paper
+L02,Microlensing of Blended Stellar Images,https://arxiv.org/abs/astro-ph/9702194,abstract_only,2026-11-01,arXiv abstract,Known blending degeneracy,Read full text and compare assumptions
+L03,Data analysis recipes: Fitting a model to data,https://arxiv.org/abs/1008.4686,abstract_only,2026-11-01,arXiv abstract,Generative model and uncertain errors,Read covariance likelihood sections
+L04,Gaussian Processes for Machine Learning,https://gaussianprocess.org/gpml/,metadata_only,2026-11-01,Book landing page,GP covariance and likelihood,Read chapters 2 4 5 and numerical appendix
+L05,Fast and scalable Gaussian process modeling with applications to astronomical time series,https://arxiv.org/abs/1703.09710,from_handoff_unverified,,none,GP astronomical series,Read full text
+L06,Modeling microlensing events with MulensModel,https://github.com/rpoleski/MulensModel,software_tested,2026-11-01,Package 3.12.0 PSPL API tested; paper not read,Independent numerical reference,Read publication and assumptions
+L07,Microlensify,https://arxiv.org/abs/2608.19419,from_handoff_unverified,,none,Closest ML prior art,Verify metadata and read full text before novelty claims
+L08,Microlensing signatures of extended dark objects using machine learning,https://doi.org/10.1103/PhysRevD.109.123004,from_handoff_unverified,,none,MicroLIA-related prior art,Verify original MicroLIA source
+L09,Bayes Factors,https://doi.org/10.1080/01621459.1995.10476572,from_handoff_unverified,,none,BIC assumptions,Read relevant sections
+L10,Verification of Forecasts Expressed in Terms of Probability,https://doi.org/10.1175/1520-0493(1950)078%3C0001:VOFEIT%3E2.0.CO;2,from_handoff_unverified,,none,Brier meaning,Verify source
+L11,On Calibration of Modern Neural Networks,https://proceedings.mlr.press/v70/guo17a.html,from_handoff_unverified,,none,Calibration limits,Read full text
+L12,Neyman-Pearson classification algorithms and NP receiver operating characteristics,https://doi.org/10.1126/sciadv.aao1659,from_handoff_unverified,,none,Independent negative calibration,Read assumptions and sample-size bounds
+L13,Selective Classification for Deep Neural Networks,https://arxiv.org/abs/1705.08500,from_handoff_unverified,,none,Risk and coverage,Read full text
+L14,Probability calibration,https://scikit-learn.org/stable/modules/calibration.html,from_handoff_unverified,,none,Brier and calibration distinction,Read documentation

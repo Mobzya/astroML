@@ -1,0 +1,65 @@
+{
+  "source_zip_sha256": "5352b3f4e535a7b5563937e0555528a0f2baf7690bb116ab25d3182bd6616dd2",
+  "files": [
+    {
+      "path": "archive/handoff-2026-11-01/AstroML_HANDFOFF_2026-11-01.md",
+      "bytes": 131959,
+      "sha256": "15e0b46f6dc7ce61ae968b7b6caa9b19dc1ed97ac0d05431c51bc6203fc4e8a8"
+    },
+    {
+      "path": "archive/handoff-2026-11-01/MANIFEST.md",
+      "bytes": 1585,
+      "sha256": "46577c2824a089eef2035a945dcecf5201232611684ab9c489f5cc2394fcc270"
+    },
+    {
+      "path": "archive/handoff-2026-11-01/sources/CODEX_MASTER_PROMPT_RU.md",
+      "bytes": 26984,
+      "sha256": "af0c8feab41bd40d377871e0bc8afb14c5e8b7be10a7a02322438c289ccc9f53"
+    },
+    {
+      "path": "archive/handoff-2026-11-01/sources/INSTALLATION_GUIDE_RU.md",
+      "bytes": 5658,
+      "sha256": "bdbf30780b90764d3291b3c721bd5719f5ce656205190943f7669fcb2e909549"
+    },
+    {
+      "path": "archive/handoff-2026-11-01/sources/astro_codex_kit.zip",
+      "bytes": 19838,
+      "sha256": "94b7ba6350230c68995c93d0a5017f0ac101538307380ae4ae07ca351c972eef"
+    },
+    {
+      "path": "archive/handoff-2026-11-01/sources/experiment_02.md",
+      "bytes": 32796,
+      "sha256": "41523475e40d54903fca35fed3f000776614b53e78542f68174db11c15eff6b1"
+    },
+    {
+      "path": "archive/handoff-2026-11-01/sources/experiment_03(1).md",
+      "bytes": 51122,
+      "sha256": "565b13bc461eb812513e4cbda2953e7170204fe3063fe24db2cae14a96183cb5"
+    },
+    {
+      "path": "archive/handoff-2026-11-01/sources/experiment_03_notes(1).md",
+      "bytes": 15435,
+      "sha256": "99b219b7483b54b2e4957fa1b6dd25230dd0839996f49cf12b908e9091ef7316"
+    },
+    {
+      "path": "archive/handoff-2026-11-01/sources/experiment_04_completion(1).md",
+      "bytes": 8001,
+      "sha256": "d03c00bebe085759a8a2e494c64b4b73cacde32b3437b6f149ce1d3827f9c715"
+    },
+    {
+      "path": "archive/handoff-2026-11-01/sources/experiment_04_summary(1).pdf",
+      "bytes": 957483,
+      "sha256": "05445448213635a6f2b206a663562a5e54d5934a91870b479c2a4ab871a1f7b3"
+    },
+    {
+      "path": "archive/handoff-2026-11-01/sources/supervisor_02.md",
+      "bytes": 5586,
+      "sha256": "83ccc8e0805d4ef6112751088b95faf0913cf6ae5071a564cc1a82b52969c9e5"
+    },
+    {
+      "path": "archive/handoff-2026-11-01/sources/supervisor_03(1).md",
+      "bytes": 4876,
+      "sha256": "3ad56c8e8684c57940ea787b72b3c7de8dcef5a373590aea10394c2d58637e27"
+    }
+  ]
+}
