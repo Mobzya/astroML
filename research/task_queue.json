@@ -4,7 +4,7 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": null,
+  "current_task_id": "LIT-01",
   "next_task_id": "LIT-01",
   "tasks": [
     {
@@ -12,80 +12,128 @@
       "status": "DONE",
       "goal": "Сохранить инструкции последовательного автоматического исследования и очередь задач в GitHub",
       "depends_on": [],
-      "artifacts": ["research/AUTONOMOUS_RESEARCH.md", "research/task_queue.json"],
+      "artifacts": [
+        "research/AUTONOMOUS_RESEARCH.md",
+        "research/task_queue.json"
+      ],
       "acceptance": "Инструкции и начальная очередь закоммичены и отправлены; факт включения планировщика фиксируется отдельно по ответу инструмента"
     },
     {
       "id": "LIT-01",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Прочитать первичные работы Paczynski 1986 и Wozniak/Paczynski 1997; сверить PSPL и blending с постановкой проекта",
-      "depends_on": ["AUTO-SETUP"],
-      "artifacts": ["research/reading_notes/L01_L02_physics.md", "research/literature_matrix.csv"],
+      "depends_on": [
+        "AUTO-SETUP"
+      ],
+      "artifacts": [
+        "research/reading_notes/L01_L02_physics.md",
+        "research/literature_matrix.csv"
+      ],
       "acceptance": "Точные DOI/версии и прочитанные страницы; формулы, допущения, известные эффекты и открытые вопросы; недоступные части явно отмечены",
-      "next_action": "Открыть первоисточники из handoff, прочитать физическую модель и blending-разделы, записать собственные проверяемые заметки. Не выполнять statistical evaluation"
+      "next_action": "Открыть первоисточники из handoff, прочитать физическую модель и blending-разделы, записать собственные проверяемые заметки. Не выполнять statistical evaluation",
+      "started_at_utc": "2026-11-01T19:18:00Z",
+      "checkpoint": "Начать с доступных полных текстов L01/L02; сверить библиографию, физические допущения и blending. Научную evaluation не открывать."
     },
     {
       "id": "LIT-02",
       "status": "TODO",
       "goal": "Проверить предпосылки likelihood и GP по Hogg 2010 и нужным разделам GPML",
-      "depends_on": ["LIT-01"],
-      "artifacts": ["research/reading_notes/L03_L04_likelihood.md", "research/literature_matrix.csv"],
+      "depends_on": [
+        "LIT-01"
+      ],
+      "artifacts": [
+        "research/reading_notes/L03_L04_likelihood.md",
+        "research/literature_matrix.csv"
+      ],
       "acceptance": "Вывод полного Gaussian log likelihood; Cholesky/logdet; ограничения оценки covariance и риск поглощения сигнала; ссылки на реально прочитанные разделы"
     },
     {
       "id": "LIT-03",
       "status": "TODO",
       "goal": "Проверить ближайшие ML-подходы: Microlensify, исходные MicroLIA и применимость к нашей задаче",
-      "depends_on": ["LIT-01"],
-      "artifacts": ["research/prior_art_comparison.md", "research/literature_matrix.csv"],
+      "depends_on": [
+        "LIT-01"
+      ],
+      "artifacts": [
+        "research/prior_art_comparison.md",
+        "research/literature_matrix.csv"
+      ],
       "acceptance": "Данные/метки/splits/negatives/noise/метрики ближайших работ; узкое отличие нашего эксперимента без выдуманной алгоритмической новизны"
     },
     {
       "id": "R2-PROTOCOL",
       "status": "TODO",
       "goal": "Зафиксировать протокол нового controlled missingness исследования с обоснованием статистики и размером выборки",
-      "depends_on": ["LIT-01", "LIT-02", "LIT-03"],
-      "artifacts": ["research/reconstruction_02_protocol.md", "configs/reconstruction_02.json"],
+      "depends_on": [
+        "LIT-01",
+        "LIT-02",
+        "LIT-03"
+      ],
+      "artifacts": [
+        "research/reconstruction_02_protocol.md",
+        "configs/reconstruction_02.json"
+      ],
       "acceptance": "Новый namespace, hypotheses, paired source splits, метрики/CI/failures, development-only pilot и правила freeze до evaluation"
     },
     {
       "id": "R2-PILOT",
       "status": "TODO",
       "goal": "Выполнить development-only CPU pilot генератора и подгонок и измерить стоимость",
-      "depends_on": ["R2-PROTOCOL"],
-      "artifacts": ["reports/reconstruction_02_pilot.md"],
+      "depends_on": [
+        "R2-PROTOCOL"
+      ],
+      "artifacts": [
+        "reports/reconstruction_02_pilot.md"
+      ],
       "acceptance": "Не более 50 независимых источников/15 минут; проверены nuisance matching и source split; точные команды/SHA/версии/hashes/failures/runtime. Основная evaluation не открыта"
     },
     {
       "id": "R2-MAIN",
       "status": "TODO",
       "goal": "Заморозить метод и завершить controlled missingness эксперимент с независимым verifier",
-      "depends_on": ["R2-PILOT"],
-      "artifacts": ["reports/reconstruction_02.md"],
+      "depends_on": [
+        "R2-PILOT"
+      ],
+      "artifacts": [
+        "reports/reconstruction_02.md"
+      ],
       "acceptance": "Frozen protocol/thresholds до evaluation; все seeds и source-level CI; численные артефакты сохранены на GitHub; исторические цифры остаются отдельными"
     },
     {
       "id": "COV-PROTOCOL",
       "status": "TODO",
       "goal": "Завершить литературную проверку и дизайн нового diagonal/estimated-C/oracle опыта",
-      "depends_on": ["R2-MAIN"],
-      "artifacts": ["research/experiment_05_protocol.md"],
+      "depends_on": [
+        "R2-MAIN"
+      ],
+      "artifacts": [
+        "research/experiment_05_protocol.md"
+      ],
       "acceptance": "Конкретные practical covariance bounds/budget/negative families/sample size/thresholds/CI/failures; контроль GP absorption и oracle leakage до новой evaluation"
     },
     {
       "id": "COV-EXPERIMENT",
       "status": "TODO",
       "goal": "Получить завершённый проверяемый результат по covariance-aware гипотезе",
-      "depends_on": ["COV-PROTOCOL"],
-      "artifacts": ["reports/experiment_05.md"],
+      "depends_on": [
+        "COV-PROTOCOL"
+      ],
+      "artifacts": [
+        "reports/experiment_05.md"
+      ],
       "acceptance": "CPU smoke, development pilot, freeze, independent evaluation и verifier как отдельные checkpoint-подзадачи; FPR/CI/recall/coverage/runtime и отрицательные исходы"
     },
     {
       "id": "SYNTHESIS",
       "status": "TODO",
       "goal": "Собрать научные выводы, ограничения и черновик рукописи из подтверждённых артефактов",
-      "depends_on": ["COV-EXPERIMENT"],
-      "artifacts": ["defense/manuscript.md", "reports/research_handoff.md"],
+      "depends_on": [
+        "COV-EXPERIMENT"
+      ],
+      "artifacts": [
+        "defense/manuscript.md",
+        "reports/research_handoff.md"
+      ],
       "acceptance": "Каждый вывод имеет источник/код/данные/verifier; научный итог не зависит от знака эффекта; личные задания ученику; собственная автоматизация приостановлена после передачи"
     }
   ]

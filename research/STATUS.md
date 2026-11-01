@@ -4,7 +4,7 @@
 
 Реализованы архив с SHA256, README, выбор ИУ5, дорожная карта, инструкции, физическое ядро, diagonal fits и CPU smoke с независимым verifier. Проверено: 13 tests passed, Ruff, MulensModel crosscheck, smoke, детерминированный повтор и независимый verifier. Данные примера и логи опубликованы; детали: reports/bootstrap_validation.md.
 
-Следующая конкретная задача **LIT-01**: первичные тексты Paczynski 1986 и Wozniak/Paczynski 1997, физика PSPL и blending; сохранить заметки с точными страницами и обновить literature_matrix. Очередь — research/task_queue.json. Нельзя начинать большое covariance/ML обучение по текущему draft протоколу.
+Выполняется сейчас вручную в этом же чате задача **LIT-01**: первичные тексты Paczynski 1986 и Wozniak/Paczynski 1997, физика PSPL и blending; сохранить заметки с точными страницами и обновить literature_matrix. Очередь — research/task_queue.json. Нельзя начинать большое covariance/ML обучение по текущему draft протоколу.
 
 Не готовы: замороженные manifests основного опыта, статистический benchmark, обученный RF, estimated covariance fitting, реальные данные, интерактивное demo, окончательная рукопись и видеовизитка. В roadmap это будущие этапы, не выполненные работы.
 
