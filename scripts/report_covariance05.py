@@ -16,14 +16,7 @@ def pct(value):
     return f"{100 * value:.2f}%"
 
 
-def main():
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("run", type=Path)
-    args = p.parse_args()
-    root = Path("reports/covariance05")
-    summary = json.loads((root / "evaluation_summary.json").read_text())
-    policy = json.loads((root / "frozen_policy.json").read_text())
-    manifest, records = load_records(args.run)
+def numerical_diagnostics(records):
     diagnostics = {}
     for mode in ["diagonal", "oracle", "estimated"]:
         methods = [v["results"][mode] for r in records for v in r["views"]]
@@ -67,6 +60,22 @@ def main():
                 "total": len(rel),
             }
             diagnostics[mode]["noise_bound_counts"] = bound_counts
+    return diagnostics
+
+
+def main():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("run", type=Path)
+    args = p.parse_args()
+    root = Path("reports/covariance05")
+    manifest, records = load_records(args.run)
+    diagnostics = numerical_diagnostics(records)
+    if manifest["phase"] == "calibration":
+        (root / "calibration_diagnostics.json").write_text(json.dumps(diagnostics, indent=2) + "\n")
+        print(json.dumps(diagnostics, indent=2))
+        return
+    summary = json.loads((root / "evaluation_summary.json").read_text())
+    policy = json.loads((root / "frozen_policy.json").read_text())
     (root / "diagnostics.json").write_text(json.dumps(diagnostics, indent=2) + "\n")
     modes = ["diagonal", "oracle", "estimated"]
     colors = ["#3266ad", "#878787", "#c76328"]

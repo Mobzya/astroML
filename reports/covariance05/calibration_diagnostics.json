@@ -1,0 +1,55 @@
+{
+  "diagonal": {
+    "method_sets": 960,
+    "invalid_method_sets": 0,
+    "fit_rows": 2880,
+    "unavailable_fits": 0,
+    "nonconverged_selected_fits": 0,
+    "failed_starts": 23,
+    "objective_numerical_failures": 0,
+    "nfev_all_starts": 725703,
+    "sum_elapsed_seconds_across_workers": 144.2955424020015,
+    "maximum_covariance_condition": 2.2489409034343453
+  },
+  "oracle": {
+    "method_sets": 960,
+    "invalid_method_sets": 0,
+    "fit_rows": 2880,
+    "unavailable_fits": 0,
+    "nonconverged_selected_fits": 0,
+    "failed_starts": 14,
+    "objective_numerical_failures": 9,
+    "nfev_all_starts": 713249,
+    "sum_elapsed_seconds_across_workers": 144.8033063490011,
+    "maximum_covariance_condition": 12.802069100193707
+  },
+  "estimated": {
+    "method_sets": 960,
+    "invalid_method_sets": 0,
+    "fit_rows": 2880,
+    "unavailable_fits": 0,
+    "nonconverged_selected_fits": 0,
+    "failed_starts": 18,
+    "objective_numerical_failures": 108,
+    "nfev_all_starts": 2105648,
+    "sum_elapsed_seconds_across_workers": 729.6948315900031,
+    "maximum_covariance_condition": 1245.0204084584554,
+    "noise_bound_counts": {
+      "sigma_scale": {
+        "at_lower": 26,
+        "at_upper": 0,
+        "total": 2880
+      },
+      "length_days": {
+        "at_lower": 273,
+        "at_upper": 19,
+        "total": 2880
+      },
+      "amplitude_relative": {
+        "at_lower": 28,
+        "at_upper": 807,
+        "total": 2880
+      }
+    }
+  }
+}
