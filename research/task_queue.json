@@ -134,7 +134,7 @@
       ],
       "acceptance": "Конкретные practical covariance bounds/budget/negative families/sample size/thresholds/CI/failures; контроль GP absorption и oracle leakage до новой evaluation",
       "started_date_utc": "2026-11-02",
-      "checkpoint": "R2 complete. Determine minimal practical covariance estimator and shared mean-fitting budget; preregister development-only noise pilot and numerical safeguards before independent covariance evaluation. No large covariance run yet."
+      "checkpoint": "До новых данных сохранён covariance_development_design.md: joint observation-only noise likelihood + whitened NNLS, preliminary bounds/budget; далее численные unit checks и4 development pairs для стоимости, без main evaluation."
     },
     {
       "id": "COV-EXPERIMENT",
