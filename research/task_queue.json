@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "SYNTHESIS",
-  "next_task_id": "SYNTHESIS",
+  "current_task_id": null,
+  "next_task_id": null,
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -159,7 +159,7 @@
     },
     {
       "id": "SYNTHESIS",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Собрать научные выводы, ограничения и черновик рукописи из подтверждённых артефактов",
       "depends_on": [
         "COV-EXPERIMENT"
@@ -170,10 +170,16 @@
       ],
       "acceptance": "Каждый вывод имеет источник/код/данные/verifier; научный итог не зависит от знака эффекта; личные задания ученику; собственная автоматизация приостановлена после передачи",
       "started_at_utc": "2026-11-02T05:11:15.726119+00:00",
-      "checkpoint": "Write bounded manuscript and handoff from verified R2/COV/LIT artifacts; explain COV negative result and optimization limits. Update README/STATUS/contributions/plan; artifact-link audit, final push, then pause only own AstroML automation."
+      "checkpoint": "Manuscript/handoff saved1af2b0f; artifact/link audit PASS99links/16archives/90evaluationfiles. Scientific outcomes bounded, personal contribution unverified. Own AstroML automation pause confirmed2026-11-02T05:17:32.562873Z,is_enabled=false. No other automation changed. Next step belongs to participant, no new automatic research task.",
+      "completed_at_utc": "2026-11-02T05:19:43.053360+00:00"
     }
   ],
   "target_session_minutes": 120,
   "checkpoint_interval_minutes": 20,
-  "continue_sequential_ready_tasks_within_session": true
+  "continue_sequential_ready_tasks_within_session": true,
+  "research_state": "COMPLETE_WITH_LIMITATIONS",
+  "automation_requested_state": "PAUSED",
+  "completed_at_utc": "2026-11-02T05:19:43.053360+00:00",
+  "handoff": "reports/research_handoff.md",
+  "next_user_action": "Read manuscript; independently restore/verify COV05 from README, explain one false positive and record actual personal contribution. New research requires an explicitly approved scope/protocol."
 }

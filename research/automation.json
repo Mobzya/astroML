@@ -1,7 +1,7 @@
 {
   "title": "Продолжать исследование AstroML",
-  "enabled_at_last_verification": true,
-  "verified_at_utc": "2026-11-01T19:14:31.302094+00:00",
+  "enabled_at_last_verification": false,
+  "verified_at_utc": "2026-11-02T05:17:32.562873+00:00",
   "same_codex_thread": true,
   "interval_hours": 8,
   "timing_mode": "exact_schedule",
@@ -10,11 +10,12 @@
   "first_scheduled_run_utc": "2026-11-02T03:15:00Z",
   "first_scheduled_run_local": "2026-11-02T06:15:00+03:00",
   "scheduler_next_run_time": null,
-  "observed_executions": 0,
-  "status_note": "Creation and enablement confirmed; no scheduled research iteration has executed yet. A null scheduler next_run_time is not treated as a run acknowledgement.",
+  "observed_executions": 1,
+  "status_note": "Own AstroML automation paused after verified bounded research and manuscript/handoff push, confirmed by update is_enabled=false. No other automation changed; no automatic new tasks remain.",
   "durable_state_repository": "https://github.com/Mobzya/astroML",
   "task_queue": "research/task_queue.json",
   "instructions": "research/AUTONOMOUS_RESEARCH.md",
   "target_session_minutes": 120,
-  "continue_sequential_ready_tasks_within_session": true
+  "continue_sequential_ready_tasks_within_session": true,
+  "last_observed_run_utc": "2026-11-02T03:15:36.454522+00:00"
 }
