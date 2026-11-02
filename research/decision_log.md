@@ -48,3 +48,7 @@
 ### 02.11.2026 04:20 UTC — COV calibration numerical failure
 
 At48/240 saved sources strict JSON rejected inf Gaussian amplitude; source20261122:00000135. NNLS can return infinite coefficient with finite norm for near-zero basis. Preserve failed partial archive/hash; reject nonfinite linear coefficients as numerical objective failure; add regression and restart calibration under new scientific fingerprint. Protocol/bounds/threshold rules unchanged, no evaluation generated or inspected.
+
+### 02.11.2026 04:25 UTC — COV policy freeze
+
+Restart completed240 calibration sources under clean5add9ea; density/KKT/matching/threshold independent verifier PASS8640fits. Three global thresholds committed before new evaluation generation. Calibration24/480 FP each;480 views arise from240 clustered sources. Proceed360 held-out source units, same methods/budget; do not tune from outcomes.

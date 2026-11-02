@@ -1,0 +1,10 @@
+{
+  "artifacts": [
+    {
+      "phase": "calibration",
+      "path": "reports/examples/covariance05-calibration-v1a.zip",
+      "bytes": 3236087,
+      "sha256": "1b80c8ded22f9a27b728351f235ac36748fa0506cbe4d4c70317ccf09824b95d"
+    }
+  ]
+}
