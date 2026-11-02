@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 
 import numpy as np
+from scipy.stats import binomtest
 
 
 def main():
@@ -68,6 +69,17 @@ def main():
     if args.summary and args.policy:
         summary, policy = json.loads(args.summary.read_text()), json.loads(args.policy.read_text())
         assert {r["source_id"] for r in records}.isdisjoint(policy["source_ids"])
+        config = json.loads(Path("configs/reconstruction_02.json").read_text())
+        rng = np.random.default_rng(config["bootstrap_seed"])
+        groups = [
+            [i for i, r in enumerate(records) if r["seed"] == seed] for seed in config["seeds"]
+        ]
+        weights = []
+        for _ in range(config["bootstrap_replicates"]):
+            indices = np.concatenate([rng.choice(g, len(g), replace=True) for g in groups])
+            weights.append(np.bincount(indices, minlength=len(records)))
+        weights = np.array(weights, dtype=float)
+        auc_draws = {}
         for c, expected in summary["conditions"].items():
             p, n, pv, nv = [], [], [], []
             for record in records:
@@ -87,6 +99,28 @@ def main():
             assert np.isclose(fp / len(n), expected["fpr_all"])
             assert np.isclose(tp / len(p), expected["recall_all"])
             assert np.isclose((pv.sum() + nv.sum()) / (len(p) + len(n)), expected["coverage"])
+            # Independent pair-comparison matrix and multinomial weights, not rank sums.
+            comparisons = (p[:, None] > n).astype(float) + 0.5 * (p[:, None] == n)
+            auc_draws[c] = (
+                np.einsum("bi,ij,bj->b", weights, comparisons, weights, optimize=True)
+                / len(records) ** 2
+            )
+            np.testing.assert_allclose(
+                np.quantile(auc_draws[c], [0.025, 0.975]),
+                expected["auc_ci95_pair_bootstrap"],
+                atol=1e-12,
+            )
+            for count, total, key in [
+                (fp, len(n), "fpr_all_ci95"),
+                (tp, len(p), "recall_all_ci95"),
+            ]:
+                ref = binomtest(count, total).proportion_ci(confidence_level=0.95, method="exact")
+                np.testing.assert_allclose([ref.low, ref.high], expected[key], atol=1e-10)
+        np.testing.assert_allclose(
+            np.quantile(auc_draws["peak40"] - auc_draws["random40"], [0.025, 0.975]),
+            summary["primary_contrast"]["ci95_pair_bootstrap"],
+            atol=1e-12,
+        )
     print(
         json.dumps(
             {
