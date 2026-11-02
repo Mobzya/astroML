@@ -267,6 +267,44 @@ def main():
         ),
         "",
     ]
+    local_path = root / "evaluation_local_minima.json"
+    if local_path.exists():
+        local = json.loads(local_path.read_text())
+        lines += [
+            "",
+            "## Exploratory oracle-контроль локальных минимумов",
+            "",
+            (
+                "Контроль добавлен после freeze без изменения детектора. True parameters "
+                "задают допустимую точку correct mean; estimated использует допустимый "
+                "Matérn candidate даже для OU data. Если selected NLL больше candidate "
+                "на>1e−5, пропущено допустимое улучшение. Это нижняя оценка числа "
+                "локальных провалов, не practical truth-based алгоритм и не новый primary endpoint."
+            ),
+            "",
+            "Primary OU/complete; для каждого correct mean360 independent sources:",
+            "",
+            "| Method | True mean | Missed feasible improvement | Max NLL gap |",
+            "|---|---|---:|---:|",
+        ]
+        for mode in modes:
+            for family in ["pspl", "gaussian"]:
+                d = local["groups"][f"ou_biased/complete/{family}/{mode}"]
+                lines.append(
+                    f"| {mode} | {family} | {d['missed_feasible_improvement']}/{d['available_fits']} | {d['worst']['nll_gap']:.3f} |"
+                )
+        lines += [
+            "",
+            (
+                "[Полная диагностика](covariance05/evaluation_local_minima.json), "
+                "[calibration](covariance05/calibration_local_minima.json), "
+                "[математическое обоснование](../research/covariance_math.md). "
+                "Convergence/coverage не доказывают global optimum. Если optimization "
+                "не справляется, outcome относится к конкретному finite-budget pipeline; "
+                "польза ideal covariance estimation остаётся отдельным вопросом."
+            ),
+            "",
+        ]
     Path("reports/experiment_05.md").write_text("\n".join(lines))
 
 

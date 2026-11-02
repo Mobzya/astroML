@@ -1,0 +1,184 @@
+{
+  "phase": "calibration",
+  "independent_sources": 240,
+  "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6",
+  "scope": "Post-freeze oracle diagnostic of missed feasible likelihood points; no refitting.\n\nFor the correct PSPL/Gaussian mean only, generator parameters define a feasible\npoint. A selected NLL above its NLL proves a missed feasible improvement, not the\nsize of the gap to the global optimum. Truth is used only by this diagnostic.\nEstimated mode uses a feasible Mat\u00e9rn C even on OU data, never OU C as its model.\n",
+  "gap_tolerance": 1e-05,
+  "groups": {
+    "white/complete/pspl/diagonal": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000078",
+        "nll_gap": -0.18979942831580843,
+        "selected_nll": -138.13502584032614,
+        "feasible_nll": -137.94522641201033,
+        "selected_success": true
+      }
+    },
+    "white/complete/pspl/oracle": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000078",
+        "nll_gap": -0.18979942831580843,
+        "selected_nll": -138.13502584032614,
+        "feasible_nll": -137.94522641201033,
+        "selected_success": true
+      }
+    },
+    "white/complete/pspl/estimated": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000066",
+        "nll_gap": -0.22970160883423318,
+        "selected_nll": -58.292018076095886,
+        "feasible_nll": -58.06231646726165,
+        "selected_success": true
+      }
+    },
+    "white/complete/gaussian/diagonal": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000000",
+        "nll_gap": -0.15174039465858868,
+        "selected_nll": -215.2004103556087,
+        "feasible_nll": -215.04866996095012,
+        "selected_success": true
+      }
+    },
+    "white/complete/gaussian/oracle": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000000",
+        "nll_gap": -0.15174039465858868,
+        "selected_nll": -215.2004103556087,
+        "feasible_nll": -215.04866996095012,
+        "selected_success": true
+      }
+    },
+    "white/complete/gaussian/estimated": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 46,
+      "fraction_available": 0.19166666666666668,
+      "median_positive_nll_gap": 49.18772316920231,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000158",
+        "nll_gap": 63.970523672331865,
+        "selected_nll": -47.39342647727945,
+        "feasible_nll": -111.36395014961131,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/pspl/diagonal": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000131",
+        "nll_gap": -2.2100342385764833,
+        "selected_nll": -81.55878586839235,
+        "feasible_nll": -79.34875162981587,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/pspl/oracle": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000079",
+        "nll_gap": -0.23599784433261561,
+        "selected_nll": -131.86571718890463,
+        "feasible_nll": -131.629719344572,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/pspl/estimated": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 45,
+      "fraction_available": 0.1875,
+      "median_positive_nll_gap": 30.136420931830386,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000158",
+        "nll_gap": 45.48388126162071,
+        "selected_nll": -52.322218244364976,
+        "feasible_nll": -97.80609950598569,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/gaussian/diagonal": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000131",
+        "nll_gap": -0.9005769784844659,
+        "selected_nll": -80.2493286083003,
+        "feasible_nll": -79.34875162981584,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/gaussian/oracle": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000199",
+        "nll_gap": -0.17646993583908,
+        "selected_nll": -122.43670076294153,
+        "feasible_nll": -122.26023082710245,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/gaussian/estimated": {
+      "available_fits": 240,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 123,
+      "fraction_available": 0.5125,
+      "median_positive_nll_gap": 33.50883075973084,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000158",
+        "nll_gap": 50.7474892346613,
+        "selected_nll": -47.05861027132438,
+        "feasible_nll": -97.80609950598569,
+        "selected_success": true
+      }
+    }
+  },
+  "candidate_specification": {
+    "mean": "generator truth, correct family only; all bounds mechanically checked",
+    "covariance": "fixed report diagonal / true oracle / feasible nominal Mat\u00e9rn with floor",
+    "no_fit_or_detector_modification": true,
+    "ou_truth_not_practical_candidate": true,
+    "target_calibration_fpr": 0.05
+  }
+}
