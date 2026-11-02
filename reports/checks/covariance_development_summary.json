@@ -1,0 +1,25 @@
+{
+  "diagonal": {
+    "method_sets": 32,
+    "valid_sets": 32,
+    "runtime_seconds_sum": 1.8741037839995442,
+    "numerical_failures": 0
+  },
+  "oracle": {
+    "method_sets": 32,
+    "valid_sets": 32,
+    "runtime_seconds_sum": 1.7977549239999462,
+    "numerical_failures": 0
+  },
+  "estimated": {
+    "method_sets": 32,
+    "valid_sets": 32,
+    "runtime_seconds_sum": 10.677273629999945,
+    "numerical_failures": 0
+  },
+  "independent_pairs": 4,
+  "observation_views": 32,
+  "runtime_seconds": 14.802928749999865,
+  "archive_sha256": "30c0b778ab51caaa5253d3eaeb3dd8a44db801a4d7ef0e6855c02520ba13a91a",
+  "code_sha": "bec0e7d8a295df9d6e5ba0f1a4d3d99ac7091f05"
+}

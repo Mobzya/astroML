@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "COV-PROTOCOL",
-  "next_task_id": "COV-PROTOCOL",
+  "current_task_id": "COV-EXPERIMENT",
+  "next_task_id": "COV-EXPERIMENT",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -124,7 +124,7 @@
     },
     {
       "id": "COV-PROTOCOL",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Завершить литературную проверку и дизайн нового diagonal/estimated-C/oracle опыта",
       "depends_on": [
         "R2-MAIN"
@@ -134,11 +134,12 @@
       ],
       "acceptance": "Конкретные practical covariance bounds/budget/negative families/sample size/thresholds/CI/failures; контроль GP absorption и oracle leakage до новой evaluation",
       "started_date_utc": "2026-11-02",
-      "checkpoint": "До новых данных сохранён covariance_development_design.md: joint observation-only noise likelihood + whitened NNLS, preliminary bounds/budget; далее численные unit checks и4 development pairs для стоимости, без main evaluation."
+      "checkpoint": "Full COV05 v1 protocol/config fixed after4-source development feasibility and independent density/KKT checks, before main data. Primary OU/Gaussian complete; joint calibration/eval bootstrap; added double-bump stress.",
+      "completed_date_utc": "2026-11-02"
     },
     {
       "id": "COV-EXPERIMENT",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Получить завершённый проверяемый результат по covariance-aware гипотезе",
       "depends_on": [
         "COV-PROTOCOL"
@@ -146,7 +147,9 @@
       "artifacts": [
         "reports/experiment_05.md"
       ],
-      "acceptance": "CPU smoke, development pilot, freeze, independent evaluation и verifier как отдельные checkpoint-подзадачи; FPR/CI/recall/coverage/runtime и отрицательные исходы"
+      "acceptance": "CPU smoke, development pilot, freeze, independent evaluation и verifier как отдельные checkpoint-подзадачи; FPR/CI/recall/coverage/runtime и отрицательные исходы",
+      "started_date_utc": "2026-11-02",
+      "checkpoint": "Implement and verify shared covariance runner/negative-family generator first; then240 calibration sources, commit policy before360 new evaluation sources. No COV main data generated yet."
     },
     {
       "id": "SYNTHESIS",
