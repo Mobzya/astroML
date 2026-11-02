@@ -1,0 +1,55 @@
+{
+  "diagonal": {
+    "method_sets": 9720,
+    "invalid_method_sets": 0,
+    "fit_rows": 29160,
+    "unavailable_fits": 0,
+    "nonconverged_selected_fits": 0,
+    "failed_starts": 283,
+    "objective_numerical_failures": 405,
+    "nfev_all_starts": 7435664,
+    "sum_elapsed_seconds_across_workers": 1459.9875769370028,
+    "maximum_covariance_condition": 2.248793673237092
+  },
+  "oracle": {
+    "method_sets": 9720,
+    "invalid_method_sets": 0,
+    "fit_rows": 29160,
+    "unavailable_fits": 0,
+    "nonconverged_selected_fits": 0,
+    "failed_starts": 146,
+    "objective_numerical_failures": 468,
+    "nfev_all_starts": 7187440,
+    "sum_elapsed_seconds_across_workers": 1424.076115107,
+    "maximum_covariance_condition": 13.147236001435674
+  },
+  "estimated": {
+    "method_sets": 9720,
+    "invalid_method_sets": 0,
+    "fit_rows": 29160,
+    "unavailable_fits": 0,
+    "nonconverged_selected_fits": 0,
+    "failed_starts": 141,
+    "objective_numerical_failures": 5502,
+    "nfev_all_starts": 19935405,
+    "sum_elapsed_seconds_across_workers": 6203.699225839981,
+    "maximum_covariance_condition": 1115.6582988698083,
+    "noise_bound_counts": {
+      "sigma_scale": {
+        "at_lower": 1139,
+        "at_upper": 50,
+        "total": 29160
+      },
+      "length_days": {
+        "at_lower": 2302,
+        "at_upper": 315,
+        "total": 29160
+      },
+      "amplitude_relative": {
+        "at_lower": 698,
+        "at_upper": 6689,
+        "total": 29160
+      }
+    }
+  }
+}

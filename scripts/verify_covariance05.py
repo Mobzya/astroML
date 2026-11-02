@@ -129,6 +129,18 @@ def main():
                         )
                         coefficients = np.array([fs, fb])
                     residual = y - design @ coefficients
+                    assert np.all(np.isfinite(coefficients)) and np.all(coefficients >= -1e-12)
+                    if family != "constant":
+                        normalized_center = (center - t.min()) / np.ptp(t)
+                        duration = te if family == "pspl" else width
+                        assert -1 - 1e-12 <= normalized_center <= 2 + 1e-12
+                        assert 0.001 - 1e-12 <= duration / np.ptp(t) <= 2 + 1e-12
+                        if family == "pspl":
+                            assert 0.01 - 1e-12 <= u0 <= 3 + 1e-12
+                    if mode == "estimated":
+                        assert 0.5 - 1e-12 <= phi["sigma_scale"] <= 3 + 1e-12
+                        assert 1e-4 - 1e-12 <= phi["gp_amplitude"] / np.median(sigma) <= 4 + 1e-12
+                        assert 1 - 1e-12 <= phi["length_days"] <= 120 + 1e-12
                     ref = -multivariate_normal.logpdf(residual, cov=c)
                     np.testing.assert_allclose(ref, fit["nll"], rtol=1e-8, atol=1e-7)
                     k = {"constant": 1, "pspl": 5, "gaussian": 4}[family] + (

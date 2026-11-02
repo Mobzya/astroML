@@ -1,0 +1,41 @@
+{
+  "selection_rule": "Illustrate first source-ID error in each primary method/class, without refitting.\n\nSelection is deterministic and illustrative. It estimates neither frequency nor\ncausal mechanism. Only observation data and saved mean fits are plotted; no GP\nconditional signal is added to the physical mean.\n",
+  "cases": [
+    {
+      "mode": "diagonal",
+      "family": "gaussian",
+      "error": "FP",
+      "source_id": "astroml-cov-main-20261102-v1:20261122:00000010",
+      "qualifying_sources": 23,
+      "score": 11.348386727173704,
+      "valid": true
+    },
+    {
+      "mode": "estimated",
+      "family": "gaussian",
+      "error": "FP",
+      "source_id": "astroml-cov-main-20261102-v1:20261122:00000130",
+      "qualifying_sources": 3,
+      "score": 77.00322158538603,
+      "valid": true
+    },
+    {
+      "mode": "diagonal",
+      "family": "pspl",
+      "error": "miss/reject",
+      "source_id": "astroml-cov-main-20261102-v1:20261122:00000002",
+      "qualifying_sources": 82,
+      "score": -38.035090680492544,
+      "valid": true
+    },
+    {
+      "mode": "estimated",
+      "family": "pspl",
+      "error": "miss/reject",
+      "source_id": "astroml-cov-main-20261102-v1:20261122:00000002",
+      "qualifying_sources": 359,
+      "score": -15.017023271098196,
+      "valid": true
+    }
+  ]
+}

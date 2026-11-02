@@ -11,9 +11,9 @@
 
 ## Текущая задача
 
-**COV-EXPERIMENT IN_PROGRESS**. Protocol/development pilot/calibration complete. Independent8640 calibration fits/counterfactuals/thresholds PASS; frozen policy4a94d44 before evaluation. Evaluation360 sources running, durable checkpoint272/360 in compact ZIP shards and recovery manifest. Restore from Git tested; no need to trust retained workspace. GitHub Releases asset upload returned401; authorized Git storage works, no credential changes.
+**SYNTHESIS IN_PROGRESS**. COV05 complete:360 held-out sources,87480 fit rows/metrics/joint bootstrap independently verified; raw artifacts fully restored from Git. Primary estimated FPR.83% vs6.39%,recall.28% vs77.22%;joint criterion not supported. Correct-mean feasible-point diagnostic found159/360 Gaussian and55/360PSPL optimizer misses in estimated OU/complete; convergence did not certify global optimum. Fitter/policy remained frozen.
 
-Scientific fitter remains frozen. Await full evaluation, independent density/metrics/joint-bootstrap verifier; do not tune from held-out scores.
+Next: bounded manuscript, evidence-linked handoff, updated README/plan/contributions, final artifact audit; then pause only own AstroML automation after handoff saved.
 
 ## Статусы исторических материалов
 

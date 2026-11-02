@@ -1,0 +1,772 @@
+{
+  "phase": "evaluation",
+  "independent_sources": 360,
+  "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6",
+  "scope": "Post-freeze oracle diagnostic of missed feasible likelihood points; no refitting.\n\nFor the correct PSPL/Gaussian mean only, generator parameters define a feasible\npoint. A selected NLL above its NLL proves a missed feasible improvement, not the\nsize of the gap to the global optimum. Truth is used only by this diagnostic.\nEstimated mode uses a feasible Mat\u00e9rn C even on OU data, never OU C as its model.\n",
+  "gap_tolerance": 1e-05,
+  "groups": {
+    "white/complete/pspl/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000058",
+        "nll_gap": -0.048097000047434335,
+        "selected_nll": -61.12900738728494,
+        "feasible_nll": -61.08091038723751,
+        "selected_success": true
+      }
+    },
+    "white/complete/pspl/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000058",
+        "nll_gap": -0.048097000047434335,
+        "selected_nll": -61.12900738728494,
+        "feasible_nll": -61.08091038723751,
+        "selected_success": true
+      }
+    },
+    "white/complete/pspl/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 1,
+      "fraction_available": 0.002777777777777778,
+      "median_positive_nll_gap": 46.24369045146874,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000135",
+        "nll_gap": 46.24369045146874,
+        "selected_nll": 26.548941606806103,
+        "feasible_nll": -19.694748844662634,
+        "selected_success": true
+      }
+    },
+    "white/random40/pspl/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000048",
+        "nll_gap": -0.1670617084010928,
+        "selected_nll": -27.759728100647713,
+        "feasible_nll": -27.59266639224662,
+        "selected_success": true
+      }
+    },
+    "white/random40/pspl/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000048",
+        "nll_gap": -0.1670617084010928,
+        "selected_nll": -27.759728100647713,
+        "feasible_nll": -27.59266639224662,
+        "selected_success": true
+      }
+    },
+    "white/random40/pspl/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000003",
+        "nll_gap": -0.3811928951351433,
+        "selected_nll": -97.72499058053964,
+        "feasible_nll": -97.3437976854045,
+        "selected_success": true
+      }
+    },
+    "white/peak40/pspl/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000156",
+        "nll_gap": -0.021383112385819913,
+        "selected_nll": -127.38201402971598,
+        "feasible_nll": -127.36063091733016,
+        "selected_success": true
+      }
+    },
+    "white/peak40/pspl/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000156",
+        "nll_gap": -0.021383112385819913,
+        "selected_nll": -127.38201402971598,
+        "feasible_nll": -127.36063091733016,
+        "selected_success": true
+      }
+    },
+    "white/peak40/pspl/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 3,
+      "fraction_available": 0.008333333333333333,
+      "median_positive_nll_gap": 0.9017917531354556,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000014",
+        "nll_gap": 0.9869396176650014,
+        "selected_nll": -164.81438168471038,
+        "feasible_nll": -165.80132130237538,
+        "selected_success": true
+      }
+    },
+    "white/complete/gaussian/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000172",
+        "nll_gap": -0.07912735910065294,
+        "selected_nll": -193.53044608879804,
+        "feasible_nll": -193.4513187296974,
+        "selected_success": true
+      }
+    },
+    "white/complete/gaussian/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000172",
+        "nll_gap": -0.07912735910065294,
+        "selected_nll": -193.53044608879804,
+        "feasible_nll": -193.4513187296974,
+        "selected_success": true
+      }
+    },
+    "white/complete/gaussian/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 49,
+      "fraction_available": 0.1361111111111111,
+      "median_positive_nll_gap": 48.325035650057316,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000189",
+        "nll_gap": 63.142418447483905,
+        "selected_nll": -59.26340800952944,
+        "feasible_nll": -122.40582645701335,
+        "selected_success": true
+      }
+    },
+    "white/random40/gaussian/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000005",
+        "nll_gap": -0.029417949768401286,
+        "selected_nll": -153.13752759950285,
+        "feasible_nll": -153.10810964973444,
+        "selected_success": true
+      }
+    },
+    "white/random40/gaussian/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000005",
+        "nll_gap": -0.029417949768401286,
+        "selected_nll": -153.13752759950285,
+        "feasible_nll": -153.10810964973444,
+        "selected_success": true
+      }
+    },
+    "white/random40/gaussian/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 42,
+      "fraction_available": 0.11666666666666667,
+      "median_positive_nll_gap": 37.58168876258823,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000170",
+        "nll_gap": 44.25806363650726,
+        "selected_nll": -0.43887305953766287,
+        "feasible_nll": -44.69693669604492,
+        "selected_success": true
+      }
+    },
+    "white/peak40/gaussian/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 1,
+      "fraction_available": 0.002777777777777778,
+      "median_positive_nll_gap": 0.08666686573363336,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000003",
+        "nll_gap": 0.08666686573363336,
+        "selected_nll": -99.08838542627026,
+        "feasible_nll": -99.1750522920039,
+        "selected_success": true
+      }
+    },
+    "white/peak40/gaussian/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 1,
+      "fraction_available": 0.002777777777777778,
+      "median_positive_nll_gap": 0.08666686573363336,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000003",
+        "nll_gap": 0.08666686573363336,
+        "selected_nll": -99.08838542627026,
+        "feasible_nll": -99.1750522920039,
+        "selected_success": true
+      }
+    },
+    "white/peak40/gaussian/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000033",
+        "nll_gap": -0.12966049168232985,
+        "selected_nll": -172.41179301598038,
+        "feasible_nll": -172.28213252429805,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/pspl/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000058",
+        "nll_gap": -1.1965626786609818,
+        "selected_nll": -33.524657226884514,
+        "feasible_nll": -32.32809454822353,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/pspl/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000185",
+        "nll_gap": -0.23232381450431205,
+        "selected_nll": -104.26861402296966,
+        "feasible_nll": -104.03629020846535,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/pspl/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 52,
+      "fraction_available": 0.14444444444444443,
+      "median_positive_nll_gap": 29.903729806660213,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000189",
+        "nll_gap": 44.99938074230471,
+        "selected_nll": -63.55575384248807,
+        "feasible_nll": -108.55513458479278,
+        "selected_success": true
+      }
+    },
+    "matern_biased/random40/pspl/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000054",
+        "nll_gap": -0.8218042308199003,
+        "selected_nll": -38.28440565964859,
+        "feasible_nll": -37.46260142882869,
+        "selected_success": true
+      }
+    },
+    "matern_biased/random40/pspl/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000014",
+        "nll_gap": -0.15340983345848258,
+        "selected_nll": -158.11393641903987,
+        "feasible_nll": -157.9605265855814,
+        "selected_success": true
+      }
+    },
+    "matern_biased/random40/pspl/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 58,
+      "fraction_available": 0.16111111111111112,
+      "median_positive_nll_gap": 22.027217412140253,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000170",
+        "nll_gap": 34.88155303103087,
+        "selected_nll": 1.3350651096364672,
+        "feasible_nll": -33.5464879213944,
+        "selected_success": true
+      }
+    },
+    "matern_biased/peak40/pspl/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 1,
+      "fraction_available": 0.002777777777777778,
+      "median_positive_nll_gap": 17.55038061786474,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000120",
+        "nll_gap": 17.55038061786474,
+        "selected_nll": -57.79356488752041,
+        "feasible_nll": -75.34394550538515,
+        "selected_success": true
+      }
+    },
+    "matern_biased/peak40/pspl/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 2,
+      "fraction_available": 0.005555555555555556,
+      "median_positive_nll_gap": 0.9325791371044403,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000056",
+        "nll_gap": 1.5297739768240888,
+        "selected_nll": -150.82473068668952,
+        "feasible_nll": -152.3545046635136,
+        "selected_success": true
+      }
+    },
+    "matern_biased/peak40/pspl/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 3,
+      "fraction_available": 0.008333333333333333,
+      "median_positive_nll_gap": 0.5025068938366815,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000075",
+        "nll_gap": 2.0820251980849207,
+        "selected_nll": -158.83292726733092,
+        "feasible_nll": -160.91495246541584,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/gaussian/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000058",
+        "nll_gap": -0.33281273865360106,
+        "selected_nll": -32.66090728687713,
+        "feasible_nll": -32.32809454822353,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/gaussian/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000185",
+        "nll_gap": -0.056250368160519315,
+        "selected_nll": -104.0925405766259,
+        "feasible_nll": -104.03629020846537,
+        "selected_success": true
+      }
+    },
+    "matern_biased/complete/gaussian/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 156,
+      "fraction_available": 0.43333333333333335,
+      "median_positive_nll_gap": 32.80733798060214,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000189",
+        "nll_gap": 50.450158065676916,
+        "selected_nll": -58.10497651911588,
+        "feasible_nll": -108.5551345847928,
+        "selected_success": true
+      }
+    },
+    "matern_biased/random40/gaussian/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000027",
+        "nll_gap": -0.4471109101181767,
+        "selected_nll": -0.03022689805747092,
+        "feasible_nll": 0.4168840120607058,
+        "selected_success": true
+      }
+    },
+    "matern_biased/random40/gaussian/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 1,
+      "fraction_available": 0.002777777777777778,
+      "median_positive_nll_gap": 8.517607171975236,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000105",
+        "nll_gap": 8.517607171975236,
+        "selected_nll": 27.403200872619983,
+        "feasible_nll": 18.885593700644748,
+        "selected_success": true
+      }
+    },
+    "matern_biased/random40/gaussian/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 164,
+      "fraction_available": 0.45555555555555555,
+      "median_positive_nll_gap": 25.681245879568852,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000170",
+        "nll_gap": 35.5366046830614,
+        "selected_nll": 1.9901167616670108,
+        "feasible_nll": -33.54648792139439,
+        "selected_success": true
+      }
+    },
+    "matern_biased/peak40/gaussian/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000033",
+        "nll_gap": -0.010682560871714486,
+        "selected_nll": -120.76857377620556,
+        "feasible_nll": -120.75789121533384,
+        "selected_success": true
+      }
+    },
+    "matern_biased/peak40/gaussian/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 1,
+      "fraction_available": 0.002777777777777778,
+      "median_positive_nll_gap": 0.00015281523456422974,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000084",
+        "nll_gap": 0.00015281523456422974,
+        "selected_nll": -57.321623827157005,
+        "feasible_nll": -57.32177664239157,
+        "selected_success": true
+      }
+    },
+    "matern_biased/peak40/gaussian/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 1,
+      "fraction_available": 0.002777777777777778,
+      "median_positive_nll_gap": 1.7768692316624595,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000025",
+        "nll_gap": 1.7768692316624595,
+        "selected_nll": -131.78545025060592,
+        "feasible_nll": -133.56231948226838,
+        "selected_success": true
+      }
+    },
+    "ou_biased/complete/pspl/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000058",
+        "nll_gap": -0.7549716453485331,
+        "selected_nll": -25.914404907817655,
+        "feasible_nll": -25.159433262469122,
+        "selected_success": true
+      }
+    },
+    "ou_biased/complete/pspl/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000058",
+        "nll_gap": -0.22173789097923446,
+        "selected_nll": -44.61268989565072,
+        "feasible_nll": -44.39095200467148,
+        "selected_success": true
+      }
+    },
+    "ou_biased/complete/pspl/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 55,
+      "fraction_available": 0.1527777777777778,
+      "median_positive_nll_gap": 29.161555235411697,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000189",
+        "nll_gap": 43.88910496676954,
+        "selected_nll": -61.53184151582802,
+        "feasible_nll": -105.42094648259756,
+        "selected_success": true
+      }
+    },
+    "ou_biased/random40/pspl/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000054",
+        "nll_gap": -0.6008347888993697,
+        "selected_nll": -35.57195194417151,
+        "feasible_nll": -34.97111715527214,
+        "selected_success": true
+      }
+    },
+    "ou_biased/random40/pspl/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000014",
+        "nll_gap": -0.15001584356079434,
+        "selected_nll": -157.0829741622522,
+        "feasible_nll": -156.93295831869142,
+        "selected_success": true
+      }
+    },
+    "ou_biased/random40/pspl/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 61,
+      "fraction_available": 0.16944444444444445,
+      "median_positive_nll_gap": 21.40517289388012,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000170",
+        "nll_gap": 34.15034486230947,
+        "selected_nll": 2.098708702367709,
+        "feasible_nll": -32.05163615994176,
+        "selected_success": true
+      }
+    },
+    "ou_biased/peak40/pspl/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000187",
+        "nll_gap": -0.7585962864048454,
+        "selected_nll": -12.835016079248255,
+        "feasible_nll": -12.07641979284341,
+        "selected_success": true
+      }
+    },
+    "ou_biased/peak40/pspl/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 1,
+      "fraction_available": 0.002777777777777778,
+      "median_positive_nll_gap": 1.0259614277050275,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000073",
+        "nll_gap": 1.0259614277050275,
+        "selected_nll": -169.90501235175356,
+        "feasible_nll": -170.93097377945858,
+        "selected_success": true
+      }
+    },
+    "ou_biased/peak40/pspl/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 2,
+      "fraction_available": 0.005555555555555556,
+      "median_positive_nll_gap": 0.3265016478174978,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000094",
+        "nll_gap": 0.5903203992338888,
+        "selected_nll": -109.69650894107417,
+        "feasible_nll": -110.28682934030806,
+        "selected_success": true
+      }
+    },
+    "ou_biased/complete/gaussian/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000058",
+        "nll_gap": -0.3928229593713439,
+        "selected_nll": -25.552256221840437,
+        "feasible_nll": -25.159433262469094,
+        "selected_success": true
+      }
+    },
+    "ou_biased/complete/gaussian/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000185",
+        "nll_gap": -0.07372005525003544,
+        "selected_nll": -101.19664974298057,
+        "feasible_nll": -101.12292968773053,
+        "selected_success": true
+      }
+    },
+    "ou_biased/complete/gaussian/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 159,
+      "fraction_available": 0.44166666666666665,
+      "median_positive_nll_gap": 31.916256877053996,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000189",
+        "nll_gap": 49.0979502616853,
+        "selected_nll": -56.32299622091229,
+        "feasible_nll": -105.42094648259759,
+        "selected_success": true
+      }
+    },
+    "ou_biased/random40/gaussian/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000027",
+        "nll_gap": -0.49323325573200094,
+        "selected_nll": 8.122837661704331,
+        "feasible_nll": 8.616070917436332,
+        "selected_success": true
+      }
+    },
+    "ou_biased/random40/gaussian/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261123:00000014",
+        "nll_gap": -0.1367378553598826,
+        "selected_nll": -157.06969617405124,
+        "feasible_nll": -156.93295831869136,
+        "selected_success": true
+      }
+    },
+    "ou_biased/random40/gaussian/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 162,
+      "fraction_available": 0.45,
+      "median_positive_nll_gap": 25.11938211973669,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000007",
+        "nll_gap": 36.1223896416165,
+        "selected_nll": -51.858356705815446,
+        "feasible_nll": -87.98074634743195,
+        "selected_success": true
+      }
+    },
+    "ou_biased/peak40/gaussian/diagonal": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 0,
+      "fraction_available": 0.0,
+      "median_positive_nll_gap": null,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261122:00000033",
+        "nll_gap": -0.01858721530767582,
+        "selected_nll": -117.92215253833794,
+        "feasible_nll": -117.90356532303026,
+        "selected_success": true
+      }
+    },
+    "ou_biased/peak40/gaussian/oracle": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 1,
+      "fraction_available": 0.002777777777777778,
+      "median_positive_nll_gap": 0.020878159249633654,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000025",
+        "nll_gap": 0.020878159249633654,
+        "selected_nll": -131.8055810282706,
+        "feasible_nll": -131.82645918752024,
+        "selected_success": true
+      }
+    },
+    "ou_biased/peak40/gaussian/estimated": {
+      "available_fits": 360,
+      "unavailable_fits": 0,
+      "missed_feasible_improvement": 1,
+      "fraction_available": 0.002777777777777778,
+      "median_positive_nll_gap": 1.9980303123057297,
+      "worst": {
+        "source_id": "astroml-cov-main-20261102-v1:20261124:00000025",
+        "nll_gap": 1.9980303123057297,
+        "selected_nll": -129.9693248782533,
+        "feasible_nll": -131.96735519055903,
+        "selected_success": true
+      }
+    }
+  },
+  "candidate_specification": {
+    "mean": "generator truth, correct family only; all bounds mechanically checked",
+    "covariance": "fixed report diagonal / true oracle / feasible nominal Mat\u00e9rn with floor",
+    "no_fit_or_detector_modification": true,
+    "ou_truth_not_practical_candidate": true,
+    "target_calibration_fpr": 0.05
+  }
+}

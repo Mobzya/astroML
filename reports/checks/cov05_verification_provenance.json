@@ -1,0 +1,19 @@
+{
+  "recorded_utc": "2026-11-02T05:10:05.068797+00:00",
+  "fit_code_sha": "4a94d440186a34c1a8de4cdc0b76d0f4cd715871",
+  "working_head_at_recording": "70225638fdd34ed66ae127972a158210650a4710",
+  "helper_sha256": {
+    "scripts/verify_covariance05.py": "6bae27b9fa2b0cdbf0aa8c8dd9f8953bb9fcde3c412ff35095d05cf16d910cdc",
+    "scripts/analyze_covariance05.py": "eed47b2cd13613cd00d503c086fc341b0797bd67bc3c788b33a6641b4e274912",
+    "scripts/diagnose_covariance05_local_minima.py": "068fd962df7cb14515de486703c17582610e5de5b07eb96baaeed1c3de444551",
+    "scripts/audit_covariance05_freeze.py": "31b26f09815914e4ce0ec3380ce0cc6ac564365844b63cbc899f2c02558640c9",
+    "scripts/restore_covariance05.py": "e836141b3fb5c6e58f7e6200d608db78aef097c37842dc54e83cd74c83c4b678",
+    "scripts/report_covariance05.py": "e36ba971ce34c597b2a9cffc9f32720cbf4787b1ea03e8bb3403736eae9c9ec1",
+    "scripts/plot_covariance05_cases.py": "a8ee219fe26ebe790231e4d4facb787c96157113b76fe7beaf8b2288a514b9b8"
+  },
+  "helper_working_changes_at_recording": [
+    " M scripts/verify_covariance05.py",
+    "?? scripts/audit_covariance05_freeze.py"
+  ],
+  "scope": "helper hashes bind verification bytes; modified helper files will be committed with results; scientific fitter/source/protocol clean and unchanged per freeze audit"
+}

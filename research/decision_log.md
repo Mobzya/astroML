@@ -56,3 +56,7 @@ Restart completed240 calibration sources under clean5add9ea; density/KKT/matchin
 ### 02.11.2026 — artifact endpoint unavailable
 
 GitHub Release metadata creation succeeded but assets upload returned HTTP401 Bad credentials. No credential modification/retry via alternate endpoint. Existing authorized git push remains available; preserve compact <=40-source compressed shards and exact recovery manifest in Git. Raw batch files are not committed individually. Scientific method unchanged.
+
+### 02.11.2026 — COV05 completed; SYNTHESIS begins
+
+360-source evaluation/87480 fit rows/CI/metrics verifier PASS,maxNLL error6.37e−12. Freeze continuity and full Git restoration PASS. Primary ΔFPR−.05556 CI[−.09722,−.02778], Δrecall−.76944 CI[−.83889,−.70556]; joint hypothesis unsupported. Covariance estimated pipeline practically fails at this operating point; negative outcome preserved. Exploratory feasible-point failures bound interpretation to finite3-start implementation, not all GP methods. No retuning from evaluation. Begin final manuscript/handoff under existing queue; no new scientific run.

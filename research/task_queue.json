@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "COV-EXPERIMENT",
-  "next_task_id": "COV-EXPERIMENT",
+  "current_task_id": "SYNTHESIS",
+  "next_task_id": "SYNTHESIS",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -139,21 +139,27 @@
     },
     {
       "id": "COV-EXPERIMENT",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Получить завершённый проверяемый результат по covariance-aware гипотезе",
       "depends_on": [
         "COV-PROTOCOL"
       ],
       "artifacts": [
-        "reports/experiment_05.md"
+        "reports/experiment_05.md",
+        "reports/covariance05/evaluation_summary.json",
+        "reports/covariance05/artifacts.json",
+        "reports/checks/cov05_evaluation_verifier.json",
+        "reports/checks/cov05_freeze_audit.json",
+        "reports/covariance05/evaluation_local_minima.json"
       ],
       "acceptance": "CPU smoke, development pilot, freeze, independent evaluation и verifier как отдельные checkpoint-подзадачи; FPR/CI/recall/coverage/runtime и отрицательные исходы",
       "started_date_utc": "2026-11-02",
-      "checkpoint": "Evaluation272/360 sources durable in nonoverlapping Git shards; second bounded invocation exited75. Resume same run for88 remaining sources. After COMPLETE: archive/push, analyze fixed policy, independent87,480-fit/CI verifier, oracle local-minima diagnostics, figures/report; only then DONE and SYNTHESIS."
+      "checkpoint": "360 evaluation sources,87480 independent fit-row checks and joint calibration/eval bootstrap PASS; raw complete restored from Git. Negative primary: FPR6.39→.83%,recall77.22→.28%,joint successFalse. Feasible-point diagnostic159/360 Gaussian,55/360PSPL local failures in estimated OU complete. No retuning. reports/experiment_05.md",
+      "completed_date_utc": "2026-11-02"
     },
     {
       "id": "SYNTHESIS",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Собрать научные выводы, ограничения и черновик рукописи из подтверждённых артефактов",
       "depends_on": [
         "COV-EXPERIMENT"
@@ -162,7 +168,9 @@
         "defense/manuscript.md",
         "reports/research_handoff.md"
       ],
-      "acceptance": "Каждый вывод имеет источник/код/данные/verifier; научный итог не зависит от знака эффекта; личные задания ученику; собственная автоматизация приостановлена после передачи"
+      "acceptance": "Каждый вывод имеет источник/код/данные/verifier; научный итог не зависит от знака эффекта; личные задания ученику; собственная автоматизация приостановлена после передачи",
+      "started_at_utc": "2026-11-02T05:11:15.726119+00:00",
+      "checkpoint": "Write bounded manuscript and handoff from verified R2/COV/LIT artifacts; explain COV negative result and optimization limits. Update README/STATUS/contributions/plan; artifact-link audit, final push, then pause only own AstroML automation."
     }
   ],
   "target_session_minutes": 120,

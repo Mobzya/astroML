@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "policy_commit": "4a94d440186a34c1a8de4cdc0b76d0f4cd715871",
+  "policy_committed_at": "2026-11-02T04:24:53Z",
+  "evaluation_created_utc": "2026-11-02T04:24:55.184246+00:00",
+  "policy_sha256": "78b849ec624ba9db2771483e6bb40bf3710dc42210db032c28dba2885754d20f",
+  "policy_bytes_unmodified": true,
+  "core_diff_from_freeze_empty": true,
+  "core_working_tree_clean": true,
+  "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6",
+  "current_audit_commit": "70225638fdd34ed66ae127972a158210650a4710",
+  "evaluation_original_code_sha": "4a94d440186a34c1a8de4cdc0b76d0f4cd715871",
+  "versions_match_manifest": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "no_detector_fit_performed": true
+}
