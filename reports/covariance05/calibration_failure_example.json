@@ -1,0 +1,91 @@
+{
+  "source_id": "astroml-cov-main-20261102-v1:20261122:00000158",
+  "calibration_batch": "batch-00048.json",
+  "true_gaussian_parameters": {
+    "baseline": 1.0,
+    "amplitude": 1.2971757012173717,
+    "center": 89.73729172135225,
+    "width": 2.1877383674123325
+  },
+  "true_noise": {
+    "amplitude": 0.0,
+    "length_days": 12.0
+  },
+  "t_minmax": [
+    0.05168095875224488,
+    237.93879202406004
+  ],
+  "diagonal_correct_mean": {
+    "parameters": [
+      0.9975889233201441,
+      1.3018643206641753,
+      89.81537734718836,
+      2.056454166987991
+    ],
+    "noise": null,
+    "nll": -111.74255997312345,
+    "bic": -205.22772718037555,
+    "success": true,
+    "starts": [
+      {
+        "success": true,
+        "nfev": 78,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nll": -111.74255997312135
+      },
+      {
+        "success": true,
+        "nfev": 84,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nll": -111.74255997312345
+      },
+      {
+        "success": true,
+        "nfev": 120,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nll": -111.74255997306152
+      }
+    ],
+    "numerical_failures": [],
+    "covariance_condition": 2.241794280316212
+  },
+  "estimated_correct_mean": {
+    "parameters": [
+      1.0248627782322697,
+      0.0,
+      302.0034137670545,
+      1.1788586203054148
+    ],
+    "noise": {
+      "sigma_scale": 0.866976887112282,
+      "gp_amplitude": 0.16246930140498167,
+      "length_days": 3.347566421615333
+    },
+    "nll": -47.39342647727945,
+    "bic": -62.83641561428404,
+    "success": true,
+    "starts": [
+      {
+        "success": true,
+        "nfev": 108,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "nll": -47.39342647727945
+      },
+      {
+        "success": true,
+        "nfev": 78,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "nll": -47.39342647727871
+      },
+      {
+        "success": true,
+        "nfev": 102,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "nll": -47.393426477278595
+      }
+    ],
+    "numerical_failures": [],
+    "covariance_condition": 19.331764846297542
+  },
+  "selection": "largest calibration feasible-point NLL gap, exploratory adverse example; not representative performance"
+}

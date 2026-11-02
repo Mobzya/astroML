@@ -305,6 +305,16 @@ def main():
             ),
             "",
         ]
+    lines += [
+        "",
+        (
+            "Negative здесь означает заданную synthetic alternative к PSPL. "
+            "Double bump — сумма Gaussian; реальные двухпиковые события могут "
+            "требовать binary-lens и других физических моделей. Классификация "
+            "всех видов микролинзирования не проверена."
+        ),
+        "",
+    ]
     Path("reports/experiment_05.md").write_text("\n".join(lines))
 
 
