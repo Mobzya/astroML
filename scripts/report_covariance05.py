@@ -315,6 +315,16 @@ def main():
         ),
         "",
     ]
+    lines += [
+        "",
+        (
+            "Correlated noise cases одновременно добавляют GP и меняют reported sigma. "
+            "Estimated mode исправляет scale и correlation вместе; scale-only ablation "
+            "не выполнена. Эффект нельзя приписывать только kernel. SNR15 задан по "
+            "white diagonal sigma, а не по полному шуму после добавления GP."
+        ),
+        "",
+    ]
     Path("reports/experiment_05.md").write_text("\n".join(lines))
 
 

@@ -16,3 +16,5 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/run_covariance05.py --ph
 ```
 
 Run manifest records exact policy commit/hash. Repeating the final command resumes intact batches with the same scientific fingerprint; it does not regenerate completed batches.
+
+Independent feasible-point diagnostics were added after freeze without changing this policy/fitter. The exact scope and numerical optimizer limitations are reported separately; a converged start is not a certified global optimum.

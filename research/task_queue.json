@@ -149,7 +149,7 @@
       ],
       "acceptance": "CPU smoke, development pilot, freeze, independent evaluation и verifier как отдельные checkpoint-подзадачи; FPR/CI/recall/coverage/runtime и отрицательные исходы",
       "started_date_utc": "2026-11-02",
-      "checkpoint": "Evaluation136/360 sources durable; first invocation PARTIAL after932.11s (900s checked between batches). Resume same output/scientific fingerprint after confirmed exit75. Frozen policy4a94d44 unchanged; no metrics-driven changes."
+      "checkpoint": "Evaluation272/360 sources durable in nonoverlapping Git shards; second bounded invocation exited75. Resume same run for88 remaining sources. After COMPLETE: archive/push, analyze fixed policy, independent87,480-fit/CI verifier, oracle local-minima diagnostics, figures/report; only then DONE and SYNTHESIS."
     },
     {
       "id": "SYNTHESIS",

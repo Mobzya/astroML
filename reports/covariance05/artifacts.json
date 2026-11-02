@@ -72,13 +72,70 @@
       "bytes": 462876,
       "sha256": "52d92241eefbb9a04bf33dd8ecfa539e1858b25fcde0d1fadfc92191e95db345",
       "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6"
+    },
+    {
+      "phase": "evaluation",
+      "path": "reports/examples/covariance05-evaluation-batches-00136-00168.zip",
+      "batch_files": [
+        "batch-00136.json",
+        "batch-00144.json",
+        "batch-00152.json",
+        "batch-00160.json",
+        "batch-00168.json"
+      ],
+      "independent_sources": 40,
+      "bytes": 2315187,
+      "sha256": "9c9a4aae1c33bc313bf45275f602f1cec55f8440a0d356133eb6d00d489e98e8",
+      "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6"
+    },
+    {
+      "phase": "evaluation",
+      "path": "reports/examples/covariance05-evaluation-batches-00176-00208.zip",
+      "batch_files": [
+        "batch-00176.json",
+        "batch-00184.json",
+        "batch-00192.json",
+        "batch-00200.json",
+        "batch-00208.json"
+      ],
+      "independent_sources": 40,
+      "bytes": 2312277,
+      "sha256": "cbe522616c0831fa31560d8a3fde2df408af46c9b32ead9861b5bfda007b8729",
+      "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6"
+    },
+    {
+      "phase": "evaluation",
+      "path": "reports/examples/covariance05-evaluation-batches-00216-00248.zip",
+      "batch_files": [
+        "batch-00216.json",
+        "batch-00224.json",
+        "batch-00232.json",
+        "batch-00240.json",
+        "batch-00248.json"
+      ],
+      "independent_sources": 40,
+      "bytes": 2308026,
+      "sha256": "f06354d83ee41064b59d1ff3ee819f4d38ccaccb83dbd5718dfaa39e2cd97656",
+      "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6"
+    },
+    {
+      "phase": "evaluation",
+      "path": "reports/examples/covariance05-evaluation-batches-00256-00264.zip",
+      "batch_files": [
+        "batch-00256.json",
+        "batch-00264.json"
+      ],
+      "independent_sources": 16,
+      "bytes": 923917,
+      "sha256": "78b16cbf595e0f0444e6b33c282c22c256f24a887cdf0c248bad7e91c816fabd",
+      "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6"
     }
   ],
   "evaluation_snapshot": {
     "path": "reports/covariance05/evaluation_run_manifest.json",
-    "sha256": "7a8b82da2c66f259a5623b302ec1f7f37632656a3eaf714b999b85469e454901",
+    "sha256": "255bd17614582f859f879519d350526a7c167896cab89fe888f86f74593ac946",
     "status": "PARTIAL",
-    "completed_sources": 136,
+    "completed_sources": 272,
     "expected_sources": 360,
     "code_sha": "4a94d440186a34c1a8de4cdc0b76d0f4cd715871",
     "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6"

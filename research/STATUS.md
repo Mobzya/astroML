@@ -11,7 +11,7 @@
 
 ## Текущая задача
 
-**COV-EXPERIMENT IN_PROGRESS**. Protocol/development pilot/calibration complete. Independent8640 calibration fits/counterfactuals/thresholds PASS; frozen policy4a94d44 before evaluation. Evaluation360 sources running, durable checkpoint136/360 in compact ZIP shards and recovery manifest. Restore from Git tested; no need to trust retained workspace. GitHub Releases asset upload returned401; authorized Git storage works, no credential changes.
+**COV-EXPERIMENT IN_PROGRESS**. Protocol/development pilot/calibration complete. Independent8640 calibration fits/counterfactuals/thresholds PASS; frozen policy4a94d44 before evaluation. Evaluation360 sources running, durable checkpoint272/360 in compact ZIP shards and recovery manifest. Restore from Git tested; no need to trust retained workspace. GitHub Releases asset upload returned401; authorized Git storage works, no credential changes.
 
 Scientific fitter remains frozen. Await full evaluation, independent density/metrics/joint-bootstrap verifier; do not tune from held-out scores.
 

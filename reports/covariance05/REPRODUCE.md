@@ -50,3 +50,17 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/run_covariance05.py --ph
 Fit-код и policy: [freeze commit4a94d44](https://github.com/Mobzya/astroML/tree/4a94d440186a34c1a8de4cdc0b76d0f4cd715871). Calibration code SHA5add9ea; scientific fingerprint совпадает с freeze. На этом историческом snapshot уже есть frozen policy, и run/evaluation запускается в новой output-папке. Не используйте current-main модификации fitter вместо зафиксированного scientific кода. Analysis/verifier/report scripts появились позже и могут проверять сохранённый output отдельно.
 
 При повторе data/parameters/metrics сравниваются с численной точностью зафиксированных библиотек. Runtime/RSS и timestamps меняются, поэтому checksum целого нового run не обязан совпадать с историческим. Нельзя редактировать старые архивы, скрывать failures или менять thresholds по результатам повторной evaluation. Платные ресурсы не нужны и не авторизованы.
+
+## Сборка итогового отчёта из COMPLETE output
+
+Эти команды обрабатывают сохранённые fits, не запускают новый научный опыт. Analyzer сохраняет новый summary и отказывается перезаписывать существующий: при возобновлении уже выполненный шаг пропускается.
+
+```bash
+python scripts/analyze_covariance05.py artifacts/cov05-evaluation-restored --policy reports/covariance05/frozen_policy.json --output reports/covariance05/evaluation_summary.json
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/verify_covariance05.py artifacts/cov05-evaluation-restored --policy reports/covariance05/frozen_policy.json --summary reports/covariance05/evaluation_summary.json
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/diagnose_covariance05_local_minima.py artifacts/cov05-evaluation-restored --output reports/covariance05/evaluation_local_minima.json
+python scripts/report_covariance05.py artifacts/cov05-evaluation-restored
+python scripts/plot_covariance05_cases.py artifacts/cov05-evaluation-restored
+```
+
+Последние графики — описательная иллюстрация lexicographically first source error каждой категории; правило выбора записано в JSON. Oracle feasible-point diagnostic добавлен после freeze как exploratory контроль, не новый primary endpoint и не truth-based исправление детектора.
