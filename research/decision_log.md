@@ -40,3 +40,7 @@
 ## 02.11.2026 — LIT-03 и переход к R2
 
 Проверены исходная MicroLIA статья2019 (arXiv2020), текущий код и Microlensify2026 в выбранных разделах. Original47 features не смешиваются с current148. Cleaned-test или selected real-positive recovery не заменяют наш frozen source-disjoint negative/positive test. Начинается R2 protocol для SNR15; претензии на глобальную алгоритмическую новизну нет.
+
+## 02.11.2026 — R2 завершён, следующий COV-PROTOCOL
+
+Новый controlled experiment прошёл по preregistered design:600 pairs,3 seeds,SNR15; freeze до evaluation, все raw/fit records сохранены. Эффект peak-vs-random поддержан, но calibration threshold не переносится на random40 (FPR13.89%). Peak40 recall10% при малом FPR нельзя объявлять полезным решением. Выбор covariance/новых методов на этой evaluation запрещён; для следующего опыта нужен новый namespace и development pilot.

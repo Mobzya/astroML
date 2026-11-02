@@ -1,0 +1,20 @@
+{
+  "artifacts": [
+    {
+      "path": "reports/examples/reconstruction02-calibration-v1.zip",
+      "bytes": 1499147,
+      "sha256": "1bb88575948d879e801067a8088a15ee6e8f7ed2804da31511a012474bac3248"
+    },
+    {
+      "path": "reports/examples/reconstruction02-evaluation-v1.zip",
+      "bytes": 2248697,
+      "sha256": "14f046b67b04d3dc414efce5fc6744cf47e1501f080b559e91f401184729ea54"
+    },
+    {
+      "path": "reports/examples/reconstruction02-pilot-v1.zip",
+      "bytes": 76283,
+      "sha256": "53a7fa1ba2d746a8a3bc5a596b545c145dd1e9169d75e9bff095a00e5203f67c"
+    }
+  ],
+  "extract_and_verify": "python scripts/verify_reconstruction02.py r2-evaluation-v1 --summary reports/reconstruction02/evaluation_summary.json --policy reports/reconstruction02/frozen_policy.json"
+}

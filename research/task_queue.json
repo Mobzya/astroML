@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "R2-MAIN",
-  "next_task_id": "R2-MAIN",
+  "current_task_id": "COV-PROTOCOL",
+  "next_task_id": "COV-PROTOCOL",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -106,21 +106,25 @@
     },
     {
       "id": "R2-MAIN",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Заморозить метод и завершить controlled missingness эксперимент с независимым verifier",
       "depends_on": [
         "R2-PILOT"
       ],
       "artifacts": [
-        "reports/reconstruction_02.md"
+        "reports/reconstruction_02.md",
+        "reports/reconstruction02/evaluation_summary.json",
+        "reports/reconstruction02/artifacts.json",
+        "reports/figures/reconstruction02_metrics.png"
       ],
       "acceptance": "Frozen protocol/thresholds до evaluation; все seeds и source-level CI; численные артефакты сохранены на GitHub; исторические цифры остаются отдельными",
       "started_date_utc": "2026-11-02",
-      "checkpoint": "240 calibration pairs complete, verified; policy and raw archive committed BEFORE any evaluation generation. Next generate360 evaluation pairs using this policy with unchanged scientific fingerprint."
+      "checkpoint": "240cal+360evaluation pairs,freeze a0eb03b before evaluation; independent6480 fit rows and CI verified. Primary deltaAUC=-.3923, CI[-.4178,-.3687]. Frozen random40 FPR13.89%; peak40 recall10%. Raw archives/reports complete.",
+      "completed_date_utc": "2026-11-02"
     },
     {
       "id": "COV-PROTOCOL",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Завершить литературную проверку и дизайн нового diagonal/estimated-C/oracle опыта",
       "depends_on": [
         "R2-MAIN"
@@ -128,7 +132,9 @@
       "artifacts": [
         "research/experiment_05_protocol.md"
       ],
-      "acceptance": "Конкретные practical covariance bounds/budget/negative families/sample size/thresholds/CI/failures; контроль GP absorption и oracle leakage до новой evaluation"
+      "acceptance": "Конкретные practical covariance bounds/budget/negative families/sample size/thresholds/CI/failures; контроль GP absorption и oracle leakage до новой evaluation",
+      "started_date_utc": "2026-11-02",
+      "checkpoint": "R2 complete. Determine minimal practical covariance estimator and shared mean-fitting budget; preregister development-only noise pilot and numerical safeguards before independent covariance evaluation. No large covariance run yet."
     },
     {
       "id": "COV-EXPERIMENT",
