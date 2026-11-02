@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "independent_pairs": 12,
+  "fit_rows": 216,
+  "max_absolute_metric_difference": 2.2737367544323206e-13,
+  "resume_unchanged": true,
+  "corrupted_bic_rejected_with_updated_checksum": true,
+  "pilot_zip_sha256": "53a7fa1ba2d746a8a3bc5a596b545c145dd1e9169d75e9bff095a00e5203f67c"
+}

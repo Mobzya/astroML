@@ -1,0 +1,26 @@
+{
+  "phase": "pilot",
+  "pairs": 12,
+  "scientific_fingerprint": "0ed3185b12c5f58acdd1508e104288894d4be26024edd987a7246c508ccb03f4",
+  "source_ids": [
+    "astroml-r2-development-20261102-v1:20261102:00000009",
+    "astroml-r2-development-20261102-v1:20261102:00000003",
+    "astroml-r2-development-20261102-v1:20261102:00000000",
+    "astroml-r2-development-20261102-v1:20261102:00000002",
+    "astroml-r2-development-20261102-v1:20261102:00000005",
+    "astroml-r2-development-20261102-v1:20261102:00000011",
+    "astroml-r2-development-20261102-v1:20261102:00000006",
+    "astroml-r2-development-20261102-v1:20261102:00000010",
+    "astroml-r2-development-20261102-v1:20261102:00000001",
+    "astroml-r2-development-20261102-v1:20261102:00000007",
+    "astroml-r2-development-20261102-v1:20261102:00000004",
+    "astroml-r2-development-20261102-v1:20261102:00000008"
+  ],
+  "runtime_seconds": 17.521764433999806,
+  "maximum_worker_rss_kib": 51464,
+  "invalid_views": {
+    "complete": 0,
+    "random40": 0,
+    "peak40": 0
+  }
+}

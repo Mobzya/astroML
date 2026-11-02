@@ -21,3 +21,5 @@
 Первый плановый запуск начат 02.11.2026 около 03:15 UTC. Другой активной исследовательской задачи/процесса в проверенной среде не обнаружено; повторная LIT-01 не запускалась.
 
 R2 v1 протокол/config зафиксированы до данных: только SNR15, primary paired AUC peak−random;600 pairs основного будущего опыта. Сейчас R2-PILOT: runner/verifier, затем12 development pairs, без основной evaluation.
+
+R2-PILOT завершён:12 pairs,72 views,17.52s, verifier/resume/corruption control PASS; параметры не менялись. Выполняется R2-MAIN, сначала только calibration.
