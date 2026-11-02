@@ -1,0 +1,6 @@
+{"phase": "calibration", "completed_pairs": 8, "elapsed_seconds": 11.385674199000277}
+{"phase": "calibration", "completed_pairs": 16, "elapsed_seconds": 20.650545483000315}
+{"phase": "calibration", "completed_pairs": 24, "elapsed_seconds": 29.339262365000195}
+{"phase": "calibration", "completed_pairs": 32, "elapsed_seconds": 39.27309757800003}
+{"phase": "calibration", "completed_pairs": 40, "elapsed_seconds": 49.077687977000096}
+{"phase": "calibration", "completed_pairs": 48, "elapsed_seconds": 58.09887969600004}

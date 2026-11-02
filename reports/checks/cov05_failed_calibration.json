@@ -14,5 +14,21 @@
   "scientific_fingerprint": "001d66a194794898a44d51cbd961480ad535b79830058f2e40c414686812cc0f",
   "code_sha": "faf36ae74ca1350869e3eba5ee8f84aadaf74adf",
   "status": "FAILED_SERIALIZATION",
-  "replacement": "restart full calibration after finite NNLS guard; unchanged protocol; no evaluation accessed"
+  "replacement": "restart full calibration after finite NNLS guard; unchanged protocol; no evaluation accessed",
+  "saved_sources": 48,
+  "unsaved_attempted_batch_source_ids": [
+    "astroml-cov-main-20261102-v1:20261122:00000139",
+    "astroml-cov-main-20261102-v1:20261122:00000135",
+    "astroml-cov-main-20261102-v1:20261122:00000005",
+    "astroml-cov-main-20261102-v1:20261122:00000190",
+    "astroml-cov-main-20261102-v1:20261122:00000158",
+    "astroml-cov-main-20261102-v1:20261122:00000018",
+    "astroml-cov-main-20261102-v1:20261122:00000173",
+    "astroml-cov-main-20261102-v1:20261122:00000194"
+  ],
+  "last_saved_runtime_seconds": 58.09887969600004,
+  "total_failed_invocation_runtime": "not captured beyond the last saved batch; do not equate it with58.10s",
+  "unsaved_batch_fit_records": "not recovered after strict JSON serialization failure",
+  "diagnostic_rerun": "located first nonfinite source and bad field; not a scientific performance evaluation",
+  "traceback_path": "reports/checks/cov05_failed_calibration_traceback.txt"
 }
