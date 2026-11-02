@@ -210,6 +210,20 @@ def main():
                 tp = int(np.count_nonzero(pv & (pos >= threshold))) if threshold is not None else 0
                 fp = int(np.count_nonzero(nv & (neg >= threshold))) if threshold is not None else 0
                 assert (tp, fp, len(neg)) == (expected["tp"], expected["fp"], expected["negatives"])
+                assert expected["rejected_positive"] == int((~pv).sum())
+                assert expected["rejected_negative"] == int((~nv).sum())
+                derived = {
+                    "fpr_accepted_negative": fp / nv.sum() if nv.any() else None,
+                    "selective_risk": (fp + pv.sum() - tp) / (pv.sum() + nv.sum())
+                    if pv.sum() + nv.sum()
+                    else None,
+                    "fdr_balanced": fp / (tp + fp) if tp + fp else None,
+                }
+                for name, value in derived.items():
+                    if value is None:
+                        assert expected[name] is None
+                    else:
+                        np.testing.assert_allclose(value, expected[name])
                 np.testing.assert_allclose(
                     np.mean((pos[:, None] > neg) + 0.5 * (pos[:, None] == neg)), expected["auc"]
                 )
@@ -223,6 +237,20 @@ def main():
                 ]:
                     ci = binomtest(k, n).proportion_ci(confidence_level=0.95, method="exact")
                     np.testing.assert_allclose([ci.low, ci.high], expected[name], atol=1e-10)
+                for seed, by_scenario in summary["per_seed"].items():
+                    ix = np.array([r["seed"] == int(seed) for r in records])
+                    ep = by_scenario[key][mode]
+                    stp = (
+                        int(np.count_nonzero(pv[ix] & (pos[ix] >= threshold)))
+                        if threshold is not None
+                        else 0
+                    )
+                    sfp = (
+                        int(np.count_nonzero(nv[ix] & (neg[ix] >= threshold)))
+                        if threshold is not None
+                        else 0
+                    )
+                    assert (stp, sfp, int(ix.sum())) == (ep["tp"], ep["fp"], ep["pairs"])
                 if key == summary["primary"]["scenario"] and mode in ["diagonal", "estimated"]:
                     primary_arrays[mode] = pos, neg, pv, nv
         config = json.loads(Path("configs/experiment_05.json").read_text())
@@ -273,6 +301,13 @@ def main():
         np.testing.assert_allclose(
             ci[:, 1], summary["primary"]["delta_recall_ci95_joint_bootstrap"]
         )
+        primary = summary["scenarios"][summary["primary"]["scenario"]]
+        supported = bool(
+            ci[1, 0] < 0
+            and ci[0, 1] >= -config["recall_noninferiority_margin"]
+            and primary["estimated"]["coverage"] >= config["minimum_coverage"]
+        )
+        assert supported == summary["primary"]["full_success_criterion_supported"]
     print(
         json.dumps(
             {
