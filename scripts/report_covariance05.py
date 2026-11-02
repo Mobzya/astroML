@@ -255,6 +255,18 @@ def main():
         ),
         "",
     ]
+    lines += [
+        "",
+        (
+            "R2 и COV05 имеют разные namespaces и fitting engines/budgets: "
+            "R2 использует9 nonlinear starts, COV05 —3 starts с профилированием linear "
+            "coefficients. Поэтому сравнение разных опытов не изолирует пользу GP; "
+            "primary comparison проводится внутри COV05 на одинаковых sources. "
+            "Суммы внутренних elapsed timers не являются CPU-time или изолированным "
+            "randomized runtime benchmark. [Среда](covariance05/execution_environment.json)."
+        ),
+        "",
+    ]
     Path("reports/experiment_05.md").write_text("\n".join(lines))
 
 

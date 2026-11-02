@@ -1,0 +1,12 @@
+{
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "recorded_utc": "2026-11-02T04:37:28.728393+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "logical_cpus_visible": 3,
+  "affinity_cpus": 3,
+  "configured_fit_workers": 4,
+  "configured_blas_threads_per_worker": 1,
+  "cgroup_cpu_quota": "200000 100000",
+  "cgroup_memory_limit": "8589934592"
+}
