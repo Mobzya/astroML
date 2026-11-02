@@ -11,9 +11,9 @@
 
 ## Текущая задача
 
-**COV-EXPERIMENT IN_PROGRESS**. COV protocol and4-source development pilot complete (density/KKT verifier PASS). Main calibration stopped at48/240 sources because NNLS produced nonfinite Gaussian amplitude with finite residual norm; failed partial archive and regression preserved. Finite guard added before evaluation; restart full calibration, freeze thresholds in GitHub, then new360-source evaluation. No COV policy/evaluation exists yet.
+**COV-EXPERIMENT IN_PROGRESS**. Protocol/development pilot/calibration complete. Independent8640 calibration fits/counterfactuals/thresholds PASS; frozen policy4a94d44 before evaluation. Evaluation360 sources running, durable checkpoint88/360 in compact ZIP shards and recovery manifest. Restore from Git tested; no need to trust retained workspace. GitHub Releases asset upload returned401; authorized Git storage works, no credential changes.
 
-Платные сервисы, CV и интерфейс сейчас не приоритет.
+Scientific fitter remains frozen. Await full evaluation, independent density/metrics/joint-bootstrap verifier; do not tune from held-out scores.
 
 ## Статусы исторических материалов
 
