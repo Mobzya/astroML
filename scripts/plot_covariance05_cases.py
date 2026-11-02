@@ -99,8 +99,9 @@ def main():
                     color=color,
                     label=f"{mean}, BIC={fit['bic']:.1f}",
                 )
+        score_text = f"{result['score']:.2f}" if result["score"] is not None else "unavailable"
         ax.set_title(
-            f"{mode}: true {family}, {error}; score={result['score']:.2f}\n"
+            f"{mode}: true {family}, {error}; score={score_text}\n"
             f"{record['source_id'].split(':', 1)[1]}"
         )
         ax.set_xlabel("Time [day]")
