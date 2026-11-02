@@ -52,7 +52,7 @@
       "acceptance": "Вывод полного Gaussian log likelihood; Cholesky/logdet; ограничения оценки covariance и риск поглощения сигнала; ссылки на реально прочитанные разделы",
       "next_action": "Прочитать полную статью Hogg 2010 (или конкретные доступные разделы), затем GPML chapters2/4/5; составить вывод Gaussian likelihood и перечень предпосылок practical covariance без truth. Отмечать реальный охват чтения.",
       "started_at_utc": "2026-11-02T03:16:20Z",
-      "checkpoint": "Открыть первичные PDF Hogg 2010 и разделы GPML2/4/5; записать точный охват. Проверить Gaussian likelihood, noise identifiability и signal absorption без открытия evaluation."
+      "checkpoint": "Указанные разделы L03/L04 прочитаны, заметки и source hashes сохранены; diagnostic script прошёл на development run. Сохранить clean-SHA запуск и итоговый отчёт."
     },
     {
       "id": "LIT-03",

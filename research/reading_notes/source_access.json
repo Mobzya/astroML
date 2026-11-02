@@ -20,5 +20,41 @@
     "retrieved_date_utc": "2026-11-01",
     "redistributed_full_text": false,
     "reading_scope": "arXiv v1 sections1-4 pp.1-8; captions1-6 pp.11-16; page5 and figure1 visually checked; other figure contours not numerically verified"
+  },
+  {
+    "id": "L03",
+    "url": "https://arxiv.org/pdf/1008.4686v1",
+    "bytes": 1528118,
+    "pages": 55,
+    "sha256": "6962910b6248805a253ff3434484cdd8505eb09b5a6193f8a5acd262849d4082",
+    "retrieved_date_utc": "2026-11-02",
+    "redistributed_full_text": false
+  },
+  {
+    "id": "L04_ch2",
+    "url": "https://gaussianprocess.org/gpml/chapters/RW2.pdf",
+    "bytes": 466925,
+    "pages": 26,
+    "sha256": "33eb573e1a15abbc04191cc57f74076e1df83024d14b934eebfac3b30a3f57ce",
+    "retrieved_date_utc": "2026-11-02",
+    "redistributed_full_text": false
+  },
+  {
+    "id": "L04_ch4",
+    "url": "https://gaussianprocess.org/gpml/chapters/RW4.pdf",
+    "bytes": 691362,
+    "pages": 26,
+    "sha256": "86008036a346076ff07f8f0a3a94725ad12c572e6bf62bd16ee7f057a42d4175",
+    "retrieved_date_utc": "2026-11-02",
+    "redistributed_full_text": false
+  },
+  {
+    "id": "L04_ch5",
+    "url": "https://gaussianprocess.org/gpml/chapters/RW5.pdf",
+    "bytes": 862928,
+    "pages": 24,
+    "sha256": "38a39db854e36b304a5fb78e70dc261fc6c634014ea1b4004c47d7affcbd8acd",
+    "retrieved_date_utc": "2026-11-02",
+    "redistributed_full_text": false
   }
 ]
