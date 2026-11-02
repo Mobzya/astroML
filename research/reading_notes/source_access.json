@@ -74,5 +74,15 @@
     "bytes": 4373112,
     "retrieved_date_utc": "2026-11-02",
     "redistributed_full_text": false
+  },
+  {
+    "id": "L18",
+    "url": "https://sites.stat.washington.edu/courses/stat527/s14/readings/ann_stat1978.pdf",
+    "doi": "10.1214/aos/1176344136",
+    "sha256": "0c00c6ca5a68756645bdd84e91f018355cb6adae1dc424c329559c387f9dbcf0",
+    "bytes": 106211,
+    "pages": 5,
+    "retrieved_date_utc": "2026-11-02",
+    "redistributed_full_text": false
   }
 ]
