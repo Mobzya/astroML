@@ -35,10 +35,22 @@
     "batch-00072.json": "cf45d2ab55828a4454031020859002b952d3ad32f5a83ac5c12644e783db9db8",
     "truth/batch-00072.json": "5b3a49d521213e421be3cf091661e7933c5e770ebd99b1ae2ca70a67c092ca95",
     "batch-00080.json": "84ae08fdfbb04691c8818fbfed8dd0a177d809a4dfc0e907e71c269487711fa5",
-    "truth/batch-00080.json": "9a52136dca69e02feecdd42df5cf2b49ded606860f976fab0c9afedbd49c38e0"
+    "truth/batch-00080.json": "9a52136dca69e02feecdd42df5cf2b49ded606860f976fab0c9afedbd49c38e0",
+    "batch-00088.json": "2d950653cd256b26ef0d724966a8d7f3b9f271ed1360ce35a7e99f6408db8b35",
+    "truth/batch-00088.json": "b3168f4fdbf08e00fcbebc9498b4221761da008107cd232ac0405229d17e0d86",
+    "batch-00096.json": "d02cab5b4390f770c44928be9fe7aa54213d36f5e8a0945172ca44b1615359ff",
+    "truth/batch-00096.json": "119f5080f3e85647fcd5c5e17dbb038d50dec03242adf2a0346e7f2887bc89bd",
+    "batch-00104.json": "0a0ccdb2eeee4177cf3ce07dd81963494f48def739a50d6da204e820ea7f8201",
+    "truth/batch-00104.json": "7c06fd8b14c6659d66b9871dc6f270675ff9ea2ec5984954352ff68b24ec1313",
+    "batch-00112.json": "18c9492074df5e43368497887af2df350cfbda1485890b7e257634c829cf8acc",
+    "truth/batch-00112.json": "afd3e4478a0d65a0f27d64a7dad3b28cb529a82c2c4dd2ee3cf7aa28f0cf203c",
+    "batch-00120.json": "7ab701531af7795d77be8408a47fe00531d82db018c3a6399044f191d7c30d20",
+    "truth/batch-00120.json": "b2adbeef35cedd83c9775eb667f758ee95b6b8b8aee86094e2b40142fe8a6e0c",
+    "batch-00128.json": "c64ba6e83ef26be06e81a73bd0580c3757edf2468c2137299788b909e7eddfb4",
+    "truth/batch-00128.json": "79a434a0e76cc31d5ca9adca0bc0c7dba27843f7375f04ca7d8ef8757188c570"
   },
-  "runtime_seconds_accumulated": 596.7038374250005,
-  "completed_pairs": 88,
+  "runtime_seconds_accumulated": 932.1146909950003,
+  "completed_pairs": 136,
   "expected_pairs": 360,
-  "status": "IN_PROGRESS"
+  "status": "PARTIAL"
 }
