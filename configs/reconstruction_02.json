@@ -1,0 +1,19 @@
+{
+  "experiment_id": "reconstruction02-v1",
+  "namespace": "astroml-r2-20261102-v1",
+  "seeds": [20261102, 20261103, 20261104],
+  "snr": 15.0,
+  "n_observations": 96,
+  "conditions": ["complete", "random40", "peak40"],
+  "source_counts_per_seed": {"calibration": 80, "evaluation": 120},
+  "pilot_namespace": "astroml-r2-development-20261102-v1",
+  "pilot_seed": 20261102,
+  "pilot_pairs": 12,
+  "max_nfev": 600,
+  "bootstrap_replicates": 500,
+  "bootstrap_seed": 20261202,
+  "target_calibration_fpr": 0.05,
+  "batch_pairs": 10,
+  "workers": 4,
+  "wall_time_limit_seconds": 900
+}

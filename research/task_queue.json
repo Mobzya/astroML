@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "R2-PROTOCOL",
-  "next_task_id": "R2-PROTOCOL",
+  "current_task_id": "R2-PILOT",
+  "next_task_id": "R2-PILOT",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -73,7 +73,7 @@
     },
     {
       "id": "R2-PROTOCOL",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Зафиксировать протокол нового controlled missingness исследования с обоснованием статистики и размером выборки",
       "depends_on": [
         "LIT-01",
@@ -86,11 +86,12 @@
       ],
       "acceptance": "Новый namespace, hypotheses, paired source splits, метрики/CI/failures, development-only pilot и правила freeze до evaluation",
       "started_date_utc": "2026-11-02",
-      "checkpoint": "Подготовить bounded SNR15 protocol: paired random/peak contrast, calibration-only threshold, clustered CI/failures, CPU pilot and freeze. Основная evaluation ещё не создана."
+      "checkpoint": "R2 v1 protocol/config fixed before pilot/evaluation: SNR15,600 pairs, primary paired AUC contrast, complete-only calibration, technical rejection.",
+      "completed_date_utc": "2026-11-02"
     },
     {
       "id": "R2-PILOT",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Выполнить development-only CPU pilot генератора и подгонок и измерить стоимость",
       "depends_on": [
         "R2-PROTOCOL"
@@ -98,7 +99,9 @@
       "artifacts": [
         "reports/reconstruction_02_pilot.md"
       ],
-      "acceptance": "Не более 50 независимых источников/15 минут; проверены nuisance matching и source split; точные команды/SHA/версии/hashes/failures/runtime. Основная evaluation не открыта"
+      "acceptance": "Не более 50 независимых источников/15 минут; проверены nuisance matching и source split; точные команды/SHA/версии/hashes/failures/runtime. Основная evaluation не открыта",
+      "started_date_utc": "2026-11-02",
+      "checkpoint": "Реализовать resumable runner/verifier и metric unit fixtures; запустить только12 development pairs, без calibration/evaluation генерации. Сохранить artifact/manifest, бюджет≤15мин."
     },
     {
       "id": "R2-MAIN",
