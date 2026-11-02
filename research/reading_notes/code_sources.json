@@ -1,0 +1,38 @@
+{
+  "checked_date_utc": "2026-11-02",
+  "full_code_executed": false,
+  "sources": [
+    {
+      "repository": "Professor-G/MicroLIA",
+      "commit": "f0898fbe56f14b224ed225fdde06befc23757cbc",
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "39f255f827112deea0c67e11ff9e17be6e5bbc27",
+          "scope": "Feature counts and publication link"
+        },
+        {
+          "path": "MicroLIA/ensemble_model.py",
+          "blob_sha": "094223fd2207a563cbc39b936cdd4397252a619c",
+          "scope": "imports/class constructor and classifier dispatch lines25-195; CV excerpt1099-1111"
+        }
+      ]
+    },
+    {
+      "repository": "Atousa-Kalantari/Microlensify",
+      "commit": "65b05530f60839bab4bc4392c26440b2b436bbc8",
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "83c69f25975ac81972fedc20be35f14a589f37f3",
+          "scope": "inference interface and duration caveat"
+        },
+        {
+          "path": "Microlensify/core.py",
+          "blob_sha": "1846c472d91baed7bc5af3d43a447992ee3b5f3e",
+          "scope": "selected preprocessing/decision/output excerpts lines117-169/225-256/292-297"
+        }
+      ]
+    }
+  ]
+}

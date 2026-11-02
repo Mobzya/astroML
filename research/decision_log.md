@@ -36,3 +36,7 @@
 ## 02.11.2026 — LIT-02
 
 Проверены конкретные likelihood/GP разделы, не заявляется полное чтение книги. Full Gaussian NLL, Cholesky и Matérn сверены. Negative control показал необходимость logdet; conditional GP illustration не выдаётся за detector performance. Practical covariance должна оцениваться без truth; optimized hyperparameters не означают полную model evidence. Следующая задача LIT-03 выполняется в этой же сессии.
+
+## 02.11.2026 — LIT-03 и переход к R2
+
+Проверены исходная MicroLIA статья2019 (arXiv2020), текущий код и Microlensify2026 в выбранных разделах. Original47 features не смешиваются с current148. Cleaned-test или selected real-positive recovery не заменяют наш frozen source-disjoint negative/positive test. Начинается R2 protocol для SNR15; претензии на глобальную алгоритмическую новизну нет.

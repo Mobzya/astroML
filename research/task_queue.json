@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "LIT-03",
-  "next_task_id": "LIT-03",
+  "current_task_id": "R2-PROTOCOL",
+  "next_task_id": "R2-PROTOCOL",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -57,7 +57,7 @@
     },
     {
       "id": "LIT-03",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Проверить ближайшие ML-подходы: Microlensify, исходные MicroLIA и применимость к нашей задаче",
       "depends_on": [
         "LIT-01"
@@ -68,11 +68,12 @@
       ],
       "acceptance": "Данные/метки/splits/negatives/noise/метрики ближайших работ; узкое отличие нашего эксперимента без выдуманной алгоритмической новизны",
       "started_date_utc": "2026-11-02",
-      "checkpoint": "Проверить библиографию Microlensify, первичный MicroLIA paper/code и реальные определения классов. Сохранять точные pages/URL; не заявлять превосходство и не запускать evaluation."
+      "checkpoint": "Primary selected sections and code snapshots compared; no models executed or SOTA performance claimed. research/prior_art_comparison.md",
+      "completed_date_utc": "2026-11-02"
     },
     {
       "id": "R2-PROTOCOL",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Зафиксировать протокол нового controlled missingness исследования с обоснованием статистики и размером выборки",
       "depends_on": [
         "LIT-01",
@@ -83,7 +84,9 @@
         "research/reconstruction_02_protocol.md",
         "configs/reconstruction_02.json"
       ],
-      "acceptance": "Новый namespace, hypotheses, paired source splits, метрики/CI/failures, development-only pilot и правила freeze до evaluation"
+      "acceptance": "Новый namespace, hypotheses, paired source splits, метрики/CI/failures, development-only pilot и правила freeze до evaluation",
+      "started_date_utc": "2026-11-02",
+      "checkpoint": "Подготовить bounded SNR15 protocol: paired random/peak contrast, calibration-only threshold, clustered CI/failures, CPU pilot and freeze. Основная evaluation ещё не создана."
     },
     {
       "id": "R2-PILOT",

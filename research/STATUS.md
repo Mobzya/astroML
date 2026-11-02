@@ -6,7 +6,7 @@
 
 Задача **LIT-01 завершена** вручную в текущем чате: первоисточники по PSPL/blending прочитаны в указанном охвате, независимая геометрическая и асимптотическая проверка прошла. Заметки — research/reading_notes/L01_L02_physics.md; отчёт — reports/lit01_2026-11-01.md.
 
-**LIT-02 завершена:** выбранные разделы Hogg/GPML прочитаны, likelihood checks PASS; reports/lit02_2026-11-02.md. Выполняется **LIT-03**: ближайшие Microlensify/MicroLIA, первичная публикация и код, данные/splits/negatives/ограничения. Evaluation не открыта.
+**LIT-02 и LIT-03 завершены** в записанном охвате: Gaussian/GP диагностика PASS; первичные MicroLIA/Microlensify и выбранный код сравнены. Заметки: research/reading_notes/L03_L04_likelihood.md и research/prior_art_comparison.md. Выполняется **R2-PROTOCOL**: новый controlled missingness протокол, без открытия evaluation.
 
 Не готовы: замороженные manifests основного опыта, статистический benchmark, обученный RF, estimated covariance fitting, реальные данные, интерактивное demo, окончательная рукопись и видеовизитка. В roadmap это будущие этапы, не выполненные работы.
 

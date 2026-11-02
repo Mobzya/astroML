@@ -56,5 +56,23 @@
     "sha256": "38a39db854e36b304a5fb78e70dc261fc6c634014ea1b4004c47d7affcbd8acd",
     "retrieved_date_utc": "2026-11-02",
     "redistributed_full_text": false
+  },
+  {
+    "id": "L07",
+    "url": "https://arxiv.org/pdf/2608.19419v1",
+    "sha256": "aa4c682a8ff00d717014a6e99b9ed3491721bee356393406b8e0f1a814a3acd0",
+    "pages": 26,
+    "bytes": 5372966,
+    "retrieved_date_utc": "2026-11-02",
+    "redistributed_full_text": false
+  },
+  {
+    "id": "L17",
+    "url": "https://arxiv.org/pdf/2004.14347v1",
+    "sha256": "723839ae72c47af3f88bee981b64ccaf6c27d0e185ecf49330e9c86754aec305",
+    "pages": 22,
+    "bytes": 4373112,
+    "retrieved_date_utc": "2026-11-02",
+    "redistributed_full_text": false
   }
 ]
