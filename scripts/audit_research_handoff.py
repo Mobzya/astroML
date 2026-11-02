@@ -14,7 +14,12 @@ def read(path):
 
 def main():
     queue = read("research/task_queue.json")
-    tasks = {t["id"]: t for t in queue["tasks"]}
+    # Audit the delivered baseline, independently of later authorized campaigns.
+    snapshot = read("research/campaigns/baseline_2026-11-02_queue.json")
+    all_tasks = {t["id"]: t for t in queue["tasks"]}
+    tasks = {t["id"]: all_tasks[t["id"]] for t in snapshot["tasks"]}
+    for historical in snapshot["tasks"]:
+        assert tasks[historical["id"]] == historical
     for key, task in tasks.items():
         if key != "SYNTHESIS":
             assert task["status"] == "DONE", key

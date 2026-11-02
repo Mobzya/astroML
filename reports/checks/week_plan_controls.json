@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "after_enable_next": "W1-DIAG-READ",
+  "final_slot_next": "W1-HANDOFF",
+  "negative_controls": [
+    {
+      "case": "duplicate_id",
+      "detected": true,
+      "message": "duplicate task IDs"
+    },
+    {
+      "case": "dependency_cycle",
+      "detected": true,
+      "message": "dependency cycle at W1-DIAG-READ"
+    },
+    {
+      "case": "baseline_reopened",
+      "detected": true,
+      "message": "baseline task changed: LIT-01"
+    }
+  ],
+  "new_fits": 0
+}

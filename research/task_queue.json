@@ -1,11 +1,11 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "repository": "https://github.com/Mobzya/astroML",
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": null,
-  "next_task_id": null,
+  "current_task_id": "W1-SETUP",
+  "next_task_id": "W1-SETUP",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -172,14 +172,327 @@
       "started_at_utc": "2026-11-02T05:11:15.726119+00:00",
       "checkpoint": "Manuscript/handoff saved1af2b0f; artifact/link audit PASS99links/16archives/90evaluationfiles. Scientific outcomes bounded, personal contribution unverified. Own AstroML automation pause confirmed2026-11-02T05:17:32.562873Z,is_enabled=false. No other automation changed. Next step belongs to participant, no new automatic research task.",
       "completed_at_utc": "2026-11-02T05:19:43.053360+00:00"
+    },
+    {
+      "id": "W1-SETUP",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "IN_PROGRESS",
+      "goal": "Сохранить новую недельную очередь и включить существующее задание этого чата с ограниченным расписанием",
+      "depends_on": [
+        "SYNTHESIS"
+      ],
+      "artifacts": [
+        "research/WEEK_PLAN_2026-11-03.md",
+        "research/task_queue.json",
+        "research/automation.json"
+      ],
+      "acceptance": "Plan/DAG checked and pushed; update of existing same-thread automation is_enabled=true confirmed; no new chat/agent/research experiment claimed.",
+      "next_action": "Configure only; do not generate experiment data in this setup.",
+      "target_day": "2026-11-02",
+      "started_at_utc": "2026-11-02T21:02:29.928946+00:00",
+      "checkpoint": "Weekly queue and bounded21-slot schedule being prepared; no new experiments started. Enable only after plan pushed; confirm returned schedule/thread/enabled flag."
+    },
+    {
+      "id": "W1-DIAG-READ",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Объяснить локальные провалы covariance optimization по коду и первичным источникам",
+      "depends_on": [
+        "W1-SETUP"
+      ],
+      "artifacts": [
+        "research/cov06/optimizer_diagnosis.md",
+        "research/reading_notes/cov06_source_access.json"
+      ],
+      "acceptance": "Read scopes/versions/URLs recorded; inspect code and published aggregate COV05 finding only; distinguish wrong stationary point, boundary and convergence; list falsifiable numerical requirements, without old evaluation rows or tuning.",
+      "next_action": "Use new campaign, read current fitter and selected optimization/GP primary sections; no benchmark or old event-level evaluation access.",
+      "target_day": "2026-11-03"
+    },
+    {
+      "id": "W1-OPT-SPEC",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Зафиксировать observation-only warm-start/incumbent и scale-only comparator",
+      "depends_on": [
+        "W1-DIAG-READ"
+      ],
+      "artifacts": [
+        "research/cov06/optimizer_design.md"
+      ],
+      "acceptance": "At most2 development candidate variants; starts use observed diagonal/scale-only fits, never truth. Feasible incumbent non-worsening rule, convergence/fallback semantics, NNLS scaling/underflow handling, budgets/bounds and development selection criterion fixed before coding/data.",
+      "next_action": "Derive objective/bounds/parameter counts and regression criteria; prioritize numerical likelihood/feasibility/cost, not evaluation AUC/FPR.",
+      "target_day": "2026-11-03"
+    },
+    {
+      "id": "W1-OPT-DEV",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Реализовать новый fitter в отдельных модулях и проверить на новых development sources",
+      "depends_on": [
+        "W1-OPT-SPEC"
+      ],
+      "artifacts": [
+        "research/cov06/development_manifest.json",
+        "reports/cov06_development.md"
+      ],
+      "acceptance": "New modules/runner leave old scientific implementation/archives intact; new development namespace; <=24 independent sources planned, <=50 and900s per logical development pilot including resumes; all variants share sources, preserve failures/actual cost.",
+      "next_action": "Implement observation-only initialization and scale-only; profile/report full NLL; no generation of main calibration/evaluation.",
+      "target_day": "2026-11-03"
+    },
+    {
+      "id": "W1-OPT-VERIFY",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Независимо проверить numerical correctness и safeguards нового fitter",
+      "depends_on": [
+        "W1-OPT-DEV"
+      ],
+      "artifacts": [
+        "reports/checks/cov06_numerical_verifier.json",
+        "reports/cov06_numerical_validation.md"
+      ],
+      "acceptance": "Independent density/KKT/primal bounds, finite guards, input isolation, incumbent NLL non-worsening, scale-only diagonal limit, corruption controls and measured CPU/memory PASS; global optimum not claimed. Select <=1 candidate using development numerical criteria, or document explicit numerical block.",
+      "next_action": "Use existing development sources/deterministic fixtures, not old evaluation or new main data; freeze practical candidate before performance evaluation.",
+      "target_day": "2026-11-04"
+    },
+    {
+      "id": "W1-COV06-PROTOCOL",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Зафиксировать новый COV06 experiment с сильным scale-only baseline и стоимостью",
+      "depends_on": [
+        "W1-OPT-VERIFY"
+      ],
+      "artifacts": [
+        "research/experiment_06_protocol.md",
+        "configs/experiment_06.json"
+      ],
+      "acceptance": "New namespaces/seeds and source-level split; proposed3seeds,240cal/360eval justified by precision/measured cost before data. Compare diagonal, estimated scale-only, frozen improved covariance, old3-start algorithm on NEW data and privileged oracle if feasible. Same means/data, explicit unequal time costs. Primary GP-vs-scale-only recall/FPR/coverage contrast, margins/CI/alpha/failures/rejection/futility limits and storage frozen. Do not copy a claimed positive effect.",
+      "next_action": "Choose sample/budget and a single primary contrast before main observations. Any reduction of design must occur before evaluation, with reason and revised precision.",
+      "target_day": "2026-11-04"
+    },
+    {
+      "id": "W1-STRESS-PROTOCOL",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Заранее задать ограниченную independent robustness проверку того же frozen practical detector",
+      "depends_on": [
+        "W1-COV06-PROTOCOL"
+      ],
+      "artifacts": [
+        "research/cov06_stress_protocol.md",
+        "configs/cov06_stress.json"
+      ],
+      "acceptance": "Freeze before COV06 calibration/evaluation: <=6 predeclared stress cells, proposed240 independent source units/3seeds; lower SNR and controlled noise-only/flare/eclipse-like negatives, missingness/kernel shifts with clear toy semantics. New sources, inherited COV06 thresholds, no winner selection or method change after main. Mechanical generator checks on development-only fixtures and sample/cost cap specified.",
+      "next_action": "Keep matrix bounded, define primary stress failure/reliability criteria and exact frozen policy transfer. Do not claim realistic telescope labels from shape alone.",
+      "target_day": "2026-11-04"
+    },
+    {
+      "id": "W1-COV06-PILOT",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Выполнить CPU smoke и сохранить замороженный scientific code/config до main",
+      "depends_on": [
+        "W1-COV06-PROTOCOL",
+        "W1-STRESS-PROTOCOL"
+      ],
+      "artifacts": [
+        "reports/cov06_pilot.md",
+        "reports/checks/cov06_pilot_verifier.json"
+      ],
+      "acceptance": "Separate development-only sources, proposed<=12; per logical pilot<=50sources/900s total, no artificial splitting to evade cap. Split/matching/input isolation/resume/hash/negative controls checked; source/config/versions/SHA/runtime and code committed. Main untouched. If too slow, revise only pre-evaluation design with new version and limits.",
+      "next_action": "Estimate main runtime; aim each indivisible batch<=15min and fit within remaining session; never launch unseen final data just to test the runner.",
+      "target_day": "2026-11-04"
+    },
+    {
+      "id": "W1-COV06-CAL",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Сгенерировать только новую calibration, заморозить policy и отправить в GitHub",
+      "depends_on": [
+        "W1-COV06-PILOT"
+      ],
+      "artifacts": [
+        "reports/covariance06/frozen_policy.json",
+        "reports/covariance06/calibration_freeze.md",
+        "reports/covariance06/artifacts.json"
+      ],
+      "acceptance": "Complete calibration/independent numerical verifier; all source IDs/scores/rejections/hash/library versions saved. Candidate not selected on calibration classification metrics. Policy/threshold and fingerprint committed+pushed BEFORE any new evaluation observations.",
+      "next_action": "Run bounded resumable calibration; failure=>checkpoint, never silently drop sources. Store compact verified shards using authorized Git if Releases assets unavailable.",
+      "target_day": "2026-11-05"
+    },
+    {
+      "id": "W1-COV06-EVAL",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Выполнить одну frozen independent COV06 evaluation с возобновляемыми batches",
+      "depends_on": [
+        "W1-COV06-CAL"
+      ],
+      "artifacts": [
+        "reports/covariance06/evaluation_manifest.json",
+        "reports/covariance06/artifacts.json"
+      ],
+      "acceptance": "Same frozen code/policy; new source-disjoint evaluation, all seeds/negative results/start failures. Completed batches never rerun; matching clean/dirty+versions checks on resume, only one live fitting process. Complete raw observations/fits and separate truth restored from Git; no tuning after opening.",
+      "next_action": "Generate after policy push; cap calls/checkpoint between batches; before each compute segment confirm persistent storage and available runtime.",
+      "target_day": "2026-11-05"
+    },
+    {
+      "id": "W1-COV06-VERIFY",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Пересчитать все fits/metrics/CI/ablation и честно оценить новую гипотезу",
+      "depends_on": [
+        "W1-COV06-EVAL"
+      ],
+      "artifacts": [
+        "reports/experiment_06.md",
+        "reports/covariance06/evaluation_summary.json",
+        "reports/checks/cov06_evaluation_verifier.json"
+      ],
+      "acceptance": "Independent full-NLL/KKT/bounds/source-split/CP+paired bootstrap including calibration uncertainty; all scenarios/seeds, scale-only ablation, numerical failures/CPU cost and null/negative outcomes. Empirical average precision/PR only with explicit prevalence/pairing semantics; no Brier without probabilities. Feasible truth only oracle control. No post-eval repair or retest on same set.",
+      "next_action": "Use saved fits; primary conclusion follows frozen criterion even if negative; artifact restore and code/policy continuity checked.",
+      "target_day": "2026-11-06"
+    },
+    {
+      "id": "W1-STRESS-RUN",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Выполнить и независимо проверить заранее frozen stress matrix без изменения detector/policy",
+      "depends_on": [
+        "W1-STRESS-PROTOCOL",
+        "W1-COV06-VERIFY"
+      ],
+      "artifacts": [
+        "reports/cov06_stress.md",
+        "reports/cov06_stress/summary.json",
+        "reports/cov06_stress/artifacts.json"
+      ],
+      "acceptance": "New stress namespace; generator numerical/unit checks before observations, no main-result-driven new cells. Carry same frozen COV06 practical algorithms/thresholds; <=6 cells within frozen source/budget cap; source-level intervals, failures, conditional metric limits and restore/verifier. No tuning using main or stress evaluation.",
+      "next_action": "Run frozen conditions sequentially, preserve whole source clusters; expose subgroup failure, not only best condition. If numerical gate blocked, record actual block and do not fabricate results.",
+      "target_day": "2026-11-06/07"
+    },
+    {
+      "id": "W1-REAL-AUDIT",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Проверить возможность малого внешнего pilot по лицензии, единицам и надёжности меток",
+      "depends_on": [
+        "W1-SETUP"
+      ],
+      "artifacts": [
+        "research/external_data_card.md",
+        "reports/external_pilot_feasibility.md"
+      ],
+      "acceptance": "Audit<=2 candidate public datasets from primary docs/metadata: flux/magnitude/time system, label provenance/negatives, split/leakage, license/download limits. Access/labels insufficient=>explicit NOT_RUN/BLOCKED feasibility decision counts as completed audit, not a completed external experiment. No bulk data or third-party outreach; no telescope performance claim.",
+      "next_action": "Read docs/metadata first; <=20 individually justified small curves only if access/license/labels clearly allow and necessary for audit. A classified external benchmark is NOT authorized by this task alone.",
+      "target_day": "2026-11-07",
+      "independent_fallback": true
+    },
+    {
+      "id": "W1-SYNTHESIS",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Обновить рукопись и материалы защиты по новым проверенным результатам и ограничениям",
+      "depends_on": [
+        "W1-COV06-VERIFY",
+        "W1-STRESS-RUN",
+        "W1-REAL-AUDIT"
+      ],
+      "artifacts": [
+        "defense/manuscript.md",
+        "defense/defense_outline.md",
+        "defense/jury_questions.md",
+        "reports/cov06_synthesis.md"
+      ],
+      "acceptance": "Preserve baseline manuscript/evidence snapshots; new verified findings distinguished from planned/reported. Figures from archived outputs, empirical precision/limits/ablation/cost exposed, new literature actual read scope. Draft7min outline and25 truthful Q&A with rule-date references; no invented student work or rehearsal. AI provenance and real-data NOT_RUN explicit.",
+      "next_action": "Cross-check all scientific claims, cite immutable GitHub evidence; formatting/UI/CV do not replace missing experiments.",
+      "target_day": "2026-11-08/09"
+    },
+    {
+      "id": "W1-HANDOFF",
+      "campaign_id": "week-2026-11-03-09",
+      "status": "TODO",
+      "goal": "Передать недельный итог или честный partial checkpoint и завершить только собственное расписание",
+      "depends_on": [
+        "W1-SETUP"
+      ],
+      "artifacts": [
+        "reports/week_2026-11-03_09_handoff.md",
+        "research/STATUS.md",
+        "research/automation.json"
+      ],
+      "acceptance": "Only when all ordinary weekly tasks DONE, all useful work genuinely blocked, or final scheduled slot/deadline. Save exact completed/pending/blocked tasks, source/fit manifests/CI/verifier/SHAs and next minimal action; no blanket DONE for unfinished work. Check successful push and pause only own AstroML job. Other automations unchanged.",
+      "next_action": "Priority finalization from2026-11-09T19:15:00Z; if final session, stop starting new long experiments and secure evidence/handoff. ScheduleCOUNT21 also limits future starts.",
+      "target_day": "2026-11-09",
+      "kind": "campaign_finalization",
+      "trigger": "all_campaign_work_done_or_no_useful_ready_work_or_final_slot",
+      "start_no_later_than_utc": "2026-11-09T19:15:00Z"
     }
   ],
   "target_session_minutes": 120,
   "checkpoint_interval_minutes": 20,
   "continue_sequential_ready_tasks_within_session": true,
-  "research_state": "COMPLETE_WITH_LIMITATIONS",
-  "automation_requested_state": "PAUSED",
-  "completed_at_utc": "2026-11-02T05:19:43.053360+00:00",
+  "research_state": "ACTIVE_NEW_SCOPE",
+  "automation_requested_state": "ENABLE_PENDING",
   "handoff": "reports/research_handoff.md",
-  "next_user_action": "Read manuscript; independently restore/verify COV05 from README, explain one false positive and record actual personal contribution. New research requires an explicitly approved scope/protocol."
+  "next_user_action": "Scheduled agent continues the first ready task in the new weekly campaign; participant learning/registration remain separate and unverified.",
+  "completed_cycles": [
+    {
+      "id": "baseline-2026-11-02",
+      "state": "COMPLETE_WITH_LIMITATIONS",
+      "completed_at_utc": "2026-11-02T05:19:43.053360+00:00",
+      "task_ids": [
+        "AUTO-SETUP",
+        "LIT-01",
+        "LIT-02",
+        "LIT-03",
+        "R2-PROTOCOL",
+        "R2-PILOT",
+        "R2-MAIN",
+        "COV-PROTOCOL",
+        "COV-EXPERIMENT",
+        "SYNTHESIS"
+      ],
+      "snapshot": "research/campaigns/baseline_2026-11-02_queue.json",
+      "source_commit": "330f24297c1b07b49edaa162dc6bcc3527b8c5a1"
+    }
+  ],
+  "active_campaign": "week-2026-11-03-09",
+  "campaigns": [
+    {
+      "id": "week-2026-11-03-09",
+      "status": "SETUP_IN_PROGRESS",
+      "plan": "research/WEEK_PLAN_2026-11-03.md",
+      "authorized_at_utc": "2026-11-02T20:54:03Z",
+      "planned_first_start_utc": "2026-11-03T03:15:00Z",
+      "planned_last_start_utc": "2026-11-09T19:15:00Z",
+      "finalization_start_utc": "2026-11-09T19:15:00Z",
+      "completion_deadline_utc": "2026-11-09T21:15:00Z",
+      "scheduled_slots": 21,
+      "interval_hours": 8,
+      "target_session_minutes": 120,
+      "task_ids": [
+        "W1-SETUP",
+        "W1-DIAG-READ",
+        "W1-OPT-SPEC",
+        "W1-OPT-DEV",
+        "W1-OPT-VERIFY",
+        "W1-COV06-PROTOCOL",
+        "W1-STRESS-PROTOCOL",
+        "W1-COV06-PILOT",
+        "W1-COV06-CAL",
+        "W1-COV06-EVAL",
+        "W1-COV06-VERIFY",
+        "W1-STRESS-RUN",
+        "W1-REAL-AUDIT",
+        "W1-SYNTHESIS",
+        "W1-HANDOFF"
+      ],
+      "primary_goal": "Repair and measure observation-only covariance optimization versus scale-only on new independent data, then test a frozen detector in bounded stress conditions; publish negative results too.",
+      "historical_evaluations_closed": true,
+      "end_rule": "Full weekly scope completed OR useful tasks blocked OR final slot/deadline; preserve incomplete work honestly and pause only own job. Old SYNTHESIS DONE alone is never a stop condition.",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Moscow:20261103T061500\nRRULE:FREQ=HOURLY;INTERVAL=8;COUNT=21\nEND:VEVENT"
+    }
+  ]
 }

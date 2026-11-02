@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/Mobzya/astroML",
+  "execution_mode": "sequential_same_codex_chat",
+  "interval_hours": 8,
+  "priority": "research_before_product_implementation",
+  "current_task_id": null,
+  "next_task_id": null,
+  "tasks": [
+    {
+      "id": "AUTO-SETUP",
+      "status": "DONE",
+      "goal": "Сохранить инструкции последовательного автоматического исследования и очередь задач в GitHub",
+      "depends_on": [],
+      "artifacts": [
+        "research/AUTONOMOUS_RESEARCH.md",
+        "research/task_queue.json"
+      ],
+      "acceptance": "Инструкции и начальная очередь закоммичены и отправлены; факт включения планировщика фиксируется отдельно по ответу инструмента"
+    },
+    {
+      "id": "LIT-01",
+      "status": "DONE",
+      "goal": "Прочитать первичные работы Paczynski 1986 и Wozniak/Paczynski 1997; сверить PSPL и blending с постановкой проекта",
+      "depends_on": [
+        "AUTO-SETUP"
+      ],
+      "artifacts": [
+        "research/reading_notes/L01_L02_physics.md",
+        "research/literature_matrix.csv",
+        "research/reading_notes/source_access.json",
+        "reports/lit01_2026-11-01.md",
+        "reports/checks/literature_physics_2026-11-01.json"
+      ],
+      "acceptance": "Точные DOI/версии и прочитанные страницы; формулы, допущения, известные эффекты и открытые вопросы; недоступные части явно отмечены",
+      "next_action": "Открыть первоисточники из handoff, прочитать физическую модель и blending-разделы, записать собственные проверяемые заметки. Не выполнять statistical evaluation",
+      "started_at_utc": "2026-11-01T19:18:00Z",
+      "checkpoint": "Прочитанный охват и заметки сохранены; geometry/scaling checks PASS на clean commit 1cf7b5d; результат в reports/lit01_2026-11-01.md. Ни evaluation, ни thresholds не использовались.",
+      "completed_date_utc": "2026-11-01"
+    },
+    {
+      "id": "LIT-02",
+      "status": "DONE",
+      "goal": "Проверить предпосылки likelihood и GP по Hogg 2010 и нужным разделам GPML",
+      "depends_on": [
+        "LIT-01"
+      ],
+      "artifacts": [
+        "research/reading_notes/L03_L04_likelihood.md",
+        "research/literature_matrix.csv"
+      ],
+      "acceptance": "Вывод полного Gaussian log likelihood; Cholesky/logdet; ограничения оценки covariance и риск поглощения сигнала; ссылки на реально прочитанные разделы",
+      "next_action": "Прочитать полную статью Hogg 2010 (или конкретные доступные разделы), затем GPML chapters2/4/5; составить вывод Gaussian likelihood и перечень предпосылок practical covariance без truth. Отмечать реальный охват чтения.",
+      "started_at_utc": "2026-11-02T03:16:20Z",
+      "checkpoint": "Primary sections read; full-NLL controls PASS on clean SHA d2937907b088d2cff209a5960fc87d581beb9f04; report reports/lit02_2026-11-02.md",
+      "completed_date_utc": "2026-11-02"
+    },
+    {
+      "id": "LIT-03",
+      "status": "DONE",
+      "goal": "Проверить ближайшие ML-подходы: Microlensify, исходные MicroLIA и применимость к нашей задаче",
+      "depends_on": [
+        "LIT-01"
+      ],
+      "artifacts": [
+        "research/prior_art_comparison.md",
+        "research/literature_matrix.csv"
+      ],
+      "acceptance": "Данные/метки/splits/negatives/noise/метрики ближайших работ; узкое отличие нашего эксперимента без выдуманной алгоритмической новизны",
+      "started_date_utc": "2026-11-02",
+      "checkpoint": "Primary selected sections and code snapshots compared; no models executed or SOTA performance claimed. research/prior_art_comparison.md",
+      "completed_date_utc": "2026-11-02"
+    },
+    {
+      "id": "R2-PROTOCOL",
+      "status": "DONE",
+      "goal": "Зафиксировать протокол нового controlled missingness исследования с обоснованием статистики и размером выборки",
+      "depends_on": [
+        "LIT-01",
+        "LIT-02",
+        "LIT-03"
+      ],
+      "artifacts": [
+        "research/reconstruction_02_protocol.md",
+        "configs/reconstruction_02.json"
+      ],
+      "acceptance": "Новый namespace, hypotheses, paired source splits, метрики/CI/failures, development-only pilot и правила freeze до evaluation",
+      "started_date_utc": "2026-11-02",
+      "checkpoint": "R2 v1 protocol/config fixed before pilot/evaluation: SNR15,600 pairs, primary paired AUC contrast, complete-only calibration, technical rejection.",
+      "completed_date_utc": "2026-11-02"
+    },
+    {
+      "id": "R2-PILOT",
+      "status": "DONE",
+      "goal": "Выполнить development-only CPU pilot генератора и подгонок и измерить стоимость",
+      "depends_on": [
+        "R2-PROTOCOL"
+      ],
+      "artifacts": [
+        "reports/reconstruction_02_pilot.md"
+      ],
+      "acceptance": "Не более 50 независимых источников/15 минут; проверены nuisance matching и source split; точные команды/SHA/версии/hashes/failures/runtime. Основная evaluation не открыта",
+      "started_date_utc": "2026-11-02",
+      "checkpoint": "12 development pairs/72 views/216 fits,17.52s; verifier/resume/negative control PASS, no protocol changes. Pilot archive published.",
+      "completed_date_utc": "2026-11-02"
+    },
+    {
+      "id": "R2-MAIN",
+      "status": "DONE",
+      "goal": "Заморозить метод и завершить controlled missingness эксперимент с независимым verifier",
+      "depends_on": [
+        "R2-PILOT"
+      ],
+      "artifacts": [
+        "reports/reconstruction_02.md",
+        "reports/reconstruction02/evaluation_summary.json",
+        "reports/reconstruction02/artifacts.json",
+        "reports/figures/reconstruction02_metrics.png"
+      ],
+      "acceptance": "Frozen protocol/thresholds до evaluation; все seeds и source-level CI; численные артефакты сохранены на GitHub; исторические цифры остаются отдельными",
+      "started_date_utc": "2026-11-02",
+      "checkpoint": "240cal+360evaluation pairs,freeze a0eb03b before evaluation; independent6480 fit rows and CI verified. Primary deltaAUC=-.3923, CI[-.4178,-.3687]. Frozen random40 FPR13.89%; peak40 recall10%. Raw archives/reports complete.",
+      "completed_date_utc": "2026-11-02"
+    },
+    {
+      "id": "COV-PROTOCOL",
+      "status": "DONE",
+      "goal": "Завершить литературную проверку и дизайн нового diagonal/estimated-C/oracle опыта",
+      "depends_on": [
+        "R2-MAIN"
+      ],
+      "artifacts": [
+        "research/experiment_05_protocol.md"
+      ],
+      "acceptance": "Конкретные practical covariance bounds/budget/negative families/sample size/thresholds/CI/failures; контроль GP absorption и oracle leakage до новой evaluation",
+      "started_date_utc": "2026-11-02",
+      "checkpoint": "Full COV05 v1 protocol/config fixed after4-source development feasibility and independent density/KKT checks, before main data. Primary OU/Gaussian complete; joint calibration/eval bootstrap; added double-bump stress.",
+      "completed_date_utc": "2026-11-02"
+    },
+    {
+      "id": "COV-EXPERIMENT",
+      "status": "DONE",
+      "goal": "Получить завершённый проверяемый результат по covariance-aware гипотезе",
+      "depends_on": [
+        "COV-PROTOCOL"
+      ],
+      "artifacts": [
+        "reports/experiment_05.md",
+        "reports/covariance05/evaluation_summary.json",
+        "reports/covariance05/artifacts.json",
+        "reports/checks/cov05_evaluation_verifier.json",
+        "reports/checks/cov05_freeze_audit.json",
+        "reports/covariance05/evaluation_local_minima.json"
+      ],
+      "acceptance": "CPU smoke, development pilot, freeze, independent evaluation и verifier как отдельные checkpoint-подзадачи; FPR/CI/recall/coverage/runtime и отрицательные исходы",
+      "started_date_utc": "2026-11-02",
+      "checkpoint": "360 evaluation sources,87480 independent fit-row checks and joint calibration/eval bootstrap PASS; raw complete restored from Git. Negative primary: FPR6.39→.83%,recall77.22→.28%,joint successFalse. Feasible-point diagnostic159/360 Gaussian,55/360PSPL local failures in estimated OU complete. No retuning. reports/experiment_05.md",
+      "completed_date_utc": "2026-11-02"
+    },
+    {
+      "id": "SYNTHESIS",
+      "status": "DONE",
+      "goal": "Собрать научные выводы, ограничения и черновик рукописи из подтверждённых артефактов",
+      "depends_on": [
+        "COV-EXPERIMENT"
+      ],
+      "artifacts": [
+        "defense/manuscript.md",
+        "reports/research_handoff.md"
+      ],
+      "acceptance": "Каждый вывод имеет источник/код/данные/verifier; научный итог не зависит от знака эффекта; личные задания ученику; собственная автоматизация приостановлена после передачи",
+      "started_at_utc": "2026-11-02T05:11:15.726119+00:00",
+      "checkpoint": "Manuscript/handoff saved1af2b0f; artifact/link audit PASS99links/16archives/90evaluationfiles. Scientific outcomes bounded, personal contribution unverified. Own AstroML automation pause confirmed2026-11-02T05:17:32.562873Z,is_enabled=false. No other automation changed. Next step belongs to participant, no new automatic research task.",
+      "completed_at_utc": "2026-11-02T05:19:43.053360+00:00"
+    }
+  ],
+  "target_session_minutes": 120,
+  "checkpoint_interval_minutes": 20,
+  "continue_sequential_ready_tasks_within_session": true,
+  "research_state": "COMPLETE_WITH_LIMITATIONS",
+  "automation_requested_state": "PAUSED",
+  "completed_at_utc": "2026-11-02T05:19:43.053360+00:00",
+  "handoff": "reports/research_handoff.md",
+  "next_user_action": "Read manuscript; independently restore/verify COV05 from README, explain one false positive and record actual personal contribution. New research requires an explicitly approved scope/protocol."
+}

@@ -64,3 +64,7 @@ GitHub Release metadata creation succeeded but assets upload returned HTTP401 Ba
 ### 02.11.2026 — bounded research handoff and pause
 
 Manuscript/handoff pushed1af2b0f and remote SHA confirmed. Artifact/link audit PASS99links/16archives/90evaluationfiles. Negative COV result preserved; no RF/CV/real-survey work or personal student contribution invented. Own AstroML automation update confirmed is_enabled=false at05:17:32UTC; only this job changed. All queue tasks DONE; future research requires new explicit scope, no repeated DONE evaluation.
+
+## 02.11.2026 — владелец разрешил новую недельную кампанию
+
+После объяснения прежней паузы пользователь поручил самостоятельно определить этапы ближайшей недели и настроить автоматический режим. Это явное разрешение нового scope: optimizer repair + scale-only ablation на новых независимых данных, заранее frozen stress matrix, небольшой внешний data audit и рукопись/защита. Baseline330f242 и его DONE entries не переоткрываются; старые evaluation закрыты для tuning. Подготовлены dependency queue и21 слот03–09ноября,06:15/14:15/22:15 Europe/Moscow,120min target; COUNT21 и финальный handoff ограничивают автономию. Никакой новый научный результат этой настройкой не заявляется. Включение сервиса фиксируется отдельно только после подтверждённого update.

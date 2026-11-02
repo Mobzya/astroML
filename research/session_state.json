@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "campaign_id": "week-2026-11-03-09",
+  "status": "IDLE",
+  "active_session": null,
+  "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",
+  "instructions": "Before scientific work acquire and push a session lease with unique owner_id,started_utc,last_checkpoint_utc,expires_utc,task_id. Fresh foreign lease=>skip; expired lease is not proof a worker died: check liveness, never duplicate a known active process. Heartbeat/push about20min; end releases lease. No fitting in schedule setup."
+}

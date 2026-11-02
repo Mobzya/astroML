@@ -17,5 +17,11 @@
   "instructions": "research/AUTONOMOUS_RESEARCH.md",
   "target_session_minutes": 120,
   "continue_sequential_ready_tasks_within_session": true,
-  "last_observed_run_utc": "2026-11-02T03:15:36.454522+00:00"
+  "last_observed_run_utc": "2026-11-02T03:15:36.454522+00:00",
+  "configuration_state": "ENABLE_PENDING",
+  "requested_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Moscow:20261103T061500\nRRULE:FREQ=HOURLY;INTERVAL=8;COUNT=21\nEND:VEVENT",
+  "requested_campaign_id": "week-2026-11-03-09",
+  "requested_first_start_utc": "2026-11-03T03:15:00Z",
+  "requested_last_start_utc": "2026-11-09T19:15:00Z",
+  "requested_slots": 21
 }
