@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "recorded_utc": "2026-11-02T05:17:15.813341+00:00",
+  "local_links_checked": 99,
+  "archives_checked": 16,
+  "evaluation_data_files": 90,
+  "closed_scientific_tasks": 9,
+  "new_fits": 0,
+  "network_calls": 0,
+  "scope": "artifact/link/queue/provenance consistency; not a new scientific experiment"
+}
