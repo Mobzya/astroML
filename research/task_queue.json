@@ -116,7 +116,7 @@
       ],
       "acceptance": "Frozen protocol/thresholds до evaluation; все seeds и source-level CI; численные артефакты сохранены на GitHub; исторические цифры остаются отдельными",
       "started_date_utc": "2026-11-02",
-      "checkpoint": "Сначала выполнить только240 calibration pairs; сохранить freeze threshold/policy в GitHub до генерации evaluation. Затем360 evaluation pairs и independent verifier."
+      "checkpoint": "240 calibration pairs complete, verified; policy and raw archive committed BEFORE any evaluation generation. Next generate360 evaluation pairs using this policy with unchanged scientific fingerprint."
     },
     {
       "id": "COV-PROTOCOL",
