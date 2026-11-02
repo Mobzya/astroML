@@ -16,15 +16,26 @@ def main():
     p.add_argument("--summary", type=Path)
     p.add_argument("--policy", type=Path)
     args = p.parse_args()
-    _manifest, records = load_records(args.run)
+    manifest, records = load_records(args.run)
+    config = json.loads(Path("configs/experiment_05.json").read_text())
     truths = {
         r["source_id"]: r
         for f in sorted((args.run / "truth").glob("batch-*.json"))
         for r in json.loads(f.read_text())
     }
     count, max_error = 0, 0.0
+    assert set(truths) == {r["source_id"] for r in records}
     for record in records:
+        assert record["split"] == manifest["phase"]
         truth = truths[record["source_id"]]
+        expected_grid = {
+            (n, f, c)
+            for n in config[manifest["phase"] + "_noise"]
+            for f in config[manifest["phase"] + "_families"]
+            for c in config[manifest["phase"] + "_conditions"]
+        }
+        assert len(record["views"]) == len(expected_grid)
+        assert {(v["noise"], v["family"], v["condition"]) for v in record["views"]} == expected_grid
         for row in record["views"]:
             t, y, sigma = map(np.asarray, [row["t"], row["flux"], row["sigma"]])
             assert len(t) == (96 if row["condition"] == "complete" else 58)
@@ -104,6 +115,21 @@ def main():
                         row["results"]["oracle"]["fits"][family]["nll"],
                         atol=1e-9,
                     )
+    if manifest["phase"] == "calibration" and args.policy:
+        policy = json.loads(args.policy.read_text())
+        assert policy["source_ids"] == [r["source_id"] for r in records]
+        for mode in config["methods"]:
+            negatives = [
+                v["results"][mode]["score"] if v["results"][mode]["valid"] else -np.inf
+                for r in records
+                for v in r["views"]
+                if v["family"] == "gaussian"
+            ]
+            quantile = np.quantile(negatives, 0.95, method="inverted_cdf")
+            threshold = np.nextafter(quantile, np.inf) if np.isfinite(quantile) else None
+            assert threshold == policy["thresholds"][mode]
+            fp = sum(v >= threshold for v in negatives) if threshold is not None else 0
+            assert fp == policy["calibration_fp"][mode]
     if args.summary and args.policy:
         summary, policy = [json.loads(p.read_text()) for p in [args.summary, args.policy]]
         assert {r["source_id"] for r in records}.isdisjoint(policy["source_ids"])
