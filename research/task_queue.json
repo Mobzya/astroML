@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "W1-SETUP",
-  "next_task_id": "W1-SETUP",
+  "current_task_id": null,
+  "next_task_id": "W1-DIAG-READ",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -176,7 +176,7 @@
     {
       "id": "W1-SETUP",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Сохранить новую недельную очередь и включить существующее задание этого чата с ограниченным расписанием",
       "depends_on": [
         "SYNTHESIS"
@@ -184,13 +184,18 @@
       "artifacts": [
         "research/WEEK_PLAN_2026-11-03.md",
         "research/task_queue.json",
-        "research/automation.json"
+        "research/automation.json",
+        "research/automation_prompt.md",
+        "reports/checks/week_automation_confirmation.json",
+        "reports/checks/week_2026-11-03_plan.json",
+        "reports/week_setup_2026-11-02.md"
       ],
       "acceptance": "Plan/DAG checked and pushed; update of existing same-thread automation is_enabled=true confirmed; no new chat/agent/research experiment claimed.",
       "next_action": "Configure only; do not generate experiment data in this setup.",
       "target_day": "2026-11-02",
       "started_at_utc": "2026-11-02T21:02:29.928946+00:00",
-      "checkpoint": "Weekly queue and bounded21-slot schedule being prepared; no new experiments started. Enable only after plan pushed; confirm returned schedule/thread/enabled flag."
+      "checkpoint": "Week plan/queue/prompt pushed5b04c94/f976205. Update+peek confirm is_enabled=true, same existing thread, RRULE8h COUNT21; planned03Nov06:15 through09Nov22:15Moscow. DAG/baseline preservation/readiness/finalization controls PASS. New experiments not started; next W1-DIAG-READ.",
+      "completed_at_utc": "2026-11-02T21:12:46.291715+00:00"
     },
     {
       "id": "W1-DIAG-READ",
@@ -434,8 +439,7 @@
   "checkpoint_interval_minutes": 20,
   "continue_sequential_ready_tasks_within_session": true,
   "research_state": "ACTIVE_NEW_SCOPE",
-  "automation_requested_state": "ENABLE_PENDING",
-  "handoff": "reports/research_handoff.md",
+  "automation_requested_state": "ENABLED",
   "next_user_action": "Scheduled agent continues the first ready task in the new weekly campaign; participant learning/registration remain separate and unverified.",
   "completed_cycles": [
     {
@@ -462,7 +466,7 @@
   "campaigns": [
     {
       "id": "week-2026-11-03-09",
-      "status": "SETUP_IN_PROGRESS",
+      "status": "ACTIVE",
       "plan": "research/WEEK_PLAN_2026-11-03.md",
       "authorized_at_utc": "2026-11-02T20:54:03Z",
       "planned_first_start_utc": "2026-11-03T03:15:00Z",
@@ -492,7 +496,11 @@
       "primary_goal": "Repair and measure observation-only covariance optimization versus scale-only on new independent data, then test a frozen detector in bounded stress conditions; publish negative results too.",
       "historical_evaluations_closed": true,
       "end_rule": "Full weekly scope completed OR useful tasks blocked OR final slot/deadline; preserve incomplete work honestly and pause only own job. Old SYNTHESIS DONE alone is never a stop condition.",
-      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Moscow:20261103T061500\nRRULE:FREQ=HOURLY;INTERVAL=8;COUNT=21\nEND:VEVENT"
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Moscow:20261103T061500\nRRULE:FREQ=HOURLY;INTERVAL=8;COUNT=21\nEND:VEVENT",
+      "setup_completed_at_utc": "2026-11-02T21:12:46.291715+00:00",
+      "automation_enablement_confirmed_at_utc": "2026-11-02T21:10:15.423066+00:00"
     }
-  ]
+  ],
+  "last_completed_handoff": "reports/research_handoff.md",
+  "active_handoff_target": "reports/week_2026-11-03_09_handoff.md"
 }

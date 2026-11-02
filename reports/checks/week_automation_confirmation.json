@@ -1,0 +1,15 @@
+{
+  "status": "CONFIRMED_ENABLED",
+  "title": "Продолжать исследование AstroML",
+  "is_enabled": true,
+  "same_existing_thread_confirmed": true,
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Moscow:20261103T061500\nRRULE:FREQ=HOURLY;INTERVAL=8;COUNT=21\nEND:VEVENT",
+  "timezone": "Europe/Moscow",
+  "service_updated_at": "2026-11-02T21:10:15.423066+00:00",
+  "service_next_run_time": null,
+  "last_observed_run_utc": "2026-11-02T03:15:36.454522+00:00",
+  "prompt_matches_saved_request": true,
+  "scheduled_slots": 21,
+  "campaign_observed_executions": 0,
+  "note": "Service confirms configuration only. Null next_run_time/history is not execution acknowledgement or proof of failure; planned times are derived from the bounded RRULE. Other automations were not modified."
+}

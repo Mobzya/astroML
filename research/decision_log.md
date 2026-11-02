@@ -68,3 +68,7 @@ Manuscript/handoff pushed1af2b0f and remote SHA confirmed. Artifact/link audit P
 ## 02.11.2026 — владелец разрешил новую недельную кампанию
 
 После объяснения прежней паузы пользователь поручил самостоятельно определить этапы ближайшей недели и настроить автоматический режим. Это явное разрешение нового scope: optimizer repair + scale-only ablation на новых независимых данных, заранее frozen stress matrix, небольшой внешний data audit и рукопись/защита. Baseline330f242 и его DONE entries не переоткрываются; старые evaluation закрыты для tuning. Подготовлены dependency queue и21 слот03–09ноября,06:15/14:15/22:15 Europe/Moscow,120min target; COUNT21 и финальный handoff ограничивают автономию. Никакой новый научный результат этой настройкой не заявляется. Включение сервиса фиксируется отдельно только после подтверждённого update.
+
+### Подтверждение новой автоматизации
+
+План5b04c94 и exact prompt f976205 pushed до update. Update+private peek подтвердили is_enabled=true, прежний thread, расписаниеDTSTART03.11.2026 06:15Europe/Moscow,HOURLY/INTERVAL8/COUNT21 и тот же prompt. Other automations unchanged. Первое/последнее окно рассчитаны из подтверждённого RRULE; null next_run_time не является proof of execution. Setup DONE; first science W1-DIAG-READ TODO, ни новых experiments, ни новых papers-read не заявлено.

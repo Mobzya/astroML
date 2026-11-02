@@ -1,12 +1,15 @@
 {
   "status": "PASS",
-  "checked_at_utc": "2026-11-02T21:06:58.443155+00:00",
+  "checked_at_utc": "2026-11-02T21:12:46.323829+00:00",
   "campaign_id": "week-2026-11-03-09",
   "baseline_entries_preserved": 10,
   "campaign_tasks": 15,
-  "current_task_id": "W1-SETUP",
-  "next_ready_task_id": "W1-SETUP",
-  "ready_ordinary_tasks": [],
+  "current_task_id": null,
+  "next_ready_task_id": "W1-DIAG-READ",
+  "ready_ordinary_tasks": [
+    "W1-DIAG-READ",
+    "W1-REAL-AUDIT"
+  ],
   "finalization_due": false,
   "planned_slots_local": [
     "2026-11-03T06:15:00+03:00",
