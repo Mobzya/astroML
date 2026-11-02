@@ -149,7 +149,7 @@
       ],
       "acceptance": "CPU smoke, development pilot, freeze, independent evaluation и verifier как отдельные checkpoint-подзадачи; FPR/CI/recall/coverage/runtime и отрицательные исходы",
       "started_date_utc": "2026-11-02",
-      "checkpoint": "Implement and verify shared covariance runner/negative-family generator first; then240 calibration sources, commit policy before360 new evaluation sources. No COV main data generated yet."
+      "checkpoint": "Calibration stopped at48/240 due nonfinite NNLS amplitude; partial archive/hash preserved. Add finite guard/regression then restart full calibration before policy freeze. Evaluation not generated."
     },
     {
       "id": "SYNTHESIS",

@@ -11,9 +11,9 @@
 
 ## Текущая задача
 
-**COV-PROTOCOL IN_PROGRESS**: определить concrete observation-only covariance fitting, одинаковые competing mean families, bounds/budget/negative families, unit safeguards и development noise pilot. Затем freeze нового протокола до новой evaluation. R2 evaluation больше не использовать для выбора нового метода.
+**COV-EXPERIMENT IN_PROGRESS**. COV protocol and4-source development pilot complete (density/KKT verifier PASS). Main calibration stopped at48/240 sources because NNLS produced nonfinite Gaussian amplitude with finite residual norm; failed partial archive and regression preserved. Finite guard added before evaluation; restart full calibration, freeze thresholds in GitHub, then new360-source evaluation. No COV policy/evaluation exists yet.
 
-Большой covariance/ML run не начинать по старому draft. GPU, платные сервисы, CV и интерфейс сейчас не приоритет.
+Платные сервисы, CV и интерфейс сейчас не приоритет.
 
 ## Статусы исторических материалов
 

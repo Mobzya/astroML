@@ -35,11 +35,15 @@ def profile_linear(design, observed_flux, lower):
     white_design = solve_triangular(lower, design, lower=True)
     white_flux = solve_triangular(lower, observed_flux, lower=True)
     coefficients, norm = nnls(white_design, white_flux)
+    if not np.all(np.isfinite(coefficients)) or not np.isfinite(norm):
+        raise ValueError("nonfinite NNLS coefficients or residual norm")
     nll = (
         0.5 * norm * norm
         + np.log(np.diag(lower)).sum()
         + 0.5 * len(observed_flux) * np.log(2 * np.pi)
     )
+    if not np.isfinite(nll):
+        raise ValueError("nonfinite profiled Gaussian NLL")
     return coefficients, float(nll)
 
 
@@ -130,13 +134,13 @@ def fit_covariance_models(obs, mode="estimated", known_covariance=None, maxiter=
                 )
                 summaries.append(
                     {
-                        "success": bool(opt.success),
+                        "success": bool(opt.success and np.isfinite(opt.fun)),
                         "nfev": int(opt.nfev),
                         "message": str(opt.message),
-                        "nll": float(opt.fun),
+                        "nll": float(opt.fun) if np.isfinite(opt.fun) else None,
                     }
                 )
-                if np.isfinite(opt.fun) and opt.fun < 1e50:
+                if np.isfinite(opt.fun) and opt.fun < 1e50 and np.all(np.isfinite(opt.x)):
                     candidates.append((opt.x, float(opt.fun), bool(opt.success)))
         if not candidates:
             results[name] = {

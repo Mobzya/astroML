@@ -39,3 +39,11 @@ def test_oracle_guard_and_diagonal_constant():
     assert diagonal["fits"]["constant"]["nll"] == pytest.approx(
         gaussian_nll(np.zeros(12), np.diag(obs.sigma**2))
     )
+
+
+def test_nonfinite_nnls_coefficient_rejected_even_with_finite_norm(monkeypatch):
+    # Regression: almost-zero Gaussian columns may yield inf coefficients while
+    # scipy.nnls reports a finite residual norm. Such a fit is not available.
+    monkeypatch.setattr("microlens.covariance.nnls", lambda *args: (np.array([np.inf]), 1.0))
+    with pytest.raises(ValueError, match="nonfinite NNLS"):
+        profile_linear(np.ones((3, 1)), np.ones(3), np.eye(3))

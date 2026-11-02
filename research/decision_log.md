@@ -44,3 +44,7 @@
 ## 02.11.2026 — R2 завершён, следующий COV-PROTOCOL
 
 Новый controlled experiment прошёл по preregistered design:600 pairs,3 seeds,SNR15; freeze до evaluation, все raw/fit records сохранены. Эффект peak-vs-random поддержан, но calibration threshold не переносится на random40 (FPR13.89%). Peak40 recall10% при малом FPR нельзя объявлять полезным решением. Выбор covariance/новых методов на этой evaluation запрещён; для следующего опыта нужен новый namespace и development pilot.
+
+### 02.11.2026 04:20 UTC — COV calibration numerical failure
+
+At48/240 saved sources strict JSON rejected inf Gaussian amplitude; source20261122:00000135. NNLS can return infinite coefficient with finite norm for near-zero basis. Preserve failed partial archive/hash; reject nonfinite linear coefficients as numerical objective failure; add regression and restart calibration under new scientific fingerprint. Protocol/bounds/threshold rules unchanged, no evaluation generated or inspected.

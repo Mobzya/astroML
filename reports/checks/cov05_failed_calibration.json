@@ -1,0 +1,18 @@
+{
+  "archive": "reports/examples/covariance05-failed-calibration-v1.zip",
+  "sha256": "2fd53783695beaa4c56d50ec3d31bb5b04f3b7952b25ebf0dde1e5f93255543d",
+  "completed_sources": 48,
+  "failure": {
+    "source_id": "astroml-cov-main-20261102-v1:20261122:00000135",
+    "bad_fields": [
+      [
+        "root.views[1].results.estimated.fits.gaussian.parameters[1]",
+        "inf"
+      ]
+    ]
+  },
+  "scientific_fingerprint": "001d66a194794898a44d51cbd961480ad535b79830058f2e40c414686812cc0f",
+  "code_sha": "faf36ae74ca1350869e3eba5ee8f84aadaf74adf",
+  "status": "FAILED_SERIALIZATION",
+  "replacement": "restart full calibration after finite NNLS guard; unchanged protocol; no evaluation accessed"
+}
