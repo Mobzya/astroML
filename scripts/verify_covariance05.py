@@ -7,7 +7,29 @@ from pathlib import Path
 import numpy as np
 from analyze_reconstruction02 import load_records
 from scipy.linalg import cholesky, solve_triangular
+from scipy.optimize import brentq
 from scipy.stats import binomtest, multivariate_normal
+
+
+def clean_flux(t, family, truth):
+    """Independent algebraic means, used only by the verifier, never inference."""
+    if family == "pspl":
+        p = truth["pspl_parameters"]
+        u2 = p["u0"] ** 2 + ((t - p["t0"]) / p["t_e"]) ** 2
+        return p["f_s"] * (u2 + 2) / np.sqrt(u2 * (u2 + 4)) + p["f_b"]
+    if family == "gaussian":
+        p = truth["gaussian_parameters"]
+        return p["baseline"] + p["amplitude"] * np.exp(-0.5 * ((t - p["center"]) / p["width"]) ** 2)
+    # Derivative of the equal two-Gaussian mixture gives x=2*tanh(2*x).
+    peak_x = brentq(lambda x: x - 2 * np.tanh(2 * x), 1, 3)
+
+    def shape(x):
+        return 0.5 * (np.exp(-0.5 * (x - 2) ** 2) + np.exp(-0.5 * (x + 2) ** 2))
+
+    peak = shape(peak_x)
+    half = brentq(lambda x: shape(x) - peak / 2, 2, 8)
+    x = (t - truth["pspl_parameters"]["t0"]) * 2 * half / truth["fwhm_days"]
+    return 1 + truth["amplitude"] * shape(x) / peak
 
 
 def main():
@@ -36,6 +58,10 @@ def main():
         }
         assert len(record["views"]) == len(expected_grid)
         assert {(v["noise"], v["family"], v["condition"]) for v in record["views"]} == expected_grid
+        shared_noise, standard_draws = {}, []
+        complete = {
+            (v["noise"], v["family"]): v for v in record["views"] if v["condition"] == "complete"
+        }
         for row in record["views"]:
             t, y, sigma = map(np.asarray, [row["t"], row["flux"], row["sigma"]])
             assert len(t) == (96 if row["condition"] == "complete" else 58)
@@ -49,6 +75,27 @@ def main():
                 else (1 + np.sqrt(3) * distance) * np.exp(-np.sqrt(3) * distance)
             )
             oracle = np.diag(true_sigma**2) + spec["amplitude"] ** 2 * kernel
+            np.testing.assert_allclose(
+                sigma,
+                true_sigma * (1 if row["noise"] == "white" else config["reported_sigma_bias"]),
+            )
+            additive = y - clean_flux(t, row["family"], truth)
+            noise_key = row["noise"], row["condition"]
+            if noise_key in shared_noise:
+                np.testing.assert_allclose(additive, shared_noise[noise_key], atol=1e-11)
+            else:
+                shared_noise[noise_key] = additive
+                if row["condition"] == "complete":
+                    standard_draws.append(
+                        solve_triangular(cholesky(oracle, lower=True), additive, lower=True)
+                    )
+            if row["condition"] != "complete":
+                full = complete[row["noise"], row["family"]]
+                np.testing.assert_array_equal(y, np.array(full["flux"])[idx])
+                if row["condition"] == "peak40":
+                    all_t = np.array(truth["t"])
+                    removed = np.argsort(abs(all_t - truth["pspl_parameters"]["t0"]))[:38]
+                    assert set(idx) == set(range(96)) - set(removed)
             for mode, method in row["results"].items():
                 assert method["oracle_only"] == (mode == "oracle")
                 bics = {}
@@ -115,6 +162,8 @@ def main():
                         row["results"]["oracle"]["fits"][family]["nll"],
                         atol=1e-9,
                     )
+        for draw in standard_draws[1:]:
+            np.testing.assert_allclose(draw, standard_draws[0], atol=1e-9)
     if manifest["phase"] == "calibration" and args.policy:
         policy = json.loads(args.policy.read_text())
         assert policy["source_ids"] == [r["source_id"] for r in records]
