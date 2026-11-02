@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "wrong_bic",
+      "checksum_refreshed": true,
+      "detected": true,
+      "returncode": 1,
+      "verifier_diagnostic_tail": "Traceback (most recent call last):\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance05.py\", line 324, in <module>\n    main()\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance05.py\", line 138, in main\n    np.testing.assert_allclose(bics[family], fit[\"bic\"], rtol=1e-8, atol=1e-7)\n  File \"/workspace/astroml-microlensing/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 1780, in assert_allclose\n    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),\n  File \"/workspace/astroml-microlensing/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 988, in assert_array_compare\n    raise AssertionError(msg)\nAssertionError: \nNot equal to tolerance rtol=1e-08, atol=1e-07\n\nMismatched elements: 1 / 1 (100%)\nMax absolute difference among violations: 1.\nMax relative difference among violations: 0.00072318\n ACTUAL: array(1381.777126)\n DESIRED: array(1382.777126)\n"
+    },
+    {
+      "case": "counterfactual_flux",
+      "checksum_refreshed": true,
+      "detected": true,
+      "returncode": 1,
+      "verifier_diagnostic_tail": "assert_allclose(additive, shared_noise[noise_key], atol=1e-11)\n  File \"/workspace/astroml-microlensing/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 1780, in assert_allclose\n    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),\n  File \"/workspace/astroml-microlensing/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 988, in assert_array_compare\n    raise AssertionError(msg)\nAssertionError: \nNot equal to tolerance rtol=1e-07, atol=1e-11\n\nMismatched elements: 1 / 96 (1.04%)\nMismatch at index:\n [0]: -0.007317114275873338 (ACTUAL), -0.017317114275873347 (DESIRED)\nMax absolute difference among violations: 0.01\nMax relative difference among violations: 0.57746342\n ACTUAL: array([-0.007317,  0.003561, -0.023087,  0.015482, -0.042746, -0.013815,\n       -0.0211  , -0.002833, -0.017208,  0.020829, -0.005379, -0.025696,\n       -0.012012, -0.033997, -0.008343, -0.011498, -0.007436, -0.00819 ,...\n DESIRED: array([-0.017317,  0.003561, -0.023087,  0.015482, -0.042746, -0.013815,\n       -0.0211  , -0.002833, -0.017208,  0.020829, -0.005379, -0.025696,\n       -0.012012, -0.033997, -0.008343, -0.011498, -0.007436, -0.00819 ,...\n"
+    },
+    {
+      "case": "oracle_flag",
+      "checksum_refreshed": true,
+      "detected": true,
+      "returncode": 1,
+      "verifier_diagnostic_tail": "Traceback (most recent call last):\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance05.py\", line 324, in <module>\n    main()\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance05.py\", line 100, in main\n    assert method[\"oracle_only\"] == (mode == \"oracle\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ],
+  "new_sources_or_fits": 0,
+  "scope": "calibration copies only; positive full verification recorded separately"
+}
