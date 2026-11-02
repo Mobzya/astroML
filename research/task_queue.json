@@ -4,7 +4,7 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": null,
+  "current_task_id": "LIT-02",
   "next_task_id": "LIT-02",
   "tasks": [
     {
@@ -40,7 +40,7 @@
     },
     {
       "id": "LIT-02",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Проверить предпосылки likelihood и GP по Hogg 2010 и нужным разделам GPML",
       "depends_on": [
         "LIT-01"
@@ -50,7 +50,9 @@
         "research/literature_matrix.csv"
       ],
       "acceptance": "Вывод полного Gaussian log likelihood; Cholesky/logdet; ограничения оценки covariance и риск поглощения сигнала; ссылки на реально прочитанные разделы",
-      "next_action": "Прочитать полную статью Hogg 2010 (или конкретные доступные разделы), затем GPML chapters2/4/5; составить вывод Gaussian likelihood и перечень предпосылок practical covariance без truth. Отмечать реальный охват чтения."
+      "next_action": "Прочитать полную статью Hogg 2010 (или конкретные доступные разделы), затем GPML chapters2/4/5; составить вывод Gaussian likelihood и перечень предпосылок practical covariance без truth. Отмечать реальный охват чтения.",
+      "started_at_utc": "2026-11-02T03:16:20Z",
+      "checkpoint": "Открыть первичные PDF Hogg 2010 и разделы GPML2/4/5; записать точный охват. Проверить Gaussian likelihood, noise identifiability и signal absorption без открытия evaluation."
     },
     {
       "id": "LIT-03",
