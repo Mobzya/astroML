@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "purpose": "deterministic_likelihood_controls_not_evaluation",
+  "independent_random_sources": 0,
+  "density_reference_cases": [
+    {
+      "length_days": 0.01,
+      "amplitude": 0.0,
+      "condition_number": 25.000000000000004,
+      "abs_nll_error": 1.7763568394002505e-15
+    },
+    {
+      "length_days": 0.01,
+      "amplitude": 0.1,
+      "condition_number": 8.548620523976727,
+      "abs_nll_error": 8.881784197001252e-16
+    },
+    {
+      "length_days": 0.01,
+      "amplitude": 1.0,
+      "condition_number": 691.1325046983426,
+      "abs_nll_error": 4.440892098500626e-16
+    },
+    {
+      "length_days": 1.0,
+      "amplitude": 0.0,
+      "condition_number": 25.000000000000004,
+      "abs_nll_error": 1.7763568394002505e-15
+    },
+    {
+      "length_days": 1.0,
+      "amplitude": 0.1,
+      "condition_number": 15.452851521166298,
+      "abs_nll_error": 3.552713678800501e-15
+    },
+    {
+      "length_days": 1.0,
+      "amplitude": 1.0,
+      "condition_number": 1147.5379168803502,
+      "abs_nll_error": 1.84297022087776e-14
+    },
+    {
+      "length_days": 100.0,
+      "amplitude": 0.0,
+      "condition_number": 25.000000000000004,
+      "abs_nll_error": 1.7763568394002505e-15
+    },
+    {
+      "length_days": 100.0,
+      "amplitude": 0.1,
+      "condition_number": 90.81468202180814,
+      "abs_nll_error": 0.0
+    },
+    {
+      "length_days": 100.0,
+      "amplitude": 1.0,
+      "condition_number": 4700.860566314239,
+      "abs_nll_error": 2.220446049250313e-14
+    }
+  ],
+  "scale_normalization_control": [
+    {
+      "variance": 0.1,
+      "full_nll": 19.070583946830595,
+      "quadratic_only": 20.0
+    },
+    {
+      "variance": 1.0,
+      "full_nll": 5.675754132818691,
+      "quadratic_only": 2.0
+    },
+    {
+      "variance": 10.0,
+      "full_nll": 8.480924318806782,
+      "quadratic_only": 0.2
+    },
+    {
+      "variance": 100.0,
+      "full_nll": 12.906094504794874,
+      "quadratic_only": 0.02
+    }
+  ],
+  "fixed_signal_absorption_illustration": [
+    {
+      "amplitude": 0.0,
+      "remaining_mean_norm_fraction": 1.0,
+      "full_nll_constant_mean": 2767.1545843126264
+    },
+    {
+      "amplitude": 0.1,
+      "remaining_mean_norm_fraction": 0.04155910037592919,
+      "full_nll_constant_mean": -58.270164803998654
+    },
+    {
+      "amplitude": 0.3,
+      "remaining_mean_norm_fraction": 0.007123770084571557,
+      "full_nll_constant_mean": -87.91330292292602
+    },
+    {
+      "amplitude": 1.0,
+      "remaining_mean_norm_fraction": 0.0007594988166339839,
+      "full_nll_constant_mean": -43.34335051469145
+    },
+    {
+      "amplitude": 3.0,
+      "remaining_mean_norm_fraction": 8.674273224388524e-05,
+      "full_nll_constant_mean": 20.405647231827793
+    }
+  ],
+  "code_sha": "d2937907b088d2cff209a5960fc87d581beb9f04",
+  "git_dirty": false,
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  }
+}

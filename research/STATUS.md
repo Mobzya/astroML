@@ -6,7 +6,7 @@
 
 Задача **LIT-01 завершена** вручную в текущем чате: первоисточники по PSPL/blending прочитаны в указанном охвате, независимая геометрическая и асимптотическая проверка прошла. Заметки — research/reading_notes/L01_L02_physics.md; отчёт — reports/lit01_2026-11-01.md.
 
-Выполняется **LIT-02**: Hogg 2010 и нужные разделы GPML; полный Gaussian likelihood, оценка covariance и риск GP absorption. Актуальная очередь — research/task_queue.json. Большое covariance/ML обучение по draft протоколу не начинать.
+**LIT-02 завершена:** выбранные разделы Hogg/GPML прочитаны, likelihood checks PASS; reports/lit02_2026-11-02.md. Выполняется **LIT-03**: ближайшие Microlensify/MicroLIA, первичная публикация и код, данные/splits/negatives/ограничения. Evaluation не открыта.
 
 Не готовы: замороженные manifests основного опыта, статистический benchmark, обученный RF, estimated covariance fitting, реальные данные, интерактивное demo, окончательная рукопись и видеовизитка. В roadmap это будущие этапы, не выполненные работы.
 

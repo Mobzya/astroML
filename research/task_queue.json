@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "LIT-02",
-  "next_task_id": "LIT-02",
+  "current_task_id": "LIT-03",
+  "next_task_id": "LIT-03",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -40,7 +40,7 @@
     },
     {
       "id": "LIT-02",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Проверить предпосылки likelihood и GP по Hogg 2010 и нужным разделам GPML",
       "depends_on": [
         "LIT-01"
@@ -52,11 +52,12 @@
       "acceptance": "Вывод полного Gaussian log likelihood; Cholesky/logdet; ограничения оценки covariance и риск поглощения сигнала; ссылки на реально прочитанные разделы",
       "next_action": "Прочитать полную статью Hogg 2010 (или конкретные доступные разделы), затем GPML chapters2/4/5; составить вывод Gaussian likelihood и перечень предпосылок practical covariance без truth. Отмечать реальный охват чтения.",
       "started_at_utc": "2026-11-02T03:16:20Z",
-      "checkpoint": "Указанные разделы L03/L04 прочитаны, заметки и source hashes сохранены; diagnostic script прошёл на development run. Сохранить clean-SHA запуск и итоговый отчёт."
+      "checkpoint": "Primary sections read; full-NLL controls PASS on clean SHA d2937907b088d2cff209a5960fc87d581beb9f04; report reports/lit02_2026-11-02.md",
+      "completed_date_utc": "2026-11-02"
     },
     {
       "id": "LIT-03",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Проверить ближайшие ML-подходы: Microlensify, исходные MicroLIA и применимость к нашей задаче",
       "depends_on": [
         "LIT-01"
@@ -65,7 +66,9 @@
         "research/prior_art_comparison.md",
         "research/literature_matrix.csv"
       ],
-      "acceptance": "Данные/метки/splits/negatives/noise/метрики ближайших работ; узкое отличие нашего эксперимента без выдуманной алгоритмической новизны"
+      "acceptance": "Данные/метки/splits/negatives/noise/метрики ближайших работ; узкое отличие нашего эксперимента без выдуманной алгоритмической новизны",
+      "started_date_utc": "2026-11-02",
+      "checkpoint": "Проверить библиографию Microlensify, первичный MicroLIA paper/code и реальные определения классов. Сохранять точные pages/URL; не заявлять превосходство и не запускать evaluation."
     },
     {
       "id": "R2-PROTOCOL",
