@@ -52,3 +52,7 @@ At48/240 saved sources strict JSON rejected inf Gaussian amplitude; source202611
 ### 02.11.2026 04:25 UTC — COV policy freeze
 
 Restart completed240 calibration sources under clean5add9ea; density/KKT/matching/threshold independent verifier PASS8640fits. Three global thresholds committed before new evaluation generation. Calibration24/480 FP each;480 views arise from240 clustered sources. Proceed360 held-out source units, same methods/budget; do not tune from outcomes.
+
+### 02.11.2026 — artifact endpoint unavailable
+
+GitHub Release metadata creation succeeded but assets upload returned HTTP401 Bad credentials. No credential modification/retry via alternate endpoint. Existing authorized git push remains available; preserve compact <=40-source compressed shards and exact recovery manifest in Git. Raw batch files are not committed individually. Scientific method unchanged.

@@ -5,6 +5,57 @@
       "path": "reports/examples/covariance05-calibration-v1a.zip",
       "bytes": 3236087,
       "sha256": "1b80c8ded22f9a27b728351f235ac36748fa0506cbe4d4c70317ccf09824b95d"
+    },
+    {
+      "phase": "evaluation",
+      "path": "reports/examples/covariance05-evaluation-batches-00000-00032.zip",
+      "batch_files": [
+        "batch-00000.json",
+        "batch-00008.json",
+        "batch-00016.json",
+        "batch-00024.json",
+        "batch-00032.json"
+      ],
+      "independent_sources": 40,
+      "bytes": 2301576,
+      "sha256": "9f84161950a06d2a79d2efa6e0188c5a2e4c7593a974d8715898bea59e950317",
+      "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6"
+    },
+    {
+      "phase": "evaluation",
+      "path": "reports/examples/covariance05-evaluation-batches-00040-00072.zip",
+      "batch_files": [
+        "batch-00040.json",
+        "batch-00048.json",
+        "batch-00056.json",
+        "batch-00064.json",
+        "batch-00072.json"
+      ],
+      "independent_sources": 40,
+      "bytes": 2311192,
+      "sha256": "1542e68c5b44d04f544eb2a4cb35be630ae27916b1ae3dac62867f9a9b9d4e5e",
+      "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6"
+    },
+    {
+      "phase": "evaluation",
+      "path": "reports/examples/covariance05-evaluation-batches-00080-00080.zip",
+      "batch_files": [
+        "batch-00080.json"
+      ],
+      "independent_sources": 8,
+      "bytes": 467298,
+      "sha256": "7b1a8bb88a21e2c056ea4ebcb08f36358b8f12dc865f4951a1b70bcfbb6b986c",
+      "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6"
     }
-  ]
+  ],
+  "evaluation_snapshot": {
+    "path": "reports/covariance05/evaluation_run_manifest.json",
+    "sha256": "e9b449b125613b7fa9aca8ba5f3d5d50dd153285ccc2c555c316d642a965d22c",
+    "status": "IN_PROGRESS",
+    "completed_sources": 88,
+    "expected_sources": 360,
+    "code_sha": "4a94d440186a34c1a8de4cdc0b76d0f4cd715871",
+    "scientific_fingerprint": "65a738bc63db416ed61e92b7d84f76ff98a159347cce309d713af8f45b2b85c6"
+  },
+  "storage_note": "GitHub Releases asset upload returned HTTP401 on2026-11-02; authorized git push works. Compact <=40-source ZIP shards are in Git; no credential changes or upload-auth bypass attempted."
 }

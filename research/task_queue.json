@@ -149,7 +149,7 @@
       ],
       "acceptance": "CPU smoke, development pilot, freeze, independent evaluation и verifier как отдельные checkpoint-подзадачи; FPR/CI/recall/coverage/runtime и отрицательные исходы",
       "started_date_utc": "2026-11-02",
-      "checkpoint": "240 calibration sources complete; independent8640 fits/counterfactuals/thresholds verified. Policy/raw saved before360 new evaluation sources. Next: fixed-policy evaluation with bounded resumable batches; no changes from evaluation."
+      "checkpoint": "Calibration/policy frozen4a94d44 before evaluation. Evaluation running; durable snapshot88/360 sources, same fingerprint. Release uploads HTTP401, compact immutable ZIP shards saved by authorized git push. Resume existing artifacts/cov05-evaluation-v1 after900s cap, do not start new run or retune."
     },
     {
       "id": "SYNTHESIS",
