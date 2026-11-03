@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "W1-COV06-EVAL",
-  "next_task_id": "W1-COV06-EVAL",
+  "current_task_id": "W1-REAL-AUDIT",
+  "next_task_id": "W1-REAL-AUDIT",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -353,7 +353,7 @@
     {
       "id": "W1-COV06-EVAL",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "BLOCKED",
       "goal": "Выполнить одну frozen independent COV06 evaluation с возобновляемыми batches",
       "depends_on": [
         "W1-COV06-CAL"
@@ -366,17 +366,18 @@
       "next_action": "Generate after policy push; cap calls/checkpoint between batches; before each compute segment confirm persistent storage and available runtime.",
       "target_day": "2026-11-05",
       "started_at_utc": "2026-11-03T04:52:19.166561+00:00",
-      "checkpoint": "RECOVERY ONLY, NO NEW FITTING. Replacement boot/start-tick incompatibility and absent original parent/workers resolve local old-process liveness; saved files/ledger preserved before ff merge.195complete receipts + source0195partial found, original manifest acknowledges192. Reconcile hashes/source matrix, archive all recovered bytes and receipts without refitting. Final fifth-call timer absent: retain observed lower bound/unclosed ledger; cannot certify remaining7200s budget. Do not invent elapsed time, reset ledger or rerun completed outputs. If cost cannot be bounded from evidence, mark EVAL BLOCKED_RUNTIME_ACCOUNTING and sequentially take independent ready W1-REAL-AUDIT.",
+      "checkpoint": "Recovered195/360complete sources + source195partial(16views);390JSONrestore and52650selected-density/KKT/bounds numerical checks PASS-only, maxNLL2.74e-12. Fitter/config/policy/data unchanged, no new nonlinear fits. Original fifth-call final stopwatch lost at environment reboot; ledger lower bound2809.8159s is NOT actual total, and nominal900s allocation is not a termination measurement. Preserve original in-progress ledger marker; cannot certify remaining7200s wall budget, no reset/guessed charge/duplicate data. Need independently supported termination-duration bound or explicit owner-approved accounting scope before resuming only missing work. Full benchmark/statistics/CI and stress not completed.",
       "execution_block": {
-        "code": "BLOCKED_SESSION_LIVENESS",
-        "detected_utc": "2026-11-03T11:56:29Z",
-        "last_durable_sources": 176,
-        "last_local_observed_sources_lower_bound": 188,
-        "prior_runner_liveness": "UNKNOWN",
-        "resume_forbidden_until_original_runner_outputs_and_cost_reconciled": true,
-        "recovery_started_utc": "2026-11-03T19:26:26.642387+00:00",
-        "local_liveness_resolved_by_new_boot": true
-      }
+        "code": "BLOCKED_RUNTIME_ACCOUNTING",
+        "local_old_process_liveness_resolved": true,
+        "final_interrupted_invocation_duration_known": false,
+        "remaining_budget_certified": false,
+        "complete_sources_recovered": 195,
+        "partial_source_index": 195,
+        "no_new_fitting": true,
+        "evidence": "reports/checks/cov06_recovery_1915_preflight.json"
+      },
+      "block_code": "BLOCKED_RUNTIME_ACCOUNTING"
     },
     {
       "id": "W1-COV06-VERIFY",
@@ -416,7 +417,7 @@
     {
       "id": "W1-REAL-AUDIT",
       "campaign_id": "week-2026-11-03-09",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Проверить возможность малого внешнего pilot по лицензии, единицам и надёжности меток",
       "depends_on": [
         "W1-SETUP"
@@ -428,7 +429,9 @@
       "acceptance": "Audit<=2 candidate public datasets from primary docs/metadata: flux/magnitude/time system, label provenance/negatives, split/leakage, license/download limits. Access/labels insufficient=>explicit NOT_RUN/BLOCKED feasibility decision counts as completed audit, not a completed external experiment. No bulk data or third-party outreach; no telescope performance claim.",
       "next_action": "Read docs/metadata first; <=20 individually justified small curves only if access/license/labels clearly allow and necessary for audit. A classified external benchmark is NOT authorized by this task alone.",
       "target_day": "2026-11-07",
-      "independent_fallback": true
+      "independent_fallback": true,
+      "started_at_utc": "2026-11-03T19:46:03.732244+00:00",
+      "checkpoint": "Independent fallback after EVAL recovery/runtime block. Audit <=2public candidate datasets: OGLE EWS and ZTF DR, primary docs/metadata only. Check time/flux units, quality, label/negative provenance, astrophysical source split/leakage and exact public-access/reuse terms. No classified telescope benchmark, no outreach/bulk data. Plan0raw curves unless individually necessary and clearly permitted; actual read scope/hashes and feasibility/NOT_RUN decision required."
     },
     {
       "id": "W1-SYNTHESIS",
@@ -539,5 +542,5 @@
   ],
   "last_completed_handoff": "reports/research_handoff.md",
   "active_handoff_target": "reports/week_2026-11-03_09_handoff.md",
-  "recovery_gate": "BLOCKED_SESSION_LIVENESS: resolve original runner before any new fitting or replacement research session; expiry/null PID/history is not proof of termination."
+  "recovery_gate": "BLOCKED_RUNTIME_ACCOUNTING forbids new COV06 fitting pending supported duration/accounting evidence; independent read-only W1-REAL-AUDIT is authorized and ready."
 }

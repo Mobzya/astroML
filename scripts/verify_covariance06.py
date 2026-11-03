@@ -69,16 +69,44 @@ def profiled_nll(t, y, family, shape, c):
     maximum = np.max(abs(x), axis=0)
     active = maximum > 0
     x = x[:, active] / maximum[active]
+    # The frozen engines require decoded physical coefficients to be float64-finite.
+    # A finite normalized coefficient may decode to infinity for a subnormal column;
+    # it is not an admissible numerical reference point. Enumerate the box faces
+    # beta in [0,float64_max] in normalized coordinates, preserving tiny columns.
+    with np.errstate(over="ignore", invalid="ignore"):
+        upper = np.minimum(maximum[active] * np.finfo(float).max, np.finfo(float).max)
+    upper = np.nextafter(upper, 0.0)
     candidates = [np.zeros(x.shape[1])]
     beta = np.linalg.lstsq(x, wy, rcond=None)[0]
-    if np.all(beta >= 0):
+    if np.all(beta >= 0) and np.all(beta <= upper):
         candidates.append(beta)
     for j in range(x.shape[1]):
-        norm = x[:, j] @ x[:, j]
-        b = np.zeros(x.shape[1])
-        b[j] = max(0.0, (x[:, j] @ wy) / norm) if norm > 0 else 0.0
-        candidates.append(b)
-    q = min(float((wy - x @ b) @ (wy - x @ b)) for b in candidates)
+        for fixed in [0.0, upper[j]]:
+            b = np.zeros(x.shape[1])
+            b[j] = fixed
+            for k in range(x.shape[1]):
+                if k == j:
+                    continue
+                norm = x[:, k] @ x[:, k]
+                b[k] = (
+                    np.clip((x[:, k] @ (wy - x[:, j] * fixed)) / norm, 0, upper[k])
+                    if norm > 0
+                    else 0.0
+                )
+            candidates.append(b)
+    if x.shape[1] == 1:
+        norm = x[:, 0] @ x[:, 0]
+        candidates.append(np.array([np.clip((x[:, 0] @ wy) / norm, 0, upper[0])]))
+    quadratics = []
+    for b in candidates:
+        with np.errstate(over="ignore", invalid="ignore", divide="ignore"):
+            decoded = b / maximum[active]
+            residual = wy - x @ b
+            value = float(residual @ residual)
+        if np.all(np.isfinite(decoded)) and np.isfinite(value):
+            quadratics.append(value)
+    assert quadratics, "No finite independently profiled candidate"
+    q = min(quadratics)
     return 0.5 * q + np.log(np.diag(lower)).sum() + 0.5 * len(t) * np.log(2 * np.pi)
 
 

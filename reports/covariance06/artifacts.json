@@ -6,10 +6,11 @@
   "freeze_commit_before_evaluation": "44ec73ee8aa2804eb5a7628fd99fd67a2e0326aa",
   "calibration_index_path": "reports/covariance06/calibration/artifacts.json",
   "calibration_index_sha256": "36a6f7060184814c997294a1ee61599c26a69710de7804b7570af58732470f22",
-  "evaluation_index_path": "reports/covariance06/evaluation/checkpoint-0176/artifacts.json",
-  "evaluation_archived_sources": 176,
+  "evaluation_index_path": "reports/covariance06/evaluation/recovered-0195/artifacts.json",
+  "evaluation_archived_sources": 195,
   "expected_evaluation_sources": 360,
-  "evaluation_status": "PARTIAL_CHECKPOINT",
+  "evaluation_status": "INTERRUPTED_RECOVERED_RESOURCE_UNRESOLVED",
   "resume_guide": "research/cov06/RESUME.md",
-  "evaluation_index_sha256": "3035755dd1c7933ce9f33d8c111bfcdfd5b7c8ec8cda6f4c3cfc71af76236d8f"
+  "evaluation_index_sha256": "29a52b0179565c925b4ec933063bbb6075996a000defae2d0cd982da7ecb3e18",
+  "recovery_index_path": "reports/covariance06/recovery-20261103-1915/artifacts.json"
 }

@@ -13,7 +13,7 @@
 
 02.11 владелец разрешил продолжение на03–09ноября: **[план недели](research/WEEK_PLAN_2026-11-03.md)**, [очередь с зависимостями](research/task_queue.json). Цель — исправление optimizer, scale-only ablation, новые независимые COV06/stress данные и обновление рукописи. Старые результаты ниже остаются неизменными; новый основной outcome ещё не измерен. Последовательный режим в этом чате,21 окно каждые8часов,120min target; фактическое подтверждение включения — [STATUS](research/STATUS.md). Лимиты аккаунта не видны, выполнение всех окон не гарантируется.
 
-Новая неделя03.11: [development pilot](reports/cov06_development.md) на24sources/219.16s завершён; [independent numerical verification](reports/cov06_numerical_validation.md) проверила2304fits/57304improvement points. Это проверка вычислений, не новые AUC/FPR и не main evaluation. Main/stress protocols и [12-source runner smoke](reports/cov06_pilot.md) завершены. [Calibration240sources/frozen policy](reports/covariance06/calibration_freeze.md) проверена; [Новая evaluation](reports/covariance06/evaluation_manifest.json):176/360sources сохранены/восстановлены (numerical proof пока для прежних68); полный outcome ещё не получен. [Продолжение из GitHub](research/cov06/RESUME.md).
+Новая неделя03.11: [development pilot](reports/cov06_development.md) на24sources/219.16s завершён; [independent numerical verification](reports/cov06_numerical_validation.md) проверила2304fits/57304improvement points. Это проверка вычислений, не новые AUC/FPR и не main evaluation. Main/stress protocols и [12-source runner smoke](reports/cov06_pilot.md) завершены. [Calibration240sources/frozen policy](reports/covariance06/calibration_freeze.md) проверена; [Новая evaluation](reports/covariance06/evaluation_manifest.json):195/360sources восстановлены и численно проверены; следующийsource частичный, runtime-budget не разрешён; полный outcome ещё не получен. [Продолжение из GitHub](research/cov06/RESUME.md).
 
 ## Два результата
 
@@ -68,7 +68,7 @@ python -m pytest -q
 python -m ruff check src scripts tests
 ```
 
-39 unit tests, включая независимую физическую сверку с MulensModel и новые COV06 numerical safeguards; CI проверяет код и numerical smoke. Научные verifier отдельно пересчитывают сохранённые результаты:6480 R2 и87480 COV05 evaluation fit rows. Ошибка full-NLL пересчёта COV05 не более6.37×10⁻¹²; это проверка вычислений, не global optimization или survey validity.
+40 unit tests, включая независимую физическую сверку с MulensModel и новые COV06 numerical safeguards; CI проверяет код и numerical smoke. Научные verifier отдельно пересчитывают сохранённые результаты:6480 R2 и87480 COV05 evaluation fit rows. Ошибка full-NLL пересчёта COV05 не более6.37×10⁻¹²; это проверка вычислений, не global optimization или survey validity.
 
 ```bash
 python scripts/restore_covariance05.py --phase evaluation --output artifacts/cov05-verify
@@ -100,3 +100,5 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/verify_covariance05.py a
 
 
 03.11 ~11:53UTC: **BLOCKED_SESSION_LIVENESS** — вычислительная среда недоступна во время fitting. В Git сохранены176/360sources; локально ранее было как минимум188, текущая судьба процесса неизвестна. [Состояние и порядок восстановления](research/session_state.json). Не запускать второй runner и не возобновлять вслепую от176: сначала проверить прежний процесс, локальные outputs и бюджет. Полный эксперимент не завершён.
+
+03.11 вечер: [восстановлены195полных источников и частичный196-й](reports/covariance06/recovery-20261103-1915/artifacts.json), независимо проверены52650selected fits. Final timer оборванного вызова потерян; **COV06 BLOCKED_RUNTIME_ACCOUNTING**, основной outcome не получен. Продолжается разрешённый независимый audit внешних данных.

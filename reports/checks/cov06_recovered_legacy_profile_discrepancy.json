@@ -1,0 +1,104 @@
+{
+  "status": "DIAGNOSTIC_NOT_GATE_PASS",
+  "source_id": "astroml-cov06-main-20261103-v1:620301:00000034",
+  "source_file": "source-0108.json",
+  "view": "white/pspl/peak40",
+  "family": "gaussian",
+  "method": "legacy_estimated",
+  "selected_parameters": [
+    1.0018443165744038,
+    0.0,
+    -238.17470231887896,
+    6.186702378714253
+  ],
+  "selected_nll": -29.89289994375492,
+  "points": [
+    {
+      "start": 0,
+      "success": true,
+      "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "stored_final_nll": -29.89289994375492,
+      "direct_original_unscaled_profile_nll": -29.89289994375492,
+      "independent_active_set_profile_nll": -30.224084574191572,
+      "column_normalized_nnls_physical_nll": "NaN (invalid physical prediction)",
+      "column_max_abs": [
+        1.1e-322,
+        7.452045157586543
+      ],
+      "unscaled_coefficients": [
+        0.0,
+        1.0018443165744038
+      ],
+      "normalized_decoded_coefficients": [
+        "Infinity (decoded coefficient overflow)",
+        0.9994131294717666
+      ],
+      "theta": [
+        -1.0,
+        -3.6521786420219216,
+        -0.2770902191891648,
+        -0.1896546375700337,
+        0.0
+      ]
+    },
+    {
+      "start": 1,
+      "success": true,
+      "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "stored_final_nll": -29.777993552427056,
+      "direct_original_unscaled_profile_nll": -29.777993552427056,
+      "independent_active_set_profile_nll": -29.77799355242704,
+      "column_normalized_nnls_physical_nll": -29.77799355242704,
+      "column_max_abs": [
+        1.4327936514698716,
+        8.295731154040782
+      ],
+      "unscaled_coefficients": [
+        0.616956233786754,
+        0.9863006619459871
+      ],
+      "normalized_decoded_coefficients": [
+        0.6169562337867535,
+        0.986300661945987
+      ],
+      "theta": [
+        0.6483149654278836,
+        -2.259652906107106,
+        0.1229917037484969,
+        -8.263073764266514,
+        2.6115612310468146
+      ]
+    },
+    {
+      "start": 2,
+      "success": true,
+      "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "stored_final_nll": -29.777993902700395,
+      "direct_original_unscaled_profile_nll": -29.777993902700395,
+      "independent_active_set_profile_nll": -29.777993902700395,
+      "column_normalized_nnls_physical_nll": -29.777993902700395,
+      "column_max_abs": [
+        1.4329353681408368,
+        8.29572876834518
+      ],
+      "unscaled_coefficients": [
+        0.616870350875748,
+        0.9862998082258722
+      ],
+      "normalized_decoded_coefficients": [
+        0.6168703508757485,
+        0.986299808225872
+      ],
+      "theta": [
+        0.6483132978664718,
+        -2.2596138136366837,
+        0.12299208659795735,
+        -9.120067890083282,
+        4.778063644629944
+      ]
+    }
+  ],
+  "no_nonlinear_fit_or_inference_repair": true,
+  "no_truth_used": true,
+  "interpretation": "The apparent better normalized reference needs an infinite decoded physical Gaussian amplitude for a ~1e-322 basis, violating the predeclared finite guard. This is a reference admissibility bug, not evidence that the returned selected likelihood is wrong. Preserve original data; test finite-domain active-set reference separately."
+}

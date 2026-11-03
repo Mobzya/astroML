@@ -4,14 +4,14 @@
   "status": "ACTIVE",
   "active_session": {
     "owner_id": "astroml-w1-82ca007c358240619912fd3936bae1f7",
-    "task_id": "W1-COV06-EVAL",
+    "task_id": "W1-REAL-AUDIT",
     "started_utc": "2026-11-03T19:26:26.642387+00:00",
-    "last_checkpoint_utc": "2026-11-03T19:26:26.642387+00:00",
-    "expires_utc": "2026-11-03T22:26:26.642387+00:00",
+    "last_checkpoint_utc": "2026-11-03T19:46:03.732244+00:00",
+    "expires_utc": "2026-11-03T22:46:03.732244+00:00",
     "fitting_pid": null,
     "fitting_process_start_ticks": null,
-    "work_mode": "RECOVERY_ONLY_NO_NEW_FITS",
-    "checkpoint": "RECOVERY ONLY, NO NEW FITTING. Replacement boot/start-tick incompatibility and absent original parent/workers resolve local old-process liveness; saved files/ledger preserved before ff merge.195complete receipts + source0195partial found, original manifest acknowledges192. Reconcile hashes/source matrix, archive all recovered bytes and receipts without refitting. Final fifth-call timer absent: retain observed lower bound/unclosed ledger; cannot certify remaining7200s budget. Do not invent elapsed time, reset ledger or rerun completed outputs. If cost cannot be bounded from evidence, mark EVAL BLOCKED_RUNTIME_ACCOUNTING and sequentially take independent ready W1-REAL-AUDIT."
+    "work_mode": "DOCUMENTARY_AUDIT_ONLY_NO_FITTING",
+    "checkpoint": "Independent fallback after EVAL recovery/runtime block. Audit <=2public candidate datasets: OGLE EWS and ZTF DR, primary docs/metadata only. Check time/flux units, quality, label/negative provenance, astrophysical source split/leakage and exact public-access/reuse terms. No classified telescope benchmark, no outreach/bulk data. Plan0raw curves unless individually necessary and clearly permitted; actual read scope/hashes and feasibility/NOT_RUN decision required."
   },
   "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",
   "instructions": "Before scientific work acquire and push a session lease with unique owner_id,started_utc,last_checkpoint_utc,expires_utc,task_id. Fresh foreign lease=>skip; expired lease is not proof a worker died: check liveness, never duplicate a known active process. Heartbeat/push about20min; end releases lease. No fitting in schedule setup.",
@@ -57,6 +57,19 @@
       "automation_paused": false,
       "week_finalization_trigger_not_reached": true
     },
-    "remote_pid_fields_are_stale": true
+    "remote_pid_fields_are_stale": true,
+    "resolution": "Original processes absent in replacement boot; recovered outputs preserved. Final interrupted timer remains unknown. Local liveness block superseded by runtime-accounting block."
+  },
+  "blocked_work": {
+    "W1-COV06-EVAL": {
+      "code": "BLOCKED_RUNTIME_ACCOUNTING",
+      "local_old_process_liveness_resolved": true,
+      "final_interrupted_invocation_duration_known": false,
+      "remaining_budget_certified": false,
+      "complete_sources_recovered": 195,
+      "partial_source_index": 195,
+      "no_new_fitting": true,
+      "evidence": "reports/checks/cov06_recovery_1915_preflight.json"
+    }
   }
 }

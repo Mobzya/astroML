@@ -1,0 +1,52 @@
+{
+  "status": "PASS_NUMERICAL_ONLY_RESOURCE_UNRESOLVED",
+  "resource_budget_verified": false,
+  "fitting_resume_authorized_by_this_verifier": false,
+  "phase": "evaluation",
+  "independent_sources": 195,
+  "observed_curves": 3510,
+  "selected_fit_rows": 52650,
+  "first_best_witnesses_checked": 55663,
+  "start_states_profiled": 308880,
+  "max_absolute_nll_difference": 2.7355895326763857e-12,
+  "nonconverged_selected_fits": {
+    "diagonal": 11,
+    "scale": 11,
+    "estimated": 15,
+    "legacy_estimated": 0,
+    "oracle": 19
+  },
+  "valid_method_sets": {
+    "diagonal": 3499,
+    "scale": 3499,
+    "estimated": 3495,
+    "legacy_estimated": 3510,
+    "oracle": 3491
+  },
+  "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
+  "runtime_seconds": 216.404216852,
+  "failed_legacy_endpoint_solver_metadata_mismatches": [
+    {
+      "source_id": "astroml-cov06-main-20261103-v1:620301:00000007",
+      "view": "matern_biased/gaussian/random40",
+      "family": "pspl",
+      "solver_message": "ABNORMAL: ",
+      "solver_reported_fun": -2.2032024626159696,
+      "independent_profile_nll_at_returned_x": -2.2031953818454966,
+      "absolute_difference": 7.0807704730668775e-06,
+      "selected_fit_density_still_checked": true
+    },
+    {
+      "source_id": "astroml-cov06-main-20261103-v1:620302:00000144",
+      "view": "ou_biased/gaussian/complete",
+      "family": "pspl",
+      "solver_message": "ABNORMAL: ",
+      "solver_reported_fun": -46.981378769502456,
+      "independent_profile_nll_at_returned_x": -46.97826247921192,
+      "absolute_difference": 0.003116290290535062,
+      "selected_fit_density_still_checked": true
+    }
+  ],
+  "classification_metrics_computed": false,
+  "full_intermediate_parameters_verified": false
+}
