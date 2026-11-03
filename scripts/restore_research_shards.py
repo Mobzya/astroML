@@ -3,6 +3,8 @@
 import argparse
 import hashlib
 import json
+from contextlib import ExitStack
+from io import BytesIO
 from pathlib import Path
 from zipfile import ZipFile
 
@@ -34,7 +36,12 @@ def main():
     args.output.mkdir(parents=True)
     for part in index["artifacts"]:
         assert sha(Path(part["path"]).read_bytes()) == part["sha256"], part["path"]
-        with ZipFile(part["path"]) as z:
+        with ExitStack() as stack:
+            z = stack.enter_context(ZipFile(part["path"]))
+            if index.get("shard_container") == "solid-zip-v1":
+                assert z.namelist() == ["payload.zip"]
+                assert z.getinfo("payload.zip").file_size <= 64 * 1024 * 1024
+                z = stack.enter_context(ZipFile(BytesIO(z.read("payload.zip"))))
             for name in z.namelist():
                 path = Path(name)
                 assert not path.is_absolute() and ".." not in path.parts

@@ -5,7 +5,7 @@ import hashlib
 import json
 from io import BytesIO
 from pathlib import Path
-from zipfile import ZIP_LZMA, ZipFile, ZipInfo
+from zipfile import ZIP_LZMA, ZIP_STORED, ZipFile, ZipInfo
 
 
 def digest(raw):
@@ -37,19 +37,24 @@ def main():
         path = shard_root / f"{a.label}-{offset:04d}-{offset + len(names) - 1:04d}.zip"
         files = [file for name in names for file in [name, "truth/" + name]]
         if path.exists():
-            with ZipFile(path) as z:
+            with ZipFile(path) as outer, ZipFile(BytesIO(outer.read("payload.zip"))) as z:
                 assert set(z.namelist()) == set(files)
                 for file in files:
                     assert digest(z.read(file)) == m["sha256"][file]
             data = path.read_bytes()
             reused = True
         else:
-            stream = BytesIO()
-            with ZipFile(stream, "w", ZIP_LZMA) as z:
+            inner = BytesIO()
+            with ZipFile(inner, "w", ZIP_STORED) as z:
                 for file in files:
                     info = ZipInfo(file, date_time=(1980, 1, 1, 0, 0, 0))
-                    info.compress_type = ZIP_LZMA
+                    info.compress_type = ZIP_STORED
                     z.writestr(info, (a.run / file).read_bytes())
+            stream = BytesIO()
+            with ZipFile(stream, "w", ZIP_LZMA) as z:
+                info = ZipInfo("payload.zip", date_time=(1980, 1, 1, 0, 0, 0))
+                info.compress_type = ZIP_LZMA
+                z.writestr(info, inner.getvalue())
             data = stream.getvalue()
             reused = False
         assert len(data) <= m["config"]["compressed_shard_cap_bytes"]
@@ -66,7 +71,8 @@ def main():
         "manifest_sha256": digest(raw),
         "artifacts": [],
         "total_compressed_bytes": total,
-        "zip_compression": "LZMA lossless",
+        "zip_compression": "LZMA lossless solid block over inner ZIP_STORED",
+        "shard_container": "solid-zip-v1",
         "reused_existing_shards": sum(g[3] for g in groups),
     }
     for path, data, names, reused in groups:

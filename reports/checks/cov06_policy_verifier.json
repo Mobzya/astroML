@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "independent_calibration_sources": 240,
+  "methods": {
+    "diagonal": {
+      "threshold": 2.5787273940060236,
+      "false_positives_of_480_dependent_calibration_views": 24,
+      "always_negative": false
+    },
+    "scale": {
+      "threshold": -1.6526096153630474,
+      "false_positives_of_480_dependent_calibration_views": 24,
+      "always_negative": false
+    },
+    "estimated": {
+      "threshold": -2.6478470345959972,
+      "false_positives_of_480_dependent_calibration_views": 24,
+      "always_negative": false
+    },
+    "legacy_estimated": {
+      "threshold": 70.91541487583147,
+      "false_positives_of_480_dependent_calibration_views": 24,
+      "always_negative": false
+    },
+    "oracle": {
+      "threshold": -3.264474012608502,
+      "false_positives_of_480_dependent_calibration_views": 24,
+      "always_negative": false
+    }
+  },
+  "policy_sha256": "4028b7244b45b96ec3b350bcc9309ae830c66da1cbd3f0b21b0ff196a13c86a0",
+  "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
+  "empirical_not_population_fpr_guarantee": true,
+  "evaluation_or_truth_used": false
+}

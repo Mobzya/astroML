@@ -1,0 +1,732 @@
+{
+  "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
+  "code_sha": "b6af9117ae16506326c9ed880221a1e6d56c0680",
+  "independent_sources": 240,
+  "manifest_path": "reports/covariance06/calibration/run_manifest.json",
+  "manifest_sha256": "e29a5c0fd631402d5122b9435c347d10d2b59c14244ea5c895082e866889b5f8",
+  "artifacts": [
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0000-0003.zip",
+      "sha256": "0047472c4c64db4af05fd346be8fe3df3a3bdbaaddabbe5c24e566947a631455",
+      "bytes": 127856,
+      "source_files": [
+        "source-0000.json",
+        "source-0001.json",
+        "source-0002.json",
+        "source-0003.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0004-0007.zip",
+      "sha256": "4029ae14bc4301d4377d4f7e5996d67b82e7e9b04c21734763d44b692d42b498",
+      "bytes": 129780,
+      "source_files": [
+        "source-0004.json",
+        "source-0005.json",
+        "source-0006.json",
+        "source-0007.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0008-0011.zip",
+      "sha256": "ec2806d5f3a8321ca6ca7c495e102d2e887f8e8f96016e0c6725197740a0dd72",
+      "bytes": 131136,
+      "source_files": [
+        "source-0008.json",
+        "source-0009.json",
+        "source-0010.json",
+        "source-0011.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0012-0015.zip",
+      "sha256": "99162250e94fd76db81acb9310c5d38dbd8bd62c61a5753e1411f5df1231c19c",
+      "bytes": 133358,
+      "source_files": [
+        "source-0012.json",
+        "source-0013.json",
+        "source-0014.json",
+        "source-0015.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0016-0019.zip",
+      "sha256": "570704ef4d86d518d1e2f5c0d4a4136cca7c230a4653d61a761bb12860b60912",
+      "bytes": 127983,
+      "source_files": [
+        "source-0016.json",
+        "source-0017.json",
+        "source-0018.json",
+        "source-0019.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0020-0023.zip",
+      "sha256": "51e6495b99c32a92cca12bfcf41341822963bd1e0ac775ec048b3d1b6a9162ba",
+      "bytes": 132438,
+      "source_files": [
+        "source-0020.json",
+        "source-0021.json",
+        "source-0022.json",
+        "source-0023.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0024-0027.zip",
+      "sha256": "21b7c86b31cebd78c3291288e8a2f4505ddfe0c940b8c40ae5afed1ba2cdb18c",
+      "bytes": 125024,
+      "source_files": [
+        "source-0024.json",
+        "source-0025.json",
+        "source-0026.json",
+        "source-0027.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0028-0031.zip",
+      "sha256": "8d1bd37db2d850ab7866ef26d56cfa5eb30a9fb48929759e1ce293b00234abc6",
+      "bytes": 128690,
+      "source_files": [
+        "source-0028.json",
+        "source-0029.json",
+        "source-0030.json",
+        "source-0031.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0032-0035.zip",
+      "sha256": "620e9871609805b50dd576f2ded03590dbb337b92160822d621d4f53da01d6ae",
+      "bytes": 129943,
+      "source_files": [
+        "source-0032.json",
+        "source-0033.json",
+        "source-0034.json",
+        "source-0035.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0036-0039.zip",
+      "sha256": "1c2cb530f5f18812fcf64d9337daffaaf2cb85df706486b5a531a8e2066a796a",
+      "bytes": 130928,
+      "source_files": [
+        "source-0036.json",
+        "source-0037.json",
+        "source-0038.json",
+        "source-0039.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0040-0043.zip",
+      "sha256": "1f1ffe00b705ac3c3c149e82ddccd649cdf1a90be4735402c731a32d84a9b580",
+      "bytes": 129738,
+      "source_files": [
+        "source-0040.json",
+        "source-0041.json",
+        "source-0042.json",
+        "source-0043.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0044-0047.zip",
+      "sha256": "f01b56fec9cb4d478aa236f5f4fdd8abc171c0ce3a807b36fb53349683c0af4e",
+      "bytes": 132265,
+      "source_files": [
+        "source-0044.json",
+        "source-0045.json",
+        "source-0046.json",
+        "source-0047.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0048-0051.zip",
+      "sha256": "2e32ac8df4c7f7c6b73226ae63edbbd79d5e23451d252087eaef75e164940aab",
+      "bytes": 127766,
+      "source_files": [
+        "source-0048.json",
+        "source-0049.json",
+        "source-0050.json",
+        "source-0051.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0052-0055.zip",
+      "sha256": "efe0bc67844dd5d968a270dd2b2ec41719841847c16c9c39bed63cb6c87e30a6",
+      "bytes": 131215,
+      "source_files": [
+        "source-0052.json",
+        "source-0053.json",
+        "source-0054.json",
+        "source-0055.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0056-0059.zip",
+      "sha256": "78786749f79817efb602cb660923eb51bb829b8db194b322e148f366d7277bf5",
+      "bytes": 134790,
+      "source_files": [
+        "source-0056.json",
+        "source-0057.json",
+        "source-0058.json",
+        "source-0059.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0060-0063.zip",
+      "sha256": "45fa42cb6dfb5bfc3a19a2c5dc9b8c504d1720cce4de904934d60e9e4bb139c8",
+      "bytes": 128434,
+      "source_files": [
+        "source-0060.json",
+        "source-0061.json",
+        "source-0062.json",
+        "source-0063.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0064-0067.zip",
+      "sha256": "1de42d82a33d396a8a41b138918d2dbb6a65fa70736bee2add6b5d8bb19fb110",
+      "bytes": 130946,
+      "source_files": [
+        "source-0064.json",
+        "source-0065.json",
+        "source-0066.json",
+        "source-0067.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0068-0071.zip",
+      "sha256": "08691062bfc855aa425728927bbbb8acbe2f80738920f6f331d5bf289acce4b5",
+      "bytes": 133544,
+      "source_files": [
+        "source-0068.json",
+        "source-0069.json",
+        "source-0070.json",
+        "source-0071.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0072-0075.zip",
+      "sha256": "bcfacf05d3a1f30d0f52492de8fb2cbb6f6afd316df92767b0e2d61cc72c2f37",
+      "bytes": 126278,
+      "source_files": [
+        "source-0072.json",
+        "source-0073.json",
+        "source-0074.json",
+        "source-0075.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0076-0079.zip",
+      "sha256": "bb9e55e2f8cf26a0ba3666f07363ce083a5069434ad2b531699f9c16fa92d3ce",
+      "bytes": 126672,
+      "source_files": [
+        "source-0076.json",
+        "source-0077.json",
+        "source-0078.json",
+        "source-0079.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0080-0083.zip",
+      "sha256": "35384251b7f146261a69c596ca9392bcdcfcd703d250aec78b8850d6cb2cb19c",
+      "bytes": 129668,
+      "source_files": [
+        "source-0080.json",
+        "source-0081.json",
+        "source-0082.json",
+        "source-0083.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0084-0087.zip",
+      "sha256": "701ae730c5710e5cfc8745390a6154f0fb97d34b8a520f08f4eda207fbd20cea",
+      "bytes": 128696,
+      "source_files": [
+        "source-0084.json",
+        "source-0085.json",
+        "source-0086.json",
+        "source-0087.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0088-0091.zip",
+      "sha256": "5f35a9f4f5c7ff9f31377618e37c418acf518b4b9c0267ec6d6a0f10059d4f1a",
+      "bytes": 131275,
+      "source_files": [
+        "source-0088.json",
+        "source-0089.json",
+        "source-0090.json",
+        "source-0091.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0092-0095.zip",
+      "sha256": "4fa76f7561603d7848e0a738fc60154566bf451f2f5a95237bd893d880f7af88",
+      "bytes": 133667,
+      "source_files": [
+        "source-0092.json",
+        "source-0093.json",
+        "source-0094.json",
+        "source-0095.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0096-0099.zip",
+      "sha256": "9b8d1de60e28114cd65ea047af453f4d90e416fc33918e10b7c2a034286f19d0",
+      "bytes": 128878,
+      "source_files": [
+        "source-0096.json",
+        "source-0097.json",
+        "source-0098.json",
+        "source-0099.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0100-0103.zip",
+      "sha256": "8da2ed9391c0c64c10c44ab8d97b3528dc4205a8dd77c96bd8ba030309e973fb",
+      "bytes": 132829,
+      "source_files": [
+        "source-0100.json",
+        "source-0101.json",
+        "source-0102.json",
+        "source-0103.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0104-0107.zip",
+      "sha256": "870542867acb646f0f1b71b12d4fa0ba09a3b08bed3088ef876062820e6bae4a",
+      "bytes": 129757,
+      "source_files": [
+        "source-0104.json",
+        "source-0105.json",
+        "source-0106.json",
+        "source-0107.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0108-0111.zip",
+      "sha256": "29aea66a3db8aa3ca503283f722cec5b02279805929f658e117cf5006918d49e",
+      "bytes": 128744,
+      "source_files": [
+        "source-0108.json",
+        "source-0109.json",
+        "source-0110.json",
+        "source-0111.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0112-0115.zip",
+      "sha256": "d4f75701091d0b42899a2556732addff24cfb2fed0ab29e0cef8c37d748b426c",
+      "bytes": 132185,
+      "source_files": [
+        "source-0112.json",
+        "source-0113.json",
+        "source-0114.json",
+        "source-0115.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0116-0119.zip",
+      "sha256": "98c84e2c663c634d16c6ade5cde58f6f2f5c279155d4fafa3826ccba64111ba6",
+      "bytes": 130010,
+      "source_files": [
+        "source-0116.json",
+        "source-0117.json",
+        "source-0118.json",
+        "source-0119.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0120-0123.zip",
+      "sha256": "b7a30c2e7467d1c18dd6d89af9eefdf57b265c250e30618991560e27aeae6534",
+      "bytes": 132092,
+      "source_files": [
+        "source-0120.json",
+        "source-0121.json",
+        "source-0122.json",
+        "source-0123.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0124-0127.zip",
+      "sha256": "21614135fad4a417712041bd6aa4b4ea5969a5be44ae9507ac86e2fba5c857c2",
+      "bytes": 140522,
+      "source_files": [
+        "source-0124.json",
+        "source-0125.json",
+        "source-0126.json",
+        "source-0127.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0128-0131.zip",
+      "sha256": "e804a7b743afd09d9004fd48e68bce4e8b1d1cbf3f616d5f7291b26cbd0233cf",
+      "bytes": 131551,
+      "source_files": [
+        "source-0128.json",
+        "source-0129.json",
+        "source-0130.json",
+        "source-0131.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0132-0135.zip",
+      "sha256": "cd9e12f398e967ab7b69ae1b7e7adcf3e492a7a27b9da52ad6a59d36f3cbbbc6",
+      "bytes": 129438,
+      "source_files": [
+        "source-0132.json",
+        "source-0133.json",
+        "source-0134.json",
+        "source-0135.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0136-0139.zip",
+      "sha256": "32023ae30b16ea1f41020ea24d63e425cf9c45bc986b984a175dc4a23f5b24fc",
+      "bytes": 132714,
+      "source_files": [
+        "source-0136.json",
+        "source-0137.json",
+        "source-0138.json",
+        "source-0139.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0140-0143.zip",
+      "sha256": "b8592c882b9e8efc0184318418c18a73a170c0c6b12c00a81cb02d941f9dffdd",
+      "bytes": 128445,
+      "source_files": [
+        "source-0140.json",
+        "source-0141.json",
+        "source-0142.json",
+        "source-0143.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0144-0147.zip",
+      "sha256": "9b7ee9ea5a9b69c4e397b5674d53f0a0c16192b6f5ad5c79bf23c7390cdd66fa",
+      "bytes": 128617,
+      "source_files": [
+        "source-0144.json",
+        "source-0145.json",
+        "source-0146.json",
+        "source-0147.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0148-0151.zip",
+      "sha256": "73c014970ad0ce4c172aed51126e81287db3f2174f06e8ab0fc83dd45c80dc32",
+      "bytes": 132023,
+      "source_files": [
+        "source-0148.json",
+        "source-0149.json",
+        "source-0150.json",
+        "source-0151.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0152-0155.zip",
+      "sha256": "e6671682c2b982a8173e95572f83fcb9983b314f024b237c637a44cb62270d2c",
+      "bytes": 132662,
+      "source_files": [
+        "source-0152.json",
+        "source-0153.json",
+        "source-0154.json",
+        "source-0155.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0156-0159.zip",
+      "sha256": "c36983adf7b45f11edcdc5b6152745702f4e6112ac5184b479bd0504def3cea4",
+      "bytes": 133046,
+      "source_files": [
+        "source-0156.json",
+        "source-0157.json",
+        "source-0158.json",
+        "source-0159.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0160-0163.zip",
+      "sha256": "30c11a68e31e1399368b15fa07eb82bdbbd04e750b6027cd2cf3ae2f6fa58627",
+      "bytes": 127387,
+      "source_files": [
+        "source-0160.json",
+        "source-0161.json",
+        "source-0162.json",
+        "source-0163.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0164-0167.zip",
+      "sha256": "faaed6dd562f66be9bfc9942a11483da6dad0396348f3b2e9d1f17123095f2bd",
+      "bytes": 129190,
+      "source_files": [
+        "source-0164.json",
+        "source-0165.json",
+        "source-0166.json",
+        "source-0167.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0168-0171.zip",
+      "sha256": "c80b5cfda6588f99ee4a148bd4619401b0a0208b376dbc061a37689c65cd9a33",
+      "bytes": 131993,
+      "source_files": [
+        "source-0168.json",
+        "source-0169.json",
+        "source-0170.json",
+        "source-0171.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0172-0175.zip",
+      "sha256": "670da417475bcec7546bcd41a03c653c0d4798baec070d62bf36a419220a09bb",
+      "bytes": 131126,
+      "source_files": [
+        "source-0172.json",
+        "source-0173.json",
+        "source-0174.json",
+        "source-0175.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0176-0179.zip",
+      "sha256": "8447a21d184ec558d8d92bc7ab8d485a125a8e68af30a38c445a208bda824516",
+      "bytes": 132221,
+      "source_files": [
+        "source-0176.json",
+        "source-0177.json",
+        "source-0178.json",
+        "source-0179.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0180-0183.zip",
+      "sha256": "b5a9481a62ede9a86599bafc69f32ec8778d9dfe89c25b2ce04c95a9b40d5b46",
+      "bytes": 129109,
+      "source_files": [
+        "source-0180.json",
+        "source-0181.json",
+        "source-0182.json",
+        "source-0183.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0184-0187.zip",
+      "sha256": "d55b82b6b4725ad44be45b01242502a64cc6ae113fee3f8b1da1018e2d5c8cd0",
+      "bytes": 130793,
+      "source_files": [
+        "source-0184.json",
+        "source-0185.json",
+        "source-0186.json",
+        "source-0187.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0188-0191.zip",
+      "sha256": "884ff5730a340587d7be042be83aa184ed9af77e827831307ae91a98e50f8553",
+      "bytes": 127297,
+      "source_files": [
+        "source-0188.json",
+        "source-0189.json",
+        "source-0190.json",
+        "source-0191.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0192-0195.zip",
+      "sha256": "f9122172e42f054d98970d7f136662529b68771547dc39ae6604b6d88a138913",
+      "bytes": 132945,
+      "source_files": [
+        "source-0192.json",
+        "source-0193.json",
+        "source-0194.json",
+        "source-0195.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0196-0199.zip",
+      "sha256": "b33a394898da013cd20752065068e23de74d4f0cadf8345125cd58f8692a8c67",
+      "bytes": 131154,
+      "source_files": [
+        "source-0196.json",
+        "source-0197.json",
+        "source-0198.json",
+        "source-0199.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0200-0203.zip",
+      "sha256": "9d42a49192caeac9fccd057df4a87740f0526607df3f5f3b88094c889148aef5",
+      "bytes": 133247,
+      "source_files": [
+        "source-0200.json",
+        "source-0201.json",
+        "source-0202.json",
+        "source-0203.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0204-0207.zip",
+      "sha256": "5b9adaea25274d001cebdf09755c19dd23025279c1b9cd6069b214ab82bfadfb",
+      "bytes": 127726,
+      "source_files": [
+        "source-0204.json",
+        "source-0205.json",
+        "source-0206.json",
+        "source-0207.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0208-0211.zip",
+      "sha256": "fd96ce105335e053aad21a72cac9de4a426b31b6f32359d20bbd3e69e02e55a6",
+      "bytes": 129992,
+      "source_files": [
+        "source-0208.json",
+        "source-0209.json",
+        "source-0210.json",
+        "source-0211.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0212-0215.zip",
+      "sha256": "b4deba688229a039fd79e9e6ee3b90bdbddf78584add9c08dfddd24881ce742c",
+      "bytes": 134505,
+      "source_files": [
+        "source-0212.json",
+        "source-0213.json",
+        "source-0214.json",
+        "source-0215.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0216-0219.zip",
+      "sha256": "da2fdd8a11c75e57d0ecc23482d3800937134d01f6a391105cd381e922005aeb",
+      "bytes": 131431,
+      "source_files": [
+        "source-0216.json",
+        "source-0217.json",
+        "source-0218.json",
+        "source-0219.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0220-0223.zip",
+      "sha256": "03910fc1b5dc6b3b4bae40c8f0ad41095c06dbfec6c7182021d56d7c4bec761e",
+      "bytes": 128232,
+      "source_files": [
+        "source-0220.json",
+        "source-0221.json",
+        "source-0222.json",
+        "source-0223.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0224-0227.zip",
+      "sha256": "66c9677c596c03be29c8c2ee37df1e4d4ff0624add59c71ffbd184ce0f095313",
+      "bytes": 129460,
+      "source_files": [
+        "source-0224.json",
+        "source-0225.json",
+        "source-0226.json",
+        "source-0227.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0228-0231.zip",
+      "sha256": "b3cf5a4e653c42239d56fe68727f5bd8a78d0bc4861e592383611bf62ff87e3f",
+      "bytes": 129501,
+      "source_files": [
+        "source-0228.json",
+        "source-0229.json",
+        "source-0230.json",
+        "source-0231.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0232-0235.zip",
+      "sha256": "768cde4a12e52fc53008ac87d4eb9aff955157013526f163b3be6a6a9f94dd5a",
+      "bytes": 130129,
+      "source_files": [
+        "source-0232.json",
+        "source-0233.json",
+        "source-0234.json",
+        "source-0235.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/calibration-shards/cov06-calibration-v1-0236-0239.zip",
+      "sha256": "c76c68be8733cf32fe224456de0a50c868dd9ff00c064ed8fa8738074276dafa",
+      "bytes": 131794,
+      "source_files": [
+        "source-0236.json",
+        "source-0237.json",
+        "source-0238.json",
+        "source-0239.json"
+      ],
+      "independent_sources": 4
+    }
+  ],
+  "total_compressed_bytes": 7834835,
+  "zip_compression": "LZMA lossless",
+  "reused_existing_shards": 0
+}

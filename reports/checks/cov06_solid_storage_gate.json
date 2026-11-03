@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "old_per_file_lzma_bytes": 7834835,
+  "solid_lzma_bytes": 7068456,
+  "all_raw_json_bytes_unchanged": true,
+  "data_files_restored": 480,
+  "conservative_complete_curve_evaluation_extrapolation_bytes": 47712078.0,
+  "phase_cap_bytes": 52428800,
+  "storage_only_change_core_scientific_fingerprint_unchanged": true,
+  "calibration_archive_kept_original_format": true,
+  "evaluation_archive_format": "solid-zip-v1"
+}

@@ -19,3 +19,7 @@
 Последовательно в этом чате: выбранные первичные likelihood/GP/ML/BIC разделы и code snapshots; новые protocols/generator/runners/calibration/evaluation; R2 и COV05 fits; независимые numerical/metric/CI verifiers, feasible-point oracle diagnostics, negative controls; опубликованные raw shards/версии/hashes; отчёты и черновик рукописи. Все выводы относятся к ограниченным синтетическим опытам. Это вклад инструмента, не доказательство, что участник лично выполнил эти действия.
 
 Личные задания из списка выше не зарегистрированы как выполненные. Следующий конкретный шаг: клонировать GitHub, восстановить COV05 и запустить verifier по README, затем добавить собственную датированную заметку с объяснением одного false positive и различий FPR/recall/coverage. Нельзя подписывать сгенерированный текст как полностью самостоятельный без фактической переработки и понимания; правила раскрытия ИИ организаторами отдельно не подтверждены.
+
+## 03.11.2026 — новая недельная кампания, помощь Codex
+
+Codex последовательно выполнил selected-source numerical diagnosis, observation-only COV06-A/scale-only design, новый24source development+independent verifier, main/stress protocols,12source runner smoke/restore/controls,240source calibration и независимый freeze. Код/протоколы/вычисления/тексты созданы с помощью ИИ; это не личный вклад ученика. Основная evaluation и её выводы на этом checkpoint ещё не завершены; личные учебные задания не отмечались выполненными.

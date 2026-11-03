@@ -2,7 +2,7 @@
 
 Исследовательский проект для **«Шага в будущее», секция «Системы обработки информации», ИУ5**. Регистрация не подтверждена. Изучаем PSPL-подобные фотометрические сигналы: как пропуски и неверная модель шума меняют ложные тревоги и пропущенные события.
 
-**02.11.2026: ограниченное синтетическое исследование завершено.** Получены два новых проверенных опыта и отрицательный результат covariance-прототипа. Подготовлен черновик рукописи. Это не оценка реального телескопного обзора и не подтверждение самостоятельной готовности участника к защите.
+**02.11.2026: baseline синтетическое исследование завершено.** Получены два новых проверенных опыта и отрицательный результат covariance-прототипа. Подготовлен черновик рукописи. Это не оценка реального телескопного обзора и не подтверждение самостоятельной готовности участника к защите.
 
 - **[Рукопись с формулами, результатами и источниками](defense/manuscript.md)**
 - **[Итоговый handoff: что доказано, как продолжить](reports/research_handoff.md)**
@@ -11,9 +11,9 @@
 
 ## Новая недельная кампания
 
-02.11 владелец разрешил продолжение на03–09ноября: **[план недели](research/WEEK_PLAN_2026-11-03.md)**, [очередь с зависимостями](research/task_queue.json). Цель — исправление optimizer, scale-only ablation, новые независимые COV06/stress данные и обновление рукописи. Старые результаты ниже остаются неизменными; новые пока PLANNED. Последовательный режим в этом чате,21 окно каждые8часов,120min target; фактическое подтверждение включения — [STATUS](research/STATUS.md). Лимиты аккаунта не видны, выполнение всех окон не гарантируется.
+02.11 владелец разрешил продолжение на03–09ноября: **[план недели](research/WEEK_PLAN_2026-11-03.md)**, [очередь с зависимостями](research/task_queue.json). Цель — исправление optimizer, scale-only ablation, новые независимые COV06/stress данные и обновление рукописи. Старые результаты ниже остаются неизменными; новый основной outcome ещё не измерен. Последовательный режим в этом чате,21 окно каждые8часов,120min target; фактическое подтверждение включения — [STATUS](research/STATUS.md). Лимиты аккаунта не видны, выполнение всех окон не гарантируется.
 
-Новая неделя03.11: [development pilot](reports/cov06_development.md) на24sources/219.16s завершён; [independent numerical verification](reports/cov06_numerical_validation.md) проверила2304fits/57304improvement points. Это проверка вычислений, не новые AUC/FPR и не main evaluation. Следующий gate — заранее сохранённые main/stress protocols и CPU pilot.
+Новая неделя03.11: [development pilot](reports/cov06_development.md) на24sources/219.16s завершён; [independent numerical verification](reports/cov06_numerical_validation.md) проверила2304fits/57304improvement points. Это проверка вычислений, не новые AUC/FPR и не main evaluation. Main/stress protocols и [12-source runner smoke](reports/cov06_pilot.md) завершены. [Calibration240sources/frozen policy](reports/covariance06/calibration_freeze.md) проверена; новая evaluation начинается после успешного freeze push.
 
 ## Два результата
 
@@ -97,4 +97,4 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/verify_covariance05.py a
 
 Лицензия кода пока не назначена. Публичность не означает произвольное разрешение повторного использования; у сторонних источников собственные условия. Секреты, персональные документы и чужие полные тексты не публикуются.
 
-03.11 COV06 runner smoke: [12-source pilot](reports/cov06_pilot.md), [independent verifier](reports/checks/cov06_pilot_verifier.json), [immutable raw shards](reports/covariance06/pilot/complete/artifacts.json). Main calibration follows; classification results are not yet available.
+

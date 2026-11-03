@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "W1-COV06-CAL",
-  "next_task_id": "W1-COV06-CAL",
+  "current_task_id": "W1-COV06-EVAL",
+  "next_task_id": "W1-COV06-EVAL",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -333,7 +333,7 @@
     {
       "id": "W1-COV06-CAL",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Сгенерировать только новую calibration, заморозить policy и отправить в GitHub",
       "depends_on": [
         "W1-COV06-PILOT"
@@ -347,12 +347,13 @@
       "next_action": "Run bounded resumable calibration; failure=>checkpoint, never silently drop sources. Store compact verified shards using authorized Git if Releases assets unavailable.",
       "target_day": "2026-11-05",
       "started_at_utc": "2026-11-03T04:32:01.325109+00:00",
-      "checkpoint": "Calibration live: 176/240sources complete; preserve current PID, do not start second process. Pre-evaluation statistics+independent weighted verifier implemented,38unit tests PASS on fixtures; no evaluation observations. Finish numerical verification/archive/frozen global policy next."
+      "checkpoint": "240cal sources/960curves/14400fits complete in815.832s/2calls. Independent numerical15313witnesses/84480start states,maxNLL2.27e-12 PASS;480files restored;5empirical thresholds independently frozen,policy SHA4028b724. Raw7.83MB shards saved. Lossless solid encoding tested on480same files before eval, conservative47.71MB projection<50MiB. No evaluation generated at freeze; successful policy push required next.",
+      "completed_at_utc": "2026-11-03T04:52:19.166561+00:00"
     },
     {
       "id": "W1-COV06-EVAL",
       "campaign_id": "week-2026-11-03-09",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Выполнить одну frozen independent COV06 evaluation с возобновляемыми batches",
       "depends_on": [
         "W1-COV06-CAL"
@@ -363,7 +364,9 @@
       ],
       "acceptance": "Same frozen code/policy; new source-disjoint evaluation, all seeds/negative results/start failures. Completed batches never rerun; matching clean/dirty+versions checks on resume, only one live fitting process. Complete raw observations/fits and separate truth restored from Git; no tuning after opening.",
       "next_action": "Generate after policy push; cap calls/checkpoint between batches; before each compute segment confirm persistent storage and available runtime.",
-      "target_day": "2026-11-05"
+      "target_day": "2026-11-05",
+      "started_at_utc": "2026-11-03T04:52:19.166561+00:00",
+      "checkpoint": "AFTER successful freeze push, generate first bounded evaluation batches only:360new source-disjoint units, frozen0052cec5 code/config+policy4028b724,5arms/18views perunit. Keep2workers/1BLAS,4source batches,900s call/7200s cumulative cap; preserve partial outputs/shards, no interim classifier metric selection/tuning. About20min left in session, leave time for raw archive/verification/lease release."
     },
     {
       "id": "W1-COV06-VERIFY",
