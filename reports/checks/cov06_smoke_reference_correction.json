@@ -1,0 +1,10 @@
+{
+  "phase": "development-only runner smoke",
+  "initial_independent_start_profiler": "FAIL: unscaled reference least-squares dropped tiny nonzero Gaussian column",
+  "initial_absolute_discrepancy": 4.01447137,
+  "correction": "positive maximum-absolute column rescaling in independent active-set enumeration; no fitter, observation, policy, bounds or candidate change",
+  "regression_test": "tests/test_covariance06_reference.py::test_reference_profile_tiny_column",
+  "corrected_partial_verifier": "reports/checks/cov06_smoke_partial_verifier.json",
+  "initial_failed_verification_wall_seconds": 0.867193827,
+  "corrected_verification_wall_seconds": 3.3632418179986416
+}

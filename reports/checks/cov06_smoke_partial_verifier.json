@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "phase": "pilot",
+  "independent_sources": 4,
+  "observed_curves": 72,
+  "selected_fit_rows": 1080,
+  "first_best_witnesses_checked": 1147,
+  "start_states_profiled": 6336,
+  "max_absolute_nll_difference": 6.821210263296962e-13,
+  "nonconverged_selected_fits": {
+    "diagonal": 0,
+    "scale": 0,
+    "estimated": 0,
+    "legacy_estimated": 0,
+    "oracle": 0
+  },
+  "valid_method_sets": {
+    "diagonal": 72,
+    "scale": 72,
+    "estimated": 72,
+    "legacy_estimated": 72,
+    "oracle": 72
+  },
+  "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
+  "runtime_seconds": 3.3632418179986416,
+  "classification_metrics_computed": false,
+  "full_intermediate_parameters_verified": false
+}

@@ -1,0 +1,22 @@
+{
+  "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
+  "code_sha": "85f59bc2db97c744ab2ef74411feaf80a534eafa",
+  "independent_sources": 4,
+  "manifest_path": "reports/covariance06/pilot/checkpoint-0004/run_manifest.json",
+  "manifest_sha256": "c7b86841c6905fbcec75e815bf6b30d081ab5e8c82a03dcf501fe75590562212",
+  "artifacts": [
+    {
+      "path": "reports/covariance06/pilot/checkpoint-0004/cov06-smoke-v1-0000-0003.zip",
+      "sha256": "bf7f7bb4e527fa4e992312c51c4039450feec5e1ad6e5464f1ae98770dae2b99",
+      "bytes": 778407,
+      "source_files": [
+        "source-0000.json",
+        "source-0001.json",
+        "source-0002.json",
+        "source-0003.json"
+      ],
+      "independent_sources": 4
+    }
+  ],
+  "total_compressed_bytes": 778407
+}

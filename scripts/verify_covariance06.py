@@ -66,6 +66,9 @@ def profiled_nll(t, y, family, shape, c):
     lower = cholesky(c, lower=True)
     x = solve_triangular(lower, design(t, family, shape), lower=True)
     wy = solve_triangular(lower, y, lower=True)
+    maximum = np.max(abs(x), axis=0)
+    active = maximum > 0
+    x = x[:, active] / maximum[active]
     candidates = [np.zeros(x.shape[1])]
     beta = np.linalg.lstsq(x, wy, rcond=None)[0]
     if np.all(beta >= 0):
@@ -308,7 +311,13 @@ def verify(run, allow_partial=False):
                             cstart = theta_cov(t, sigma, mode, theta, dim, oracle)
                             check = profiled_nll(t, y, family, theta[:dim], cstart)
                             # No independent KKT claim for discarded non-selected states.
-                            np.testing.assert_allclose(check, value, atol=1e-7, rtol=1e-9)
+                            np.testing.assert_allclose(
+                                check,
+                                value,
+                                atol=1e-7,
+                                rtol=1e-9,
+                                err_msg=f"{record['source_id']} {row['key']} {mode} {family} {prefix}",
+                            )
                             endpoints += 1
                 if len(bics) == 3:
                     np.testing.assert_allclose(

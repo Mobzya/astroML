@@ -327,7 +327,7 @@
       "next_action": "Estimate main runtime; aim each indivisible batch<=15min and fit within remaining session; never launch unseen final data just to test the runner.",
       "target_day": "2026-11-04",
       "started_at_utc": "2026-11-03T04:18:16.913027+00:00",
-      "checkpoint": "Pre-data code gate:33unit tests+lint PASS; new resumable runner/logging-only legacy observer, bounded trace encoding, deterministic stress gate, independent verifier and immutable shard helper. Next run separate12source/216curve smoke in2calls to exercise restore/resume, total900s cap. No main data."
+      "checkpoint": "Smoke4/12sources saved:58.35s,72views/1080fits independent density PASS. Independent start-profiler tiny-column correction documented; scientific fingerprint unchanged. Checkpoint shards complete; restore+resume next8, no refitting4."
     },
     {
       "id": "W1-COV06-CAL",
