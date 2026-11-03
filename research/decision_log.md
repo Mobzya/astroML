@@ -146,3 +146,7 @@ EVAL120/360source clusters archived and restored (240JSONfiles); cumulative meas
 ## 2026-11-03T11:46:04.001826+00:00 — durable evaluation checkpoint
 
 EVAL176/360sources archived/restored(352files), fit-wall2569.962095s/4calls, unchanged frozen code/policy. No classification metrics or candidate/subgroup selection. Next resume remaining184sources under7200s cumulative cap; after360only full verifier/metrics stage. Immutable prior source shards reused; all observed outputs/failures preserved.
+
+## 2026-11-03T11:49:55.671180+00:00 — bounded operational continuation helper
+
+Added scripts/continue_covariance06_bounded.py for sequential frozen evaluation calls: require owner/closed process/preflight, run one call, immutable shards+restore, heartbeat/status/queue/log/report, ordinary commit+push+remoteSHA check before next call. Any ownership/push/preflight failure aborts chain; no automatic retries/new namespace. This is operational implementation, not another research task or a new scheduler; all17scientific files/config/policy remain unchanged. Helper is not yet executed at this checkpoint.
