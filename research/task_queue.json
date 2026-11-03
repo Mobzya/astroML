@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "W1-COV06-PROTOCOL",
-  "next_task_id": "W1-COV06-PROTOCOL",
+  "current_task_id": "W1-STRESS-PROTOCOL",
+  "next_task_id": "W1-STRESS-PROTOCOL",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -275,7 +275,7 @@
     {
       "id": "W1-COV06-PROTOCOL",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Зафиксировать новый COV06 experiment с сильным scale-only baseline и стоимостью",
       "depends_on": [
         "W1-OPT-VERIFY"
@@ -288,12 +288,13 @@
       "next_action": "Choose sample/budget and a single primary contrast before main observations. Any reduction of design must occur before evaluation, with reason and revised precision.",
       "target_day": "2026-11-04",
       "started_at_utc": "2026-11-03T04:08:52.871908+00:00",
-      "checkpoint": "Freeze new main hypothesis/strong scale-only comparator/sample precision/source splits/resource+storage/failure/CI policy before any calibration/evaluation; inspect only development aggregate cost/numerical output. Stress protocol must follow before main."
+      "checkpoint": "Main COV06 protocol/config fixed BEFORE main data: new3seeds240cal/360eval,5methods,strong scale-only primary vsGP, paired calibration/eval bootstrap, finite fail/resource/storage policy.6480observations,not independent views. No main generated.",
+      "completed_at_utc": "2026-11-03T04:12:47.566692+00:00"
     },
     {
       "id": "W1-STRESS-PROTOCOL",
       "campaign_id": "week-2026-11-03-09",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Заранее задать ограниченную independent robustness проверку того же frozen practical detector",
       "depends_on": [
         "W1-COV06-PROTOCOL"
@@ -304,7 +305,9 @@
       ],
       "acceptance": "Freeze before COV06 calibration/evaluation: <=6 predeclared stress cells, proposed240 independent source units/3seeds; lower SNR and controlled noise-only/flare/eclipse-like negatives, missingness/kernel shifts with clear toy semantics. New sources, inherited COV06 thresholds, no winner selection or method change after main. Mechanical generator checks on development-only fixtures and sample/cost cap specified.",
       "next_action": "Keep matrix bounded, define primary stress failure/reliability criteria and exact frozen policy transfer. Do not claim realistic telescope labels from shape alone.",
-      "target_day": "2026-11-04"
+      "target_day": "2026-11-04",
+      "started_at_utc": "2026-11-03T04:12:47.566692+00:00",
+      "checkpoint": "Define <=6 fixed robustness cells and new240-source namespace, inherited COV06 methods/policy, typed toy-negative semantics and numerical fixture checks BEFORE main data. Do not select cells from main outcomes."
     },
     {
       "id": "W1-COV06-PILOT",

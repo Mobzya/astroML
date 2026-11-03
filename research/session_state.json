@@ -4,12 +4,12 @@
   "status": "ACTIVE",
   "active_session": {
     "owner_id": "astroml-w1-deef89d7d3454356a049d9c92efc047f",
-    "task_id": "W1-COV06-PROTOCOL",
+    "task_id": "W1-STRESS-PROTOCOL",
     "started_utc": "2026-11-03T03:15:36.894282+00:00",
-    "last_checkpoint_utc": "2026-11-03T04:08:52.871908+00:00",
-    "expires_utc": "2026-11-03T07:08:52.871908+00:00",
+    "last_checkpoint_utc": "2026-11-03T04:12:47.566692+00:00",
+    "expires_utc": "2026-11-03T07:12:47.566692+00:00",
     "fitting_pid": null,
-    "checkpoint": "Freeze new main hypothesis/strong scale-only comparator/sample precision/source splits/resource+storage/failure/CI policy before any calibration/evaluation; inspect only development aggregate cost/numerical output. Stress protocol must follow before main.",
+    "checkpoint": "Define <=6 fixed robustness cells and new240-source namespace, inherited COV06 methods/policy, typed toy-negative semantics and numerical fixture checks BEFORE main data. Do not select cells from main outcomes.",
     "fitting_process_start_ticks": "5315967"
   },
   "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",

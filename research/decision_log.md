@@ -92,3 +92,7 @@ Freeze one candidate, not a broad hyperparameter search. q0 exact nested scale-o
 ### 03.11 — COV06-A independent numerical gate PASS
 
 All2304selected fits and57304saved improvements independently verified;6negative controls and full48-file restore pass.29unit tests; explicit fallback retained3diagonal/scale and1newGP fits. New feasible-point diagnostic0/192views vslegacy18/192 on fresh development only; no causal isolated-component or classifier-performance claim. Select the single predeclared candidate using numerical criteria; main/stress protocols still required before calibration/evaluation.
+
+### 03.11 — main COV06 protocol fixed before data
+
+Primary estimated-vs-scale-only OU/complete/Gaussian,FPR reduction with recall noninferiority5pp andcoverage80%; empirical5% calibration,240cal/360eval new sources.5methods including original algorithm only on fresh data and privileged oracle.6480eval observations; double bump belongs to separate pre-main frozen stress matrix. Bounded witness+scalar history storage explicitly excludes full main intermediate vectors, preserves selected fits/starts/failures;<=50MiBphase and8MiBshard gate before main. No old/new evaluation tuning.
