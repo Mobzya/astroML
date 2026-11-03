@@ -6,10 +6,10 @@
     "owner_id": "astroml-w1-deef89d7d3454356a049d9c92efc047f",
     "task_id": "W1-OPT-DEV",
     "started_utc": "2026-11-03T03:15:36.894282+00:00",
-    "last_checkpoint_utc": "2026-11-03T03:31:15.335200+00:00",
+    "last_checkpoint_utc": "2026-11-03T03:45:35.070749+00:00",
     "expires_utc": "2026-11-03T06:31:15.335200+00:00",
     "fitting_pid": null,
-    "checkpoint": "Implement new covariance06 module and bounded24-source development runner; independent unit/numerical checks first, commit clean scientific code before new development data. Do not modify old fitter or open main/evaluation."
+    "checkpoint": "COV06-A module, bounded development runner and7new/28total unit tests PASS. Commit clean implementation before24-source development data; main remains unopened."
   },
   "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",
   "instructions": "Before scientific work acquire and push a session lease with unique owner_id,started_utc,last_checkpoint_utc,expires_utc,task_id. Fresh foreign lease=>skip; expired lease is not proof a worker died: check liveness, never duplicate a known active process. Heartbeat/push about20min; end releases lease. No fitting in schedule setup."

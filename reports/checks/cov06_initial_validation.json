@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "unit/numerical implementation safeguards only; no development population data yet",
+  "unit_log": "reports/checks/cov06_initial_unit_tests.txt",
+  "new_tests": 7,
+  "total_tests": 28,
+  "source_sha256": {
+    "src/microlens/covariance06.py": "34b0e00f2a0dd4235737796f117b1c7a6410838ee79c14d62cd86855afcda3c8",
+    "tests/test_covariance06.py": "536138b8f7ea8b8220a592aa2f9446312f472f7f560c5fffbaa1b8b65d50fb7a",
+    "scripts/run_covariance06_development.py": "12b0aba97fea805ca2392bff048cceb79131aee72b2d4d0f202f357a1dfc0d6b"
+  },
+  "recorded_utc": "2026-11-03T03:45:35.070749+00:00"
+}

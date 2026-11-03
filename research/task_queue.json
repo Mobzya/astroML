@@ -250,7 +250,7 @@
       "next_action": "Implement observation-only initialization and scale-only; profile/report full NLL; no generation of main calibration/evaluation.",
       "target_day": "2026-11-03",
       "started_at_utc": "2026-11-03T03:31:15.335200+00:00",
-      "checkpoint": "Implement new covariance06 module and bounded24-source development runner; independent unit/numerical checks first, commit clean scientific code before new development data. Do not modify old fitter or open main/evaluation."
+      "checkpoint": "COV06-A module, bounded development runner and7new/28total unit tests PASS. Commit clean implementation before24-source development data; main remains unopened."
     },
     {
       "id": "W1-OPT-VERIFY",
