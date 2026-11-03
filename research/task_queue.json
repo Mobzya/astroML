@@ -366,7 +366,7 @@
       "next_action": "Generate after policy push; cap calls/checkpoint between batches; before each compute segment confirm persistent storage and available runtime.",
       "target_day": "2026-11-05",
       "started_at_utc": "2026-11-03T04:52:19.166561+00:00",
-      "checkpoint": "Evaluation live 32/360source units, one known fitting parent; do not start second process. Freeze continuity17files/Git objects/version/policy PASS. No interim classifier metrics. On call close archive raw completed clusters, then small continuation only if enough time; final save/release own lease about05:15UTC."
+      "checkpoint": "Evaluation60/360sources closed first call811.666s;1080curves/16200mean-output records saved in immutable solid shards,120JSONfiles restored. Still IN_PROGRESS, numerical full/subset check not yet run and no classification metrics. After successful checkpoint push, run only2more batches(8sources), then final numerical subset verification/archive/lease release within session."
     },
     {
       "id": "W1-COV06-VERIFY",

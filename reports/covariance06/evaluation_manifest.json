@@ -1,0 +1,24 @@
+{
+  "status": "PARTIAL_CHECKPOINT",
+  "expected_independent_sources": 360,
+  "completed_independent_sources": 60,
+  "observed_curves_completed": 1080,
+  "saved_mean_fit_records": 16200,
+  "full_evaluation_complete": false,
+  "latest_checkpoint_index": "reports/covariance06/evaluation/checkpoint-0060/artifacts.json",
+  "latest_checkpoint_index_sha256": "66d7f14d30cf6dd0b52950fe1bf38c3b4ac36b025c29d82dd5bb6b441767c54a",
+  "raw_manifest_path": "reports/covariance06/evaluation/checkpoint-0060/run_manifest.json",
+  "raw_manifest_sha256": "46ee1530c685fef08c4adc5b1ba7287787f287b2c2d952d8308ca42b48b149a2",
+  "restore_proof": "reports/checks/cov06_evaluation_restore_0060.json",
+  "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
+  "policy_sha256": "4028b7244b45b96ec3b350bcc9309ae830c66da1cbd3f0b21b0ff196a13c86a0",
+  "initial_clean_code_sha": "44ec73ee8aa2804eb5a7628fd99fd67a2e0326aa",
+  "cumulative_fit_wall_seconds": 811.6662188010014,
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "python": "3.12.14",
+  "classification_metrics_computed": false,
+  "numerical_verification": "PENDING; numerical task not marked DONE by storage helper"
+}
