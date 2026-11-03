@@ -72,3 +72,7 @@ Manuscript/handoff pushed1af2b0f and remote SHA confirmed. Artifact/link audit P
 ### Подтверждение новой автоматизации
 
 План5b04c94 и exact prompt f976205 pushed до update. Update+private peek подтвердили is_enabled=true, прежний thread, расписаниеDTSTART03.11.2026 06:15Europe/Moscow,HOURLY/INTERVAL8/COUNT21 и тот же prompt. Other automations unchanged. Первое/последнее окно рассчитаны из подтверждённого RRULE; null next_run_time не является proof of execution. Setup DONE; first science W1-DIAG-READ TODO, ни новых experiments, ни новых papers-read не заявлено.
+
+## 03.11.2026 — первая научная сессия новой недели
+
+Checkout/fetch/main6f88ff7, IDLE lease and no known live research runner checked. Acquire unique lease and mark W1-DIAG-READ IN_PROGRESS before scientific reading. Work only code/primary sources/published aggregate motivation; old event-level evaluation and truth closed. Target120min, continue next ready tasks sequentially; no new primary/main data generated at start.

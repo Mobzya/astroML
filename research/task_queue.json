@@ -4,7 +4,7 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": null,
+  "current_task_id": "W1-DIAG-READ",
   "next_task_id": "W1-DIAG-READ",
   "tasks": [
     {
@@ -200,7 +200,7 @@
     {
       "id": "W1-DIAG-READ",
       "campaign_id": "week-2026-11-03-09",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Объяснить локальные провалы covariance optimization по коду и первичным источникам",
       "depends_on": [
         "W1-SETUP"
@@ -211,7 +211,9 @@
       ],
       "acceptance": "Read scopes/versions/URLs recorded; inspect code and published aggregate COV05 finding only; distinguish wrong stationary point, boundary and convergence; list falsifiable numerical requirements, without old evaluation rows or tuning.",
       "next_action": "Use new campaign, read current fitter and selected optimization/GP primary sections; no benchmark or old event-level evaluation access.",
-      "target_day": "2026-11-03"
+      "target_day": "2026-11-03",
+      "started_at_utc": "2026-11-03T03:15:36.894282+00:00",
+      "checkpoint": "Session lease acquired before science. Next: inspect current fitter, primary L-BFGS-B/NNLS and GP likelihood sections; record actually read scopes and falsifiable numerical invariants. No benchmark/main data generated."
     },
     {
       "id": "W1-OPT-SPEC",

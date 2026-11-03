@@ -2,7 +2,7 @@
 
 **Baseline исследование завершено; новая недельная кампания03–09ноября разрешена и автоматизация включена.** Старые DONE остаются закрытыми. [План03–09ноября](WEEK_PLAN_2026-11-03.md), [активная очередь](task_queue.json), [baseline рукопись](../defense/manuscript.md), [baseline handoff](../reports/research_handoff.md).
 
-W1-SETUP DONE: план/очередь/prompt сохранены, update и read-back сервиса подтверждены. Следующая научная задача — W1-DIAG-READ (TODO); активного fitting run сейчас нет. Новые COV06/stress эксперименты ещё не выполнялись; это PLANNED scope, не полученные результаты.
+W1-SETUP DONE: план/очередь/prompt сохранены, update и read-back сервиса подтверждены. 03.11 начата W1-DIAG-READ (IN_PROGRESS): lease/checkpoint сохранены до чтения scientific implementation/primary sources; активного fitting run нет. Новые COV06/stress эксперименты ещё не выполнялись; это PLANNED scope, не полученные результаты.
 
 ## Подтверждённые результаты
 
