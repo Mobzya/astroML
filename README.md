@@ -13,6 +13,8 @@
 
 02.11 владелец разрешил продолжение на03–09ноября: **[план недели](research/WEEK_PLAN_2026-11-03.md)**, [очередь с зависимостями](research/task_queue.json). Цель — исправление optimizer, scale-only ablation, новые независимые COV06/stress данные и обновление рукописи. Старые результаты ниже остаются неизменными; новые пока PLANNED. Последовательный режим в этом чате,21 окно каждые8часов,120min target; фактическое подтверждение включения — [STATUS](research/STATUS.md). Лимиты аккаунта не видны, выполнение всех окон не гарантируется.
 
+Новая неделя03.11: [development pilot](reports/cov06_development.md) на24sources/219.16s завершён; [independent numerical verification](reports/cov06_numerical_validation.md) проверила2304fits/57304improvement points. Это проверка вычислений, не новые AUC/FPR и не main evaluation. Следующий gate — заранее сохранённые main/stress protocols и CPU pilot.
+
 ## Два результата
 
 **R2: место пропуска важно.** При SNR15 на360 новых matched source pairs:
@@ -66,7 +68,7 @@ python -m pytest -q
 python -m ruff check src scripts tests
 ```
 
-21 unit tests, включая независимую физическую сверку с MulensModel; CI проверяет код и numerical smoke. Научные verifier отдельно пересчитывают сохранённые результаты:6480 R2 и87480 COV05 evaluation fit rows. Ошибка full-NLL пересчёта COV05 не более6.37×10⁻¹²; это проверка вычислений, не global optimization или survey validity.
+29 unit tests, включая независимую физическую сверку с MulensModel и новые COV06 numerical safeguards; CI проверяет код и numerical smoke. Научные verifier отдельно пересчитывают сохранённые результаты:6480 R2 и87480 COV05 evaluation fit rows. Ошибка full-NLL пересчёта COV05 не более6.37×10⁻¹²; это проверка вычислений, не global optimization или survey validity.
 
 ```bash
 python scripts/restore_covariance05.py --phase evaluation --output artifacts/cov05-verify

@@ -88,3 +88,7 @@ Freeze one candidate, not a broad hyperparameter search. q0 exact nested scale-o
 ### 03.11 — COV06-A development pilot completed
 
 24source units,3seeds,192views; unchanged legacy estimated compared numerically on fresh sources, not old evaluation. Runtime219.16s,1worker/1BLASthread; logical ledger cumulative and raw immutable shards preserved.28unit tests pass. Continue independent verification before performance protocol; no AUC/FPR-based candidate selection.
+
+### 03.11 — COV06-A independent numerical gate PASS
+
+All2304selected fits and57304saved improvements independently verified;6negative controls and full48-file restore pass.29unit tests; explicit fallback retained3diagonal/scale and1newGP fits. New feasible-point diagnostic0/192views vslegacy18/192 on fresh development only; no causal isolated-component or classifier-performance claim. Select the single predeclared candidate using numerical criteria; main/stress protocols still required before calibration/evaluation.

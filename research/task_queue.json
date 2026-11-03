@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "W1-OPT-VERIFY",
-  "next_task_id": "W1-OPT-VERIFY",
+  "current_task_id": "W1-COV06-PROTOCOL",
+  "next_task_id": "W1-COV06-PROTOCOL",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -256,7 +256,7 @@
     {
       "id": "W1-OPT-VERIFY",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Независимо проверить numerical correctness и safeguards нового fitter",
       "depends_on": [
         "W1-OPT-DEV"
@@ -269,12 +269,13 @@
       "next_action": "Use existing development sources/deterministic fixtures, not old evaluation or new main data; freeze practical candidate before performance evaluation.",
       "target_day": "2026-11-04",
       "started_at_utc": "2026-11-03T03:50:22.582348+00:00",
-      "checkpoint": "Implement and apply independent density/KKT/primal/bounds/input/mask/analytic-scale/incumbent/flag verifier to all2304saved development fits and improvement traces, plus corruption and restore controls. Only afterPASS may select candidate/protocol."
+      "checkpoint": "Independent2304fits+57304improvement points density/KKT/bounds/incumbent/scale/input/mask checks PASS,maxNLL6.65e-12;6corruption/restore controls PASS;29unit tests;48datafiles restored. COV06-A selected only numerically.24development sources,fit219.16s,combinedcompute conservatively charged360s<900. No main data.",
+      "completed_at_utc": "2026-11-03T04:08:52.871908+00:00"
     },
     {
       "id": "W1-COV06-PROTOCOL",
       "campaign_id": "week-2026-11-03-09",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Зафиксировать новый COV06 experiment с сильным scale-only baseline и стоимостью",
       "depends_on": [
         "W1-OPT-VERIFY"
@@ -285,7 +286,9 @@
       ],
       "acceptance": "New namespaces/seeds and source-level split; proposed3seeds,240cal/360eval justified by precision/measured cost before data. Compare diagonal, estimated scale-only, frozen improved covariance, old3-start algorithm on NEW data and privileged oracle if feasible. Same means/data, explicit unequal time costs. Primary GP-vs-scale-only recall/FPR/coverage contrast, margins/CI/alpha/failures/rejection/futility limits and storage frozen. Do not copy a claimed positive effect.",
       "next_action": "Choose sample/budget and a single primary contrast before main observations. Any reduction of design must occur before evaluation, with reason and revised precision.",
-      "target_day": "2026-11-04"
+      "target_day": "2026-11-04",
+      "started_at_utc": "2026-11-03T04:08:52.871908+00:00",
+      "checkpoint": "Freeze new main hypothesis/strong scale-only comparator/sample precision/source splits/resource+storage/failure/CI policy before any calibration/evaluation; inspect only development aggregate cost/numerical output. Stress protocol must follow before main."
     },
     {
       "id": "W1-STRESS-PROTOCOL",

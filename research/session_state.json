@@ -4,12 +4,12 @@
   "status": "ACTIVE",
   "active_session": {
     "owner_id": "astroml-w1-deef89d7d3454356a049d9c92efc047f",
-    "task_id": "W1-OPT-VERIFY",
+    "task_id": "W1-COV06-PROTOCOL",
     "started_utc": "2026-11-03T03:15:36.894282+00:00",
-    "last_checkpoint_utc": "2026-11-03T03:50:22.582348+00:00",
-    "expires_utc": "2026-11-03T06:50:22.582348+00:00",
+    "last_checkpoint_utc": "2026-11-03T04:08:52.871908+00:00",
+    "expires_utc": "2026-11-03T07:08:52.871908+00:00",
     "fitting_pid": null,
-    "checkpoint": "Implement and apply independent density/KKT/primal/bounds/input/mask/analytic-scale/incumbent/flag verifier to all2304saved development fits and improvement traces, plus corruption and restore controls. Only afterPASS may select candidate/protocol.",
+    "checkpoint": "Freeze new main hypothesis/strong scale-only comparator/sample precision/source splits/resource+storage/failure/CI policy before any calibration/evaluation; inspect only development aggregate cost/numerical output. Stress protocol must follow before main.",
     "fitting_process_start_ticks": "5315967"
   },
   "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",

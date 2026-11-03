@@ -115,3 +115,25 @@ def test_joint_fit_retains_exact_scale_only_initial_incumbent():
         assert (
             fit["nll"] <= min(p["nll"] for p in fit["incumbent_trace"]) + fit["incumbent_tolerance"]
         )
+
+
+def test_oracle_density_uses_only_explicit_known_covariance():
+    obs = example()
+    distance = abs(obs.t[:, None] - obs.t[None, :])
+    c = np.diag(obs.sigma**2) + 0.02**2 * np.exp(-distance / 1.8)
+    result = fit_covariance06(obs, mode="oracle", known_covariance=c)
+    assert result["oracle_only"]
+    for name, fit in result["fits"].items():
+        p = fit["parameters"]
+        if name == "constant":
+            predicted = np.full(len(obs.t), p[0])
+        elif name == "gaussian":
+            predicted = p[0] + p[1] * np.exp(-((obs.t - p[2]) ** 2) / (2 * p[3] ** 2))
+        else:
+            u2 = p[0] ** 2 + ((obs.t - p[1]) / p[2]) ** 2
+            predicted = p[3] * (u2 + 2) / np.sqrt(u2 * (u2 + 4)) + p[4]
+        ref = -multivariate_normal.logpdf(obs.flux - predicted, cov=c)
+        assert fit["nll"] == pytest.approx(ref, abs=1e-8)
+        assert fit["bic"] == pytest.approx(
+            2 * ref + {"constant": 1, "pspl": 5, "gaussian": 4}[name] * np.log(len(obs.t))
+        )

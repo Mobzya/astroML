@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "purpose": "independent numerical development verification, not classifier evaluation",
+  "independent_sources": 24,
+  "selected_fit_rows": 2304,
+  "incumbent_points_checked": 57304,
+  "max_absolute_nll_difference": 6.650680006714538e-12,
+  "max_selected_minus_best_reference_nll": 1.157790876504805e-07,
+  "nonconverged_selected_fits": {
+    "diagonal": 3,
+    "scale": 3,
+    "estimated": 1,
+    "legacy_estimated": 0
+  },
+  "valid_method_sets": {
+    "diagonal": 189,
+    "scale": 189,
+    "estimated": 191,
+    "legacy_estimated": 192
+  },
+  "oracle_feasible_point_control": {
+    "white/complete/pspl/estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -0.6984700696750679
+    },
+    "white/complete/pspl/legacy_estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -0.6984698920608707
+    },
+    "white/peak40/pspl/estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -1.8998805228371651
+    },
+    "white/peak40/pspl/legacy_estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 1,
+      "max_nll_gap": 0.30091125300447175
+    },
+    "white/complete/gaussian/estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -0.29729887816591827
+    },
+    "white/complete/gaussian/legacy_estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 3,
+      "max_nll_gap": 53.31776244888386
+    },
+    "white/peak40/gaussian/estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -1.2063047549849273
+    },
+    "white/peak40/gaussian/legacy_estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -1.1390738279333021
+    },
+    "matern_biased/complete/pspl/estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -1.1916023595107106
+    },
+    "matern_biased/complete/pspl/legacy_estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 4,
+      "max_nll_gap": 35.881726836328
+    },
+    "matern_biased/peak40/pspl/estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -3.290741731732254
+    },
+    "matern_biased/peak40/pspl/legacy_estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -2.1668374757964273
+    },
+    "matern_biased/complete/gaussian/estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -1.143588454815017
+    },
+    "matern_biased/complete/gaussian/legacy_estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 10,
+      "max_nll_gap": 39.318400118019156
+    },
+    "matern_biased/peak40/gaussian/estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -2.937703507350534
+    },
+    "matern_biased/peak40/gaussian/legacy_estimated": {
+      "views": 24,
+      "missed_feasible_improvements": 0,
+      "max_nll_gap": -0.2281629902552993
+    }
+  },
+  "runtime_seconds": 50.32751338500384,
+  "classification_metrics_computed": false,
+  "source_fingerprint": "c33b11913f0b0f5638b43596a83a75da20afbcf21c78bf0fdb22c1e9140b4217"
+}

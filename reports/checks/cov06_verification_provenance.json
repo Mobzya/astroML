@@ -1,0 +1,15 @@
+{
+  "fit_code_sha": "007b9d3c2e7613f2f5f207eb55c15dff923e7bbc",
+  "fit_scientific_fingerprint": "c33b11913f0b0f5638b43596a83a75da20afbcf21c78bf0fdb22c1e9140b4217",
+  "verification_helper_sha256": {
+    "scripts/verify_covariance06_development.py": "d757858b50623d077cc62670ac0f0ac2bf4a2add670735a9330c7d11b7031734",
+    "scripts/check_covariance06_negative_controls.py": "f3923a2fcef4f9358638f0873af410943d32bf8f968b01d58af2ccfc6c1d91cc",
+    "scripts/restore_research_shards.py": "392ff7c48a1ffd286ee3a20126d2c439c9b6a2881649417c8b38178f96f8a895",
+    "tests/test_covariance06.py": "3eee81d68be4f8b902c26562bb7050dd5fead14b2b982c90b493415912973a88"
+  },
+  "numerical_result_scope": "2304selected fits and57304saved improvements, not a global-optimum/performance proof",
+  "first_verifier_pass_seconds": 48.418626401995425,
+  "final_verifier_pass_seconds": 50.32751338500384,
+  "fit_and_validation_charged_seconds": 360.0,
+  "source_data_scope": "fresh development sources only; old event-level evaluation/truth not accessed"
+}

@@ -9,5 +9,7 @@
     "tests/test_covariance06.py": "536138b8f7ea8b8220a592aa2f9446312f472f7f560c5fffbaa1b8b65d50fb7a",
     "scripts/run_covariance06_development.py": "12b0aba97fea805ca2392bff048cceb79131aee72b2d4d0f202f357a1dfc0d6b"
   },
-  "recorded_utc": "2026-11-03T03:45:35.070749+00:00"
+  "recorded_utc": "2026-11-03T03:45:35.070749+00:00",
+  "applies_to_commit": "007b9d3c2e7613f2f5f207eb55c15dff923e7bbc",
+  "note": "Initial28-test proof at pre-data snapshot; later29-test oracle extension has separate verified log/provenance."
 }

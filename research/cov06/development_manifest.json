@@ -1,7 +1,7 @@
 {
   "logical_pilot_id": "cov06-development-v1",
   "namespace": "astroml-cov06-dev-20261103-v1",
-  "budget_used_seconds": 219.16159011800482,
+  "budget_used_seconds": 360.0,
   "source_ids_used": [
     "astroml-cov06-dev-20261103-v1:610301:00000000",
     "astroml-cov06-dev-20261103-v1:610301:00000001",
@@ -39,5 +39,10 @@
       "ended_utc": "2026-11-03T03:49:15.909496+00:00"
     }
   ],
-  "invocation_in_progress": false
+  "invocation_in_progress": false,
+  "measured_fit_wall_seconds": 219.16159011800482,
+  "measured_validation_core_seconds": 112.19349176000107,
+  "unmeasured_overhead_reserve_seconds": 28.644918121994124,
+  "logical_pilot_status": "COMPLETE_NUMERICALLY_VERIFIED",
+  "validation_note": "Charge includes both verifier passes,7/28/29-test reported durations and corruption controls, rounded up to30s for unmeasured local startup/archive/restore overhead; not an exact end-to-end timer. No new fitting attempts after completed pilot."
 }

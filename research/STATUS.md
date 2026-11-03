@@ -2,7 +2,7 @@
 
 **Baseline исследование завершено; новая недельная кампания03–09ноября разрешена и автоматизация включена.** Старые DONE остаются закрытыми. [План03–09ноября](WEEK_PLAN_2026-11-03.md), [активная очередь](task_queue.json), [baseline рукопись](../defense/manuscript.md), [baseline handoff](../reports/research_handoff.md).
 
-W1-SETUP DONE: план/очередь/prompt сохранены, update и read-back сервиса подтверждены. 03.11 W1-DIAG-READ DONE: selected primary/code scopes, hashes и математический разбор сохранены. W1-OPT-SPEC DONE: COV06-A design/development config сохранены до кода/данных. W1-OPT-DEV DONE:24development sources/192views/2304selected fits,219.16s; raw artifacts сохранены. Текущая W1-OPT-VERIFY IN_PROGRESS; independent density/KKT/incumbent checks pending, никакая main readiness/performance не заявляется. Новые COV06/stress эксперименты ещё не выполнялись; это PLANNED scope, не полученные результаты.
+W1-SETUP DONE: план/очередь/prompt сохранены, update и read-back сервиса подтверждены. 03.11 W1-DIAG-READ DONE: selected primary/code scopes, hashes и математический разбор сохранены. W1-OPT-SPEC DONE: COV06-A design/development config сохранены до кода/данных. W1-OPT-DEV DONE:24development sources/192views/2304selected fits,219.16s; raw artifacts сохранены. W1-OPT-VERIFY DONE:2304fits/57304incumbent points independently checked,maxNLL6.65e−12,6negative controls,29unit tests,48files restored. Один COV06-A принят по numerical criteria; main readiness требует нового protocol/pilot. Текущая W1-COV06-PROTOCOL IN_PROGRESS. Новые COV06/stress эксперименты ещё не выполнялись; это PLANNED scope, не полученные результаты.
 
 ## Подтверждённые результаты
 
@@ -28,4 +28,4 @@ W1-SETUP DONE: план/очередь/prompt сохранены, update и read
 
 ## Остановка новой кампании
 
-Прежний SYNTHESIS DONE не останавливает новую очередь. W1-HANDOFF выполняется после всего нового scope, фактической блокировки всех полезных задач или в финальное окно; незавершённое остаётся TODO/BLOCKED. Затем пауза только собственного AstroML задания. Старые научные выводы не меняются; новые numerical/performance результаты пока отсутствуют.
+Прежний SYNTHESIS DONE не останавливает новую очередь. W1-HANDOFF выполняется после всего нового scope, фактической блокировки всех полезных задач или в финальное окно; незавершённое остаётся TODO/BLOCKED. Затем пауза только собственного AstroML задания. Старые научные выводы не меняются; numerical development результаты опубликованы; main performance ещё не измерялась.

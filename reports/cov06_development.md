@@ -13,6 +13,6 @@ Scientific code `007b9d3c2e7613f2f5f207eb55c15dff923e7bbc`, clean at start=True.
 
 Scale/estimated share the observed diagonal initializer; their timers are incremental, not isolated end-to-end cost. Views/classes/masks are not independent repetitions. Convergence/availability here are implementation diagnostics, not classification performance.
 
-**Independent numerical verification still PENDING**: next task W1-OPT-VERIFY must recompute density/KKT/bounds/incumbents/analytic scale/input isolation/corruption controls before numerical correctness or main readiness is claimed.
+**Independent numerical verification PASS** в следующем завершённом gate: [отчёт](cov06_numerical_validation.md). Это bounded numerical validation; main performance/readiness отдельно требует protocol/pilot.
 
 [Raw shards/checksums](covariance06/development/artifacts.json), [manifest](covariance06/development/run_manifest.json), [summary](covariance06/development/development_summary.json), [design](../research/cov06/optimizer_design.md), [logical budget ledger](../research/cov06/development_manifest.json).

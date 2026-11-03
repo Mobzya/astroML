@@ -37,6 +37,8 @@
       "sum_incremental_elapsed_seconds": 68.22516994705074
     }
   },
-  "independent_numerical_verifier": "PENDING_NEXT_TASK",
-  "classification_metrics_computed": false
+  "independent_numerical_verifier": "PASS",
+  "classification_metrics_computed": false,
+  "selected_candidate": "COV06-A",
+  "selection_basis": "Only preregistered numerical invariants, bounded runtime and independent checks; no classifier metrics"
 }
