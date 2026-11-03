@@ -366,14 +366,16 @@
       "next_action": "Generate after policy push; cap calls/checkpoint between batches; before each compute segment confirm persistent storage and available runtime.",
       "target_day": "2026-11-05",
       "started_at_utc": "2026-11-03T04:52:19.166561+00:00",
-      "checkpoint": "BLOCKED_SESSION_LIVENESS after environment disconnected during live fifth call.176/360sources durably archived/restored; local>=188 observed but current run/ledger/output fate unknown. Keep IN_PROGRESS, not DONE. Do not start second fitter, clear unresolved lease, reset cost to2569.962s or blindly restore176. First restore ORIGINAL environment access; inspect parent/workers, ledger/receipts/all sources after176, preserve/publish new outputs and reconcile actual elapsed budget. Only then acquire/reconcile ownership and resume truly missing sources under same frozen0052cec5 code and4028b724 policy. If fate unknown, remain blocked even after lease expiry.",
+      "checkpoint": "RECOVERY ONLY, NO NEW FITTING. Replacement boot/start-tick incompatibility and absent original parent/workers resolve local old-process liveness; saved files/ledger preserved before ff merge.195complete receipts + source0195partial found, original manifest acknowledges192. Reconcile hashes/source matrix, archive all recovered bytes and receipts without refitting. Final fifth-call timer absent: retain observed lower bound/unclosed ledger; cannot certify remaining7200s budget. Do not invent elapsed time, reset ledger or rerun completed outputs. If cost cannot be bounded from evidence, mark EVAL BLOCKED_RUNTIME_ACCOUNTING and sequentially take independent ready W1-REAL-AUDIT.",
       "execution_block": {
         "code": "BLOCKED_SESSION_LIVENESS",
         "detected_utc": "2026-11-03T11:56:29Z",
         "last_durable_sources": 176,
         "last_local_observed_sources_lower_bound": 188,
         "prior_runner_liveness": "UNKNOWN",
-        "resume_forbidden_until_original_runner_outputs_and_cost_reconciled": true
+        "resume_forbidden_until_original_runner_outputs_and_cost_reconciled": true,
+        "recovery_started_utc": "2026-11-03T19:26:26.642387+00:00",
+        "local_liveness_resolved_by_new_boot": true
       }
     },
     {

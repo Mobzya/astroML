@@ -1,0 +1,21 @@
+{
+  "observed_utc": "2026-11-03T19:26:26.642387+00:00",
+  "scope": "selected managed executor; no new runner launched",
+  "original_parent_pid": 3687,
+  "original_parent_start_ticks": 8205200,
+  "current_uptime_seconds": 613.32,
+  "ticks_per_second": 100,
+  "current_boot_id": "1e9f8af2-2d8e-4282-b7d3-09ce72236c23",
+  "current_btime_line": "btime 1793733373",
+  "original_start_ticks_exceed_current_boot_uptime_ticks": true,
+  "all_recorded_parent_and_worker_pids_absent": true,
+  "original_process_final_duration_known": false,
+  "local_complete_source_receipts": 195,
+  "local_partial_source_index": 195,
+  "remote_durable_before_recovery": 176,
+  "original_manifest_completed_sources": 192,
+  "original_ledger_budget_observed_lower_bound_seconds": 2809.8159244260096,
+  "original_invocation_in_progress_marker_preserved": true,
+  "fitting_resume_forbidden_until_runtime_accounting_resolved": true,
+  "executor_log_evidence": "Only current connection19:16:21; no prior termination event. No journal boots available. File mtimes do not alone prove exact stop time."
+}

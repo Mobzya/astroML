@@ -1,8 +1,32 @@
 {
   "schema_version": 1,
   "campaign_id": "week-2026-11-03-09",
-  "status": "BLOCKED_SESSION_LIVENESS",
+  "status": "ACTIVE",
   "active_session": {
+    "owner_id": "astroml-w1-82ca007c358240619912fd3936bae1f7",
+    "task_id": "W1-COV06-EVAL",
+    "started_utc": "2026-11-03T19:26:26.642387+00:00",
+    "last_checkpoint_utc": "2026-11-03T19:26:26.642387+00:00",
+    "expires_utc": "2026-11-03T22:26:26.642387+00:00",
+    "fitting_pid": null,
+    "fitting_process_start_ticks": null,
+    "work_mode": "RECOVERY_ONLY_NO_NEW_FITS",
+    "checkpoint": "RECOVERY ONLY, NO NEW FITTING. Replacement boot/start-tick incompatibility and absent original parent/workers resolve local old-process liveness; saved files/ledger preserved before ff merge.195complete receipts + source0195partial found, original manifest acknowledges192. Reconcile hashes/source matrix, archive all recovered bytes and receipts without refitting. Final fifth-call timer absent: retain observed lower bound/unclosed ledger; cannot certify remaining7200s budget. Do not invent elapsed time, reset ledger or rerun completed outputs. If cost cannot be bounded from evidence, mark EVAL BLOCKED_RUNTIME_ACCOUNTING and sequentially take independent ready W1-REAL-AUDIT."
+  },
+  "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",
+  "instructions": "Before scientific work acquire and push a session lease with unique owner_id,started_utc,last_checkpoint_utc,expires_utc,task_id. Fresh foreign lease=>skip; expired lease is not proof a worker died: check liveness, never duplicate a known active process. Heartbeat/push about20min; end releases lease. No fitting in schedule setup.",
+  "last_campaign_session": {
+    "owner_id": "astroml-w1-deef89d7d3454356a049d9c92efc047f",
+    "finished_utc": "2026-11-03T05:15:32.594633+00:00",
+    "task_id": "W1-COV06-EVAL",
+    "task_remains_in_progress": true,
+    "archived_evaluation_sources": 68,
+    "checkpoint_index": "reports/covariance06/evaluation/checkpoint-0068/artifacts.json",
+    "known_fitting_parent_and_worker_pids_absent": true,
+    "automation_not_paused": true
+  },
+  "recovery_required_before_any_fit": true,
+  "prior_unresolved_session": {
     "owner_id": "astroml-w1-667d6c0e770d458e82b9888a4fea5494",
     "task_id": "W1-COV06-EVAL",
     "started_utc": "2026-11-03T11:15:55.907411+00:00",
@@ -34,18 +58,5 @@
       "week_finalization_trigger_not_reached": true
     },
     "remote_pid_fields_are_stale": true
-  },
-  "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",
-  "instructions": "Before scientific work acquire and push a session lease with unique owner_id,started_utc,last_checkpoint_utc,expires_utc,task_id. Fresh foreign lease=>skip; expired lease is not proof a worker died: check liveness, never duplicate a known active process. Heartbeat/push about20min; end releases lease. No fitting in schedule setup.",
-  "last_campaign_session": {
-    "owner_id": "astroml-w1-deef89d7d3454356a049d9c92efc047f",
-    "finished_utc": "2026-11-03T05:15:32.594633+00:00",
-    "task_id": "W1-COV06-EVAL",
-    "task_remains_in_progress": true,
-    "archived_evaluation_sources": 68,
-    "checkpoint_index": "reports/covariance06/evaluation/checkpoint-0068/artifacts.json",
-    "known_fitting_parent_and_worker_pids_absent": true,
-    "automation_not_paused": true
-  },
-  "recovery_required_before_any_fit": true
+  }
 }
