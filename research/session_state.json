@@ -6,10 +6,10 @@
     "owner_id": "astroml-w1-deef89d7d3454356a049d9c92efc047f",
     "task_id": "W1-COV06-PILOT",
     "started_utc": "2026-11-03T03:15:36.894282+00:00",
-    "last_checkpoint_utc": "2026-11-03T04:18:16.913027+00:00",
-    "expires_utc": "2026-11-03T07:18:16.913027+00:00",
+    "last_checkpoint_utc": "2026-11-03T04:24:43.788448+00:00",
+    "expires_utc": "2026-11-03T07:24:43.788448+00:00",
     "fitting_pid": null,
-    "checkpoint": "New main runner/stress deterministic tests, then separate <=12source smoke; no calibration/evaluation until pilot acceptance.",
+    "checkpoint": "Pre-data code gate:33unit tests+lint PASS; new resumable runner/logging-only legacy observer, bounded trace encoding, deterministic stress gate, independent verifier and immutable shard helper. Next run separate12source/216curve smoke in2calls to exercise restore/resume, total900s cap. No main data.",
     "fitting_process_start_ticks": "5315967"
   },
   "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",

@@ -15,13 +15,21 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--index", type=Path, required=True)
     p.add_argument("--output", type=Path, required=True)
+    p.add_argument(
+        "--allow-partial",
+        action="store_true",
+        help="Explicitly restore a completed-source partial checkpoint",
+    )
     args = p.parse_args()
     assert not args.output.exists(), "Never overwrite existing output"
     index = json.loads(args.index.read_text())
     manifest_raw = Path(index["manifest_path"]).read_bytes()
     assert sha(manifest_raw) == index["manifest_sha256"]
     manifest = json.loads(manifest_raw)
-    assert manifest["status"] == "COMPLETE"
+    assert manifest["status"] == "COMPLETE" or (
+        args.allow_partial and manifest["status"] in ["PARTIAL_CHECKPOINT", "INTERRUPTED"]
+    )
+    assert len(manifest["sha256"]) == 2 * manifest["completed_sources"]
     restored = set()
     args.output.mkdir(parents=True)
     for part in index["artifacts"]:

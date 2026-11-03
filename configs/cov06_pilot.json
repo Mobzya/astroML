@@ -1,0 +1,14 @@
+{
+  "experiment_id": "cov06-runner-smoke-v1",
+  "namespace": "astroml-cov06-smoke-20261103-v1",
+  "seeds": [640301, 640302, 640303],
+  "source_counts_per_seed": {"pilot": 4},
+  "pilot_noise": ["white", "matern_biased", "ou_biased"],
+  "pilot_families": ["pspl", "gaussian"],
+  "pilot_conditions": ["complete", "random40", "peak40"],
+  "logical_pilot_source_cap": 50,
+  "logical_pilot_wall_time_cap_seconds": 900,
+  "purpose": "pre-main runner feasibility only; not classification selection",
+  "workers": 2,
+  "batch_sources": 4
+}
