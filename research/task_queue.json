@@ -366,7 +366,15 @@
       "next_action": "Generate after policy push; cap calls/checkpoint between batches; before each compute segment confirm persistent storage and available runtime.",
       "target_day": "2026-11-05",
       "started_at_utc": "2026-11-03T04:52:19.166561+00:00",
-      "checkpoint": "EVAL176/360sources archived/restored(352files), fit-wall2569.962095s/4calls, unchanged frozen code/policy. No classification metrics or candidate/subgroup selection. Next resume remaining184sources under7200s cumulative cap; after360only full verifier/metrics stage."
+      "checkpoint": "BLOCKED_SESSION_LIVENESS after environment disconnected during live fifth call.176/360sources durably archived/restored; local>=188 observed but current run/ledger/output fate unknown. Keep IN_PROGRESS, not DONE. Do not start second fitter, clear unresolved lease, reset cost to2569.962s or blindly restore176. First restore ORIGINAL environment access; inspect parent/workers, ledger/receipts/all sources after176, preserve/publish new outputs and reconcile actual elapsed budget. Only then acquire/reconcile ownership and resume truly missing sources under same frozen0052cec5 code and4028b724 policy. If fate unknown, remain blocked even after lease expiry.",
+      "execution_block": {
+        "code": "BLOCKED_SESSION_LIVENESS",
+        "detected_utc": "2026-11-03T11:56:29Z",
+        "last_durable_sources": 176,
+        "last_local_observed_sources_lower_bound": 188,
+        "prior_runner_liveness": "UNKNOWN",
+        "resume_forbidden_until_original_runner_outputs_and_cost_reconciled": true
+      }
     },
     {
       "id": "W1-COV06-VERIFY",
@@ -528,5 +536,6 @@
     }
   ],
   "last_completed_handoff": "reports/research_handoff.md",
-  "active_handoff_target": "reports/week_2026-11-03_09_handoff.md"
+  "active_handoff_target": "reports/week_2026-11-03_09_handoff.md",
+  "recovery_gate": "BLOCKED_SESSION_LIVENESS: resolve original runner before any new fitting or replacement research session; expiry/null PID/history is not proof of termination."
 }
