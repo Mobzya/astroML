@@ -294,7 +294,7 @@
     {
       "id": "W1-STRESS-PROTOCOL",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Заранее задать ограниченную independent robustness проверку того же frozen practical detector",
       "depends_on": [
         "W1-COV06-PROTOCOL"
@@ -307,12 +307,13 @@
       "next_action": "Keep matrix bounded, define primary stress failure/reliability criteria and exact frozen policy transfer. Do not claim realistic telescope labels from shape alone.",
       "target_day": "2026-11-04",
       "started_at_utc": "2026-11-03T04:12:47.566692+00:00",
-      "checkpoint": "Define <=6 fixed robustness cells and new240-source namespace, inherited COV06 methods/policy, typed toy-negative semantics and numerical fixture checks BEFORE main data. Do not select cells from main outcomes."
+      "checkpoint": "Six fixed cells/240new units/3seeds, typed toy alternatives/matching exceptions, inherited policy, all-cell CP reliability flags/paired mask bootstrap, mechanical fixtures and resource/storage caps frozen BEFORE main data. Design only, stress run remains TODO.",
+      "completed_at_utc": "2026-11-03T04:18:16.913027+00:00"
     },
     {
       "id": "W1-COV06-PILOT",
       "campaign_id": "week-2026-11-03-09",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Выполнить CPU smoke и сохранить замороженный scientific code/config до main",
       "depends_on": [
         "W1-COV06-PROTOCOL",
@@ -324,7 +325,9 @@
       ],
       "acceptance": "Separate development-only sources, proposed<=12; per logical pilot<=50sources/900s total, no artificial splitting to evade cap. Split/matching/input isolation/resume/hash/negative controls checked; source/config/versions/SHA/runtime and code committed. Main untouched. If too slow, revise only pre-evaluation design with new version and limits.",
       "next_action": "Estimate main runtime; aim each indivisible batch<=15min and fit within remaining session; never launch unseen final data just to test the runner.",
-      "target_day": "2026-11-04"
+      "target_day": "2026-11-04",
+      "started_at_utc": "2026-11-03T04:18:16.913027+00:00",
+      "checkpoint": "Implement new source-resumable main runner and deterministic stress fixtures, then separate <=12source development smoke within900s logical cap. No main data; retain complete numerical/cost/input/hash/restore controls, commit+push scientific code before smoke."
     },
     {
       "id": "W1-COV06-CAL",

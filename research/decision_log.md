@@ -96,3 +96,7 @@ All2304selected fits and57304saved improvements independently verified;6negative
 ### 03.11 — main COV06 protocol fixed before data
 
 Primary estimated-vs-scale-only OU/complete/Gaussian,FPR reduction with recall noninferiority5pp andcoverage80%; empirical5% calibration,240cal/360eval new sources.5methods including original algorithm only on fresh data and privileged oracle.6480eval observations; double bump belongs to separate pre-main frozen stress matrix. Bounded witness+scalar history storage explicitly excludes full main intermediate vectors, preserves selected fits/starts/failures;<=50MiBphase and8MiBshard gate before main. No old/new evaluation tuning.
+
+## 2026-11-03T04:18:16.913027+00:00 — W1-STRESS-PROTOCOL DONE; PILOT begins
+
+Six cells fixed before main data;240new source units/3seeds, lowerSNR/OU/Matérn/masks/Gaussian+flare+double bump+constant+eclipse-like toys. Inherit same3 practical methods/thresholds, explicit matching exceptions, all-cell CP failure flags, bounded runtime/storage and deterministic generator gate. Protocol completion is not stress execution. Proceed to separate pre-main smoke; no main observations generated.
