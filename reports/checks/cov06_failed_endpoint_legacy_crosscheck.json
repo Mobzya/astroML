@@ -1,0 +1,16 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "scope": "Direct frozen legacy linear profile at already returned unsuccessful endpoint, no nonlinear optimizer call, no truth/classification metric or model change",
+  "source_id": "astroml-cov06-main-20261103-v1:620301:00000007",
+  "view": "matern_biased/gaussian/random40",
+  "legacy_module_profile_nll_at_returned_x": -2.2031953818454824,
+  "solver_reported_fun": -2.2032024626159696,
+  "difference": 7.080770487277732e-06,
+  "coefficients": [
+    1.0638140812719639,
+    0.0032781233701398233
+  ],
+  "independent_reference_agrees_with_frozen_linear_code": true,
+  "selected_fit_recomputed_previously": 24.08699875668853,
+  "interpretation": "Discrepancy also exists using the unchanged original design/kernel/linear profiler. Preserve unsuccessful solver fun as solver metadata; selected density remains independently checked. No claim of SciPy internal root cause without its internal trace."
+}

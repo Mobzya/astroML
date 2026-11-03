@@ -38,3 +38,7 @@ Verify scientific fingerprint`0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f
 7. Only after all360units exist: mark output task DONE after raw restore/hash/source/code continuity, then W1-COV06-VERIFY. Run frozen `covariance06_statistics.py` and independent `verify_covariance06_statistics.py`; all180tables/500calibration-aware joint source-bootstrap draws must be verified. Producer SHA is locked in policy; BIC is not probability,oracle not practical,negative result acceptable. No detector repair/retest on the same evaluation. Keep old R2/COV05 event-level/reserved final test closed.
 
 Then next ready tasks: frozen stress, external audit, new synthesis; W1-HANDOFF only on week trigger, not because this small checkpoint ended. Other automations unchanged.
+
+## Liveness note from second session03.11
+
+On resume, raw manifest `status` can retain the preceding `PARTIAL_CHECKPOINT` while the next invocation is actually running. Do not infer liveness from that field. The fitting PID/process start, fresh owner lease, `runner_evaluation_ledger.json` invocation_in_progress flag and actual process-pool completion must agree. Preflight and checkpoint helper require a closed invocation and null fitting PID; no second runner is authorized by a stale manifest status. Frozen scientific runner is unchanged.

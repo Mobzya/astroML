@@ -1,0 +1,373 @@
+{
+  "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
+  "code_sha": "44ec73ee8aa2804eb5a7628fd99fd67a2e0326aa",
+  "independent_sources": 120,
+  "manifest_path": "reports/covariance06/evaluation/checkpoint-0120/run_manifest.json",
+  "manifest_sha256": "a3f6200d666c5df98abfb4f46434a7109ca4299d5e66d6948ac342340841a798",
+  "artifacts": [
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0000-0003.zip",
+      "sha256": "7b16297420623385f72e4fd98495819ae2fcda03e05c93aa61bd0803a965dce7",
+      "bytes": 474155,
+      "source_files": [
+        "source-0000.json",
+        "source-0001.json",
+        "source-0002.json",
+        "source-0003.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0004-0007.zip",
+      "sha256": "73ef4593743cb1d4ff7e0096e0b765f66049e169e8edae267af86f9c61fa5979",
+      "bytes": 463286,
+      "source_files": [
+        "source-0004.json",
+        "source-0005.json",
+        "source-0006.json",
+        "source-0007.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0008-0011.zip",
+      "sha256": "662e93d801285972a562f591e0691c1375cff1268635576397a41aa0d41f4e3e",
+      "bytes": 465715,
+      "source_files": [
+        "source-0008.json",
+        "source-0009.json",
+        "source-0010.json",
+        "source-0011.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0012-0015.zip",
+      "sha256": "fb71cf97d1d8b0d0c4bdc808cfecfd34d82a72a077283e531e1156d16cdafeda",
+      "bytes": 460143,
+      "source_files": [
+        "source-0012.json",
+        "source-0013.json",
+        "source-0014.json",
+        "source-0015.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0016-0019.zip",
+      "sha256": "d0a3b481e385e874d66c1a7ee65edba92cd683d9e183f88ec6f62a4d600ab76e",
+      "bytes": 480360,
+      "source_files": [
+        "source-0016.json",
+        "source-0017.json",
+        "source-0018.json",
+        "source-0019.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0020-0023.zip",
+      "sha256": "2507ac9c2e5b67fb3467801f7986ea951009269c7eab5d4ed3f1047ded32707a",
+      "bytes": 486730,
+      "source_files": [
+        "source-0020.json",
+        "source-0021.json",
+        "source-0022.json",
+        "source-0023.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0024-0027.zip",
+      "sha256": "047574c287915ad343ac0d1265812aa6c5d868d16a033f8ecf189f73ba29a5ba",
+      "bytes": 471437,
+      "source_files": [
+        "source-0024.json",
+        "source-0025.json",
+        "source-0026.json",
+        "source-0027.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0028-0031.zip",
+      "sha256": "db08d0453cd34c749fdbdce1cc62a89c48a953c528f4235c02cfb379d6aed667",
+      "bytes": 455940,
+      "source_files": [
+        "source-0028.json",
+        "source-0029.json",
+        "source-0030.json",
+        "source-0031.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0032-0035.zip",
+      "sha256": "a354c0d84379cc5e3b32a573668c946f4d1afbb4c630346b8f3c22e4bb95b7a9",
+      "bytes": 450648,
+      "source_files": [
+        "source-0032.json",
+        "source-0033.json",
+        "source-0034.json",
+        "source-0035.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0036-0039.zip",
+      "sha256": "884662acb842a56c6abad67270e28e4fe235d374a296d4e6abd6db61a3534d38",
+      "bytes": 480174,
+      "source_files": [
+        "source-0036.json",
+        "source-0037.json",
+        "source-0038.json",
+        "source-0039.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0040-0043.zip",
+      "sha256": "46681d2eead07039000ea534420ac0baaf9ae7a74425ad0c6d4d7c6f90886f5b",
+      "bytes": 451135,
+      "source_files": [
+        "source-0040.json",
+        "source-0041.json",
+        "source-0042.json",
+        "source-0043.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0044-0047.zip",
+      "sha256": "1fa0831ddb626e108d31382a9e09a427225c933ec16e459c35eba3baa8339eaa",
+      "bytes": 465819,
+      "source_files": [
+        "source-0044.json",
+        "source-0045.json",
+        "source-0046.json",
+        "source-0047.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0048-0051.zip",
+      "sha256": "f2ed1ee716afd4befa5d7dc7488f457a4a13d47c8f8c99b4ca6f548ed83bfb07",
+      "bytes": 494854,
+      "source_files": [
+        "source-0048.json",
+        "source-0049.json",
+        "source-0050.json",
+        "source-0051.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0052-0055.zip",
+      "sha256": "db6e7298cd9c6b31754f58cb17ffb75d1edc2db71e24c501684fc2cf905837f2",
+      "bytes": 481759,
+      "source_files": [
+        "source-0052.json",
+        "source-0053.json",
+        "source-0054.json",
+        "source-0055.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0056-0059.zip",
+      "sha256": "b738b70b32f8fdef46003743555c015ebecd00efddf3d461725c5b22557a45f1",
+      "bytes": 472101,
+      "source_files": [
+        "source-0056.json",
+        "source-0057.json",
+        "source-0058.json",
+        "source-0059.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0060-0063.zip",
+      "sha256": "5e1e85611899a303a5b58598ad15541a76028d80f34bc90ac382ae6f53468bcf",
+      "bytes": 463358,
+      "source_files": [
+        "source-0060.json",
+        "source-0061.json",
+        "source-0062.json",
+        "source-0063.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0064-0067.zip",
+      "sha256": "5511470fa73d3380e731a9db3b0c6afcf5d901eeed041e666a0fcd45a10b4c6f",
+      "bytes": 463888,
+      "source_files": [
+        "source-0064.json",
+        "source-0065.json",
+        "source-0066.json",
+        "source-0067.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0068-0071.zip",
+      "sha256": "8fdbed57aaf8b92ffc941e19ec5a6ac5a14d1ab7d8c00d70a6bbe254aada227f",
+      "bytes": 463645,
+      "source_files": [
+        "source-0068.json",
+        "source-0069.json",
+        "source-0070.json",
+        "source-0071.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0072-0075.zip",
+      "sha256": "54d9156fbf9c3b719287d92ee2e840e63b04d628e75759acd49c8d1e1b5e39fb",
+      "bytes": 479018,
+      "source_files": [
+        "source-0072.json",
+        "source-0073.json",
+        "source-0074.json",
+        "source-0075.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0076-0079.zip",
+      "sha256": "069596282d61cdcc3e5fa33b3f3d495ffccc949439bde82c3e808d943be26b6c",
+      "bytes": 471824,
+      "source_files": [
+        "source-0076.json",
+        "source-0077.json",
+        "source-0078.json",
+        "source-0079.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0080-0083.zip",
+      "sha256": "5c46f71814820883e774f4f2b1242297e32f9107115d21201bb0072f55c59bac",
+      "bytes": 463432,
+      "source_files": [
+        "source-0080.json",
+        "source-0081.json",
+        "source-0082.json",
+        "source-0083.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0084-0087.zip",
+      "sha256": "d94a27029d5296dd979e51535c736b7bddf56cfddf5bfad45b458f006a21d7ab",
+      "bytes": 481877,
+      "source_files": [
+        "source-0084.json",
+        "source-0085.json",
+        "source-0086.json",
+        "source-0087.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0088-0091.zip",
+      "sha256": "3f0054819130fc41cfd27434f78a649ba5fce62b5d54841942756169f0eeab36",
+      "bytes": 457475,
+      "source_files": [
+        "source-0088.json",
+        "source-0089.json",
+        "source-0090.json",
+        "source-0091.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0092-0095.zip",
+      "sha256": "86d4f56968066988f34c580424025e40202fac03449eb12065f7a1b215bef6d9",
+      "bytes": 470429,
+      "source_files": [
+        "source-0092.json",
+        "source-0093.json",
+        "source-0094.json",
+        "source-0095.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0096-0099.zip",
+      "sha256": "99d3f72fdd2fa4cd68e0fcfbd7b9033dd10a5e7eed229f8cec60346ceebcf6fc",
+      "bytes": 470790,
+      "source_files": [
+        "source-0096.json",
+        "source-0097.json",
+        "source-0098.json",
+        "source-0099.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0100-0103.zip",
+      "sha256": "34b5b21ec03c393194a44eef6989e74feb9694a022ed0baba7dbea169108e11e",
+      "bytes": 468958,
+      "source_files": [
+        "source-0100.json",
+        "source-0101.json",
+        "source-0102.json",
+        "source-0103.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0104-0107.zip",
+      "sha256": "626ca61b51622405bd9c6270e2343f34646b3516ec9f77f3f090d285e5a943d1",
+      "bytes": 477064,
+      "source_files": [
+        "source-0104.json",
+        "source-0105.json",
+        "source-0106.json",
+        "source-0107.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0108-0111.zip",
+      "sha256": "81e06d25536551b9c2a41046d5d3269d364cc6cceffe099726a79af6f5eeb4cd",
+      "bytes": 476974,
+      "source_files": [
+        "source-0108.json",
+        "source-0109.json",
+        "source-0110.json",
+        "source-0111.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0112-0115.zip",
+      "sha256": "4e9d27a6bbe649c70926773e16f30f72fe1a481094578896edc1078b2d6deaf5",
+      "bytes": 461219,
+      "source_files": [
+        "source-0112.json",
+        "source-0113.json",
+        "source-0114.json",
+        "source-0115.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/evaluation-shards/cov06-evaluation-v1-0116-0119.zip",
+      "sha256": "4b826460012fefdd257b001925a244a792da48ffdbf8545f5e876fd61dcf1012",
+      "bytes": 468309,
+      "source_files": [
+        "source-0116.json",
+        "source-0117.json",
+        "source-0118.json",
+        "source-0119.json"
+      ],
+      "independent_sources": 4
+    }
+  ],
+  "total_compressed_bytes": 14092516,
+  "zip_compression": "LZMA lossless solid block over inner ZIP_STORED",
+  "shard_container": "solid-zip-v1",
+  "reused_existing_shards": 17
+}

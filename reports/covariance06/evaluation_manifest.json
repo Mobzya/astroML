@@ -1,26 +1,24 @@
 {
   "status": "PARTIAL_CHECKPOINT",
   "expected_independent_sources": 360,
-  "completed_independent_sources": 68,
-  "observed_curves_completed": 1224,
-  "saved_mean_fit_records": 18360,
+  "completed_independent_sources": 120,
+  "observed_curves_completed": 2160,
+  "saved_mean_fit_records": 32400,
   "full_evaluation_complete": false,
-  "latest_checkpoint_index": "reports/covariance06/evaluation/checkpoint-0068/artifacts.json",
-  "latest_checkpoint_index_sha256": "b41a38e9c7677d44e8d60e2959a7c729f90f1a1a0774dff2c9ec809561a82d12",
-  "raw_manifest_path": "reports/covariance06/evaluation/checkpoint-0068/run_manifest.json",
-  "raw_manifest_sha256": "3526e93d94f89fd41cd9f5dc9fd600a201bbeb00e604ab5a7ccbbfc7ff0b25c6",
-  "restore_proof": "reports/checks/cov06_evaluation_restore_0068.json",
+  "latest_checkpoint_index": "reports/covariance06/evaluation/checkpoint-0120/artifacts.json",
+  "latest_checkpoint_index_sha256": "053f4d268036c5f02618a5ffd69df4c11c9cd5c6f3c6a12888c830fcad6a42de",
+  "raw_manifest_path": "reports/covariance06/evaluation/checkpoint-0120/run_manifest.json",
+  "raw_manifest_sha256": "a3f6200d666c5df98abfb4f46434a7109ca4299d5e66d6948ac342340841a798",
+  "restore_proof": "reports/checks/cov06_evaluation_restore_0120.json",
   "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
   "policy_sha256": "4028b7244b45b96ec3b350bcc9309ae830c66da1cbd3f0b21b0ff196a13c86a0",
   "initial_clean_code_sha": "44ec73ee8aa2804eb5a7628fd99fd67a2e0326aa",
-  "cumulative_fit_wall_seconds": 923.8776098110029,
+  "cumulative_fit_wall_seconds": 1724.1399438010048,
   "versions": {
     "numpy": "2.5.4",
     "scipy": "1.18.1"
   },
   "python": "3.12.14",
   "classification_metrics_computed": false,
-  "numerical_verification": "PASS_ON_68_SOURCE_SUBSET; full evaluation/scientific outcome NOT complete",
-  "numerical_verifier": "reports/checks/cov06_evaluation_partial_0068_verifier.json",
-  "numerical_verifier_sha256": "00aed9b8d71b946247a43ebed271887c7270b256e11184c0f2bf3a00e304a5f5"
+  "numerical_verification": "PENDING; numerical task not marked DONE by storage helper"
 }

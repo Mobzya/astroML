@@ -138,3 +138,7 @@ Evaluation60/360sources closed first call811.666s;1080curves/16200mean-output re
 ## 2026-11-03T11:15:55.907411+00:00 — new same-chat session; resume evaluation
 
 Resume existing W1-COV06-EVAL,68/360sources already durably archived; no known live runner, closed ledger923.8776s andIDLE lease. New unique owner; keep frozen0052cec5 scientific fingerprint,4028b724 policy,Python3.12.14/NumPy2.5.4/SciPy1.18.1. Preflight hashes/input isolation and continue remaining292at source index68 in <=900s calls,2CPU/1BLAS,source batches4,7200s cumulative phase cap. Checkpoint/push about20min and after calls. Do not compute classification metrics until360complete. Then only next dependency-ready task. Unique owner acquired; commit+push before compute. No other agent/chat/research process.
+
+## 2026-11-03T11:31:01.479406+00:00 — closed-call durable checkpoint
+
+EVAL120/360source clusters archived and restored (240JSONfiles); cumulative measured fit wall1724.139944s across3calls. Same0052cec5 fingerprint/4028b724 policy, full source-level sample unchanged; no interim classification metrics. Next continue remaining240sources, completed files skipped. Numerical full-stage verifier/metrics/CI only after360complete. Raw manifest may retain preceding PARTIAL status during live resume: ledger/PID/lease checks are required, documented in resume guide. Direct original legacy linear-profile crosscheck confirms prior failed-endpoint metadata discrepancy (no nonlinear refit or detector change); proof saved.
