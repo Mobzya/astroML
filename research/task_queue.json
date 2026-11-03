@@ -366,7 +366,7 @@
       "next_action": "Generate after policy push; cap calls/checkpoint between batches; before each compute segment confirm persistent storage and available runtime.",
       "target_day": "2026-11-05",
       "started_at_utc": "2026-11-03T04:52:19.166561+00:00",
-      "checkpoint": "EVAL120/360source clusters archived and restored (240JSONfiles); cumulative measured fit wall1724.139944s across3calls. Same0052cec5 fingerprint/4028b724 policy, full source-level sample unchanged; no interim classification metrics. Next continue remaining240sources, completed files skipped. Numerical full-stage verifier/metrics/CI only after360complete."
+      "checkpoint": "EVAL176/360sources archived/restored(352files), fit-wall2569.962095s/4calls, unchanged frozen code/policy. No classification metrics or candidate/subgroup selection. Next resume remaining184sources under7200s cumulative cap; after360only full verifier/metrics stage."
     },
     {
       "id": "W1-COV06-VERIFY",
