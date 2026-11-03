@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "W1-OPT-SPEC",
-  "next_task_id": "W1-OPT-SPEC",
+  "current_task_id": "W1-OPT-DEV",
+  "next_task_id": "W1-OPT-DEV",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -219,7 +219,7 @@
     {
       "id": "W1-OPT-SPEC",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Зафиксировать observation-only warm-start/incumbent и scale-only comparator",
       "depends_on": [
         "W1-DIAG-READ"
@@ -231,12 +231,13 @@
       "next_action": "Derive objective/bounds/parameter counts and regression criteria; prioritize numerical likelihood/feasibility/cost, not evaluation AUC/FPR.",
       "target_day": "2026-11-03",
       "started_at_utc": "2026-11-03T03:22:47.806115+00:00",
-      "checkpoint": "Next: freeze <=2 observation-only candidates, q=0/scale-only nesting, incumbent selection and operational fallback semantics; define development pilot/budgets before implementation/data."
+      "checkpoint": "One candidate COV06-A and new24-source development config fixed before code/data: scaled NNLS, observed6-start diagonal seed, analytic scale-only, q0-nested3noise warm starts, retained incumbent/tolerance and truthful fallback. Main protocol/evaluation not started.",
+      "completed_at_utc": "2026-11-03T03:31:15.335200+00:00"
     },
     {
       "id": "W1-OPT-DEV",
       "campaign_id": "week-2026-11-03-09",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Реализовать новый fitter в отдельных модулях и проверить на новых development sources",
       "depends_on": [
         "W1-OPT-SPEC"
@@ -247,7 +248,9 @@
       ],
       "acceptance": "New modules/runner leave old scientific implementation/archives intact; new development namespace; <=24 independent sources planned, <=50 and900s per logical development pilot including resumes; all variants share sources, preserve failures/actual cost.",
       "next_action": "Implement observation-only initialization and scale-only; profile/report full NLL; no generation of main calibration/evaluation.",
-      "target_day": "2026-11-03"
+      "target_day": "2026-11-03",
+      "started_at_utc": "2026-11-03T03:31:15.335200+00:00",
+      "checkpoint": "Implement new covariance06 module and bounded24-source development runner; independent unit/numerical checks first, commit clean scientific code before new development data. Do not modify old fitter or open main/evaluation."
     },
     {
       "id": "W1-OPT-VERIFY",

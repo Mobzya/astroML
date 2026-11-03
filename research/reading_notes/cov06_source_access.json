@@ -39,7 +39,7 @@
       "url": "https://github.com/Mobzya/astroML/blob/6f88ff7c37470d5e92e8542b590013be4f537d8c/src/microlens/covariance.py",
       "sha256": "f269f5303fa074e0edf8ea29c539d9b786507e60b7258ff48bd7c18c762ad547",
       "bytes": 8831,
-      "read_scope": "Full module,222 lines; previous inference numerical implementation only; no old event rows",
+      "read_scope": "Full module,204 lines; previous scientific numerical implementation only; no old event rows",
       "accessed_at_utc": "2026-11-03T03:22:47.782192+00:00",
       "redistributed_full_text": false,
       "version": "baseline source snapshot6f88ff7"

@@ -80,3 +80,7 @@ Checkout/fetch/main6f88ff7, IDLE lease and no known live research runner checked
 ### 03.11 — optimizer diagnosis complete
 
 Selected primary-source scope and current code audit saved. opt.success is local stopping status; initial incumbent not retained and best-converged priority may discard lower finite points. Own scale-only derivation gives clipped sqrt(Q/n), same mean profile. These are mathematical/code claims, no new performance results. Continue W1-OPT-SPEC before coding or new data.
+
+### 03.11 — COV06-A development specification
+
+Freeze one candidate, not a broad hyperparameter search. q0 exact nested scale-only with direct variance coordinate; diagonal observed width starts, stable positive NNLS column scaling, all feasible improvements retained. Selected converged endpoint allowed only within1e−8 relative objective tolerance of best feasible; otherwise flagged fallback/reject.24 new development pairs, logical cap900s. Main protocol/thresholds remain a separate future gate.
