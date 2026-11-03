@@ -6,11 +6,11 @@
     "owner_id": "astroml-w1-deef89d7d3454356a049d9c92efc047f",
     "task_id": "W1-COV06-EVAL",
     "started_utc": "2026-11-03T03:15:36.894282+00:00",
-    "last_checkpoint_utc": "2026-11-03T04:52:19.166561+00:00",
-    "expires_utc": "2026-11-03T07:52:19.166561+00:00",
-    "fitting_pid": null,
-    "checkpoint": "AFTER successful freeze push, generate first bounded evaluation batches only:360new source-disjoint units, frozen0052cec5 code/config+policy4028b724,5arms/18views perunit. Keep2workers/1BLAS,4source batches,900s call/7200s cumulative cap; preserve partial outputs/shards, no interim classifier metric selection/tuning. About20min left in session, leave time for raw archive/verification/lease release.",
-    "fitting_process_start_ticks": null
+    "last_checkpoint_utc": "2026-11-03T05:00:22.087967+00:00",
+    "expires_utc": "2026-11-03T08:00:22.087967+00:00",
+    "fitting_pid": 2928,
+    "checkpoint": "Evaluation live 32/360source units, one known fitting parent; do not start second process. Freeze continuity17files/Git objects/version/policy PASS. No interim classifier metrics. On call close archive raw completed clusters, then small continuation only if enough time; final save/release own lease about05:15UTC.",
+    "fitting_process_start_ticks": "5718700"
   },
   "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",
   "instructions": "Before scientific work acquire and push a session lease with unique owner_id,started_utc,last_checkpoint_utc,expires_utc,task_id. Fresh foreign lease=>skip; expired lease is not proof a worker died: check liveness, never duplicate a known active process. Heartbeat/push about20min; end releases lease. No fitting in schedule setup."

@@ -1,0 +1,14 @@
+{
+  "experiment_id": "covariance06-v1",
+  "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
+  "policy_path": "reports/covariance06/frozen_policy.json",
+  "policy_sha256": "4028b7244b45b96ec3b350bcc9309ae830c66da1cbd3f0b21b0ff196a13c86a0",
+  "freeze_commit_before_evaluation": "44ec73ee8aa2804eb5a7628fd99fd67a2e0326aa",
+  "calibration_index_path": "reports/covariance06/calibration/artifacts.json",
+  "calibration_index_sha256": "36a6f7060184814c997294a1ee61599c26a69710de7804b7570af58732470f22",
+  "evaluation_index_path": null,
+  "evaluation_archived_sources": 0,
+  "expected_evaluation_sources": 360,
+  "evaluation_status": "IN_PROGRESS_NOT_YET_ARCHIVED",
+  "resume_guide": "research/cov06/RESUME.md"
+}

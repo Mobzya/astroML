@@ -366,7 +366,7 @@
       "next_action": "Generate after policy push; cap calls/checkpoint between batches; before each compute segment confirm persistent storage and available runtime.",
       "target_day": "2026-11-05",
       "started_at_utc": "2026-11-03T04:52:19.166561+00:00",
-      "checkpoint": "AFTER successful freeze push, generate first bounded evaluation batches only:360new source-disjoint units, frozen0052cec5 code/config+policy4028b724,5arms/18views perunit. Keep2workers/1BLAS,4source batches,900s call/7200s cumulative cap; preserve partial outputs/shards, no interim classifier metric selection/tuning. About20min left in session, leave time for raw archive/verification/lease release."
+      "checkpoint": "Evaluation live 32/360source units, one known fitting parent; do not start second process. Freeze continuity17files/Git objects/version/policy PASS. No interim classifier metrics. On call close archive raw completed clusters, then small continuation only if enough time; final save/release own lease about05:15UTC."
     },
     {
       "id": "W1-COV06-VERIFY",

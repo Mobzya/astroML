@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "Git objects/source assignment/frozen policy/version continuity only; no fit/metric verification claimed",
+  "scientific_files_checked_across_calibration_freeze_evaluation_and_current": 17,
+  "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
+  "calibration_initial_code_sha": "b6af9117ae16506326c9ed880221a1e6d56c0680",
+  "policy_freeze_commit": "44ec73ee8aa2804eb5a7628fd99fd67a2e0326aa",
+  "evaluation_initial_code_sha": "44ec73ee8aa2804eb5a7628fd99fd67a2e0326aa",
+  "policy_sha256": "4028b7244b45b96ec3b350bcc9309ae830c66da1cbd3f0b21b0ff196a13c86a0",
+  "calibration_sources": 240,
+  "assigned_evaluation_sources": 360,
+  "evaluation_completed_at_audit": 28,
+  "evaluation_status_at_audit": "IN_PROGRESS",
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "new_run_remote_head_and_policy_check_enforced_by_frozen_runner": true,
+  "push_before_evaluation_ordering": "Observed in same-chat tool execution: freeze push succeeded, fetch HEAD/origin matched44ec73e, then new-run preconditions passed before generation. Not inferred from commit dates alone.",
+  "event_level_data_or_truth_read": false,
+  "classification_metrics_computed": false
+}
