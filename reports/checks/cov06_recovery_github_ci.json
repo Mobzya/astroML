@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-11-03T19:56:44.471304+00:00",
+  "head_sha": "bbe37dd130f5f626a6cc14630495c30b3fc3b806",
+  "query_url": "https://api.github.com/repos/Mobzya/astroML/actions/runs?head_sha=bbe37dd130f5f626a6cc14630495c30b3fc3b806&per_page=10",
+  "connector_limit": "Available workflow-run wrapper filters pull_request events; public API used to inspect push workflows.",
+  "access_method": "Unauthenticated public GitHub REST GET; no credentials changed.",
+  "runs": [
+    {
+      "id": 41706339423,
+      "html_url": "https://github.com/Mobzya/astroML/actions/runs/41706339423",
+      "head_sha": "bbe37dd130f5f626a6cc14630495c30b3fc3b806",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-03T19:46:12Z",
+      "updated_at": "2026-11-03T19:47:12Z"
+    }
+  ]
+}

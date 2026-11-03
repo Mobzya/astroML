@@ -1,5 +1,9 @@
 # COV06: restore/resume without relying on workspace or venv
 
+## Current blocking gate after recovered195 (03.11 ~19:46UTC)
+
+**Do not execute the generic fitting steps below.** Original local process liveness was resolved by replacement-boot evidence, all195complete sources and partialsource195 were preserved, but final fifth-call duration is unknown. Current gate is **BLOCKED_RUNTIME_ACCOUNTING**, not the earlier unresolved-process gate. The ledger's in-progress marker is historical/unclosed; no measured remaining7200s budget is certified. Do not clear/reset it or overwrite the partial source. Read [weekly partial handoff](../../reports/week_2026-11-03_09_handoff.md), current queue/session/manifest first. Independent external audit is DONE with external experiment NOT_RUN. After all useful ready work became blocked, W1-HANDOFF was selected; service state is recorded separately. A supported interrupted-duration bound or explicit owner-approved revised accounting scope is required before any new fitting, followed by an approved partial-view reconciliation procedure, new owner checkpoint and successful push. Full numerical verification of recovered195 does not authorize resume or certify full360evaluation.
+
 This is an operational guide, not evidence that another run completed. Active task and exact completed count come from `task_queue.json` and `reports/covariance06/evaluation_manifest.json`; baseline DONE never reopened. Same chat, no second runner/subagents.
 
 1. Find checkout by `https://github.com/Mobzya/astroML`,fetch main and preserve user changes. Read AGENTS/autonomous/week/status/queue/session/log. Check previous processes and foreign lease. Unresolved liveness→BLOCKED_SESSION_LIVENESS; expiry/null history is insufficient. Acquire a **new unique** owner/lease for the existing W1-COV06-EVAL and commit+push before work; don't reuse a former session owner. Push rejection→fetch/recheck ownership.

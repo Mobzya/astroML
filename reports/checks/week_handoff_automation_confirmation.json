@@ -1,0 +1,7 @@
+{
+  "status": "PAUSE_PENDING_HANDOFF_PUSH",
+  "is_enabled": true,
+  "other_automations_modified": 0,
+  "same_own_job_and_thread": true,
+  "note": "Preparation state only. Handoff must be pushed and remote SHA checked before own job pause; final service update/read-back evidence replaces this record."
+}
