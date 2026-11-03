@@ -366,7 +366,7 @@
       "next_action": "Generate after policy push; cap calls/checkpoint between batches; before each compute segment confirm persistent storage and available runtime.",
       "target_day": "2026-11-05",
       "started_at_utc": "2026-11-03T04:52:19.166561+00:00",
-      "checkpoint": "Evaluation60/360sources closed first call811.666s;1080curves/16200mean-output records saved in immutable solid shards,120JSONfiles restored. Still IN_PROGRESS, numerical full/subset check not yet run and no classification metrics. After successful checkpoint push, run only2more batches(8sources), then final numerical subset verification/archive/lease release within session."
+      "checkpoint": "68/360sources archived/restored(136files),1224curves/18360selected fits;923.8776fit-wall s/2calls. Independent selected density/KKT/bounds/19431witnesses/107712start-state references PASS,maxNLL1.82e-12. One failed legacy ABNORMAL endpoint opt.fun != independently evaluated fun(opt.x), preserved as solver metadata; verifier bookkeeping corrected without changing detector/tolerances/policy/data. Fallback/nonconverged flags retained. No classifier metrics. Next: acquire NEW owner+push, restore latest index checkpoint-0068 if missing, preflight exact Python/NumPy/SciPy/fingerprint, resume remaining292sources at index68 under same frozen4028b724 policy. Never rerun completed sources; full360required before statistics/CI."
     },
     {
       "id": "W1-COV06-VERIFY",

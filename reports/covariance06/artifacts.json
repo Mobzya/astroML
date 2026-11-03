@@ -6,10 +6,10 @@
   "freeze_commit_before_evaluation": "44ec73ee8aa2804eb5a7628fd99fd67a2e0326aa",
   "calibration_index_path": "reports/covariance06/calibration/artifacts.json",
   "calibration_index_sha256": "36a6f7060184814c997294a1ee61599c26a69710de7804b7570af58732470f22",
-  "evaluation_index_path": "reports/covariance06/evaluation/checkpoint-0060/artifacts.json",
-  "evaluation_archived_sources": 60,
+  "evaluation_index_path": "reports/covariance06/evaluation/checkpoint-0068/artifacts.json",
+  "evaluation_archived_sources": 68,
   "expected_evaluation_sources": 360,
   "evaluation_status": "PARTIAL_CHECKPOINT",
   "resume_guide": "research/cov06/RESUME.md",
-  "evaluation_index_sha256": "66d7f14d30cf6dd0b52950fe1bf38c3b4ac36b025c29d82dd5bb6b441767c54a"
+  "evaluation_index_sha256": "b41a38e9c7677d44e8d60e2959a7c729f90f1a1a0774dff2c9ec809561a82d12"
 }

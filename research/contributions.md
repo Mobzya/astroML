@@ -23,3 +23,5 @@
 ## 03.11.2026 — новая недельная кампания, помощь Codex
 
 Codex последовательно выполнил selected-source numerical diagnosis, observation-only COV06-A/scale-only design, новый24source development+independent verifier, main/stress protocols,12source runner smoke/restore/controls,240source calibration и независимый freeze. Код/протоколы/вычисления/тексты созданы с помощью ИИ; это не личный вклад ученика. Основная evaluation и её выводы на этом checkpoint ещё не завершены; личные учебные задания не отмечались выполненными.
+
+03.11 конец окна: Codex выполнил первые68/360новых evaluation sources, raw restore и независимую numerical проверку subset; full experiment/CI/outcome не объявлены завершёнными. Выявлено и сохранено расхождение metadata неуспешного legacy solver endpoint; detector не менялся и повторно не запускался. Это помощь ИИ, не выполненное личное задание участника.

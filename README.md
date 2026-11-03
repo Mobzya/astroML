@@ -13,7 +13,7 @@
 
 02.11 владелец разрешил продолжение на03–09ноября: **[план недели](research/WEEK_PLAN_2026-11-03.md)**, [очередь с зависимостями](research/task_queue.json). Цель — исправление optimizer, scale-only ablation, новые независимые COV06/stress данные и обновление рукописи. Старые результаты ниже остаются неизменными; новый основной outcome ещё не измерен. Последовательный режим в этом чате,21 окно каждые8часов,120min target; фактическое подтверждение включения — [STATUS](research/STATUS.md). Лимиты аккаунта не видны, выполнение всех окон не гарантируется.
 
-Новая неделя03.11: [development pilot](reports/cov06_development.md) на24sources/219.16s завершён; [independent numerical verification](reports/cov06_numerical_validation.md) проверила2304fits/57304improvement points. Это проверка вычислений, не новые AUC/FPR и не main evaluation. Main/stress protocols и [12-source runner smoke](reports/cov06_pilot.md) завершены. [Calibration240sources/frozen policy](reports/covariance06/calibration_freeze.md) проверена; новая evaluation начинается после успешного freeze push.
+Новая неделя03.11: [development pilot](reports/cov06_development.md) на24sources/219.16s завершён; [independent numerical verification](reports/cov06_numerical_validation.md) проверила2304fits/57304improvement points. Это проверка вычислений, не новые AUC/FPR и не main evaluation. Main/stress protocols и [12-source runner smoke](reports/cov06_pilot.md) завершены. [Calibration240sources/frozen policy](reports/covariance06/calibration_freeze.md) проверена; [Новая evaluation](reports/covariance06/evaluation_manifest.json):68/360sources сохранены/восстановлены и численно проверены; полный outcome ещё не получен. [Продолжение из GitHub](research/cov06/RESUME.md).
 
 ## Два результата
 

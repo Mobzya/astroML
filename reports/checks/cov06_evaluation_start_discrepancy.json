@@ -1,0 +1,83 @@
+{
+  "status": "DIAGNOSTIC_ONLY_NOT_A_GATE_PASS",
+  "source_id": "astroml-cov06-main-20261103-v1:620301:00000007",
+  "source_file": "source-0019.json",
+  "view": "matern_biased/gaussian/random40",
+  "method": "legacy_estimated",
+  "family": "pspl",
+  "selected_fit_nll": 24.08699875668853,
+  "points": [
+    {
+      "start_index": 0,
+      "success": true,
+      "stored_final_nll": 24.08699875668853,
+      "raw_nnls_norm_nll": 24.08699875668853,
+      "raw_nnls_physical_residual_nll": 24.086998756688526,
+      "scipy_density_at_raw_nnls_coefficients": 24.086998756688512,
+      "independent_active_set_nll": 24.086998756688523,
+      "raw_nnls_coefficients": [
+        0.0,
+        1.1120008531596584
+      ],
+      "whitened_design_condition": 3801881017737.632,
+      "covariance_condition": 11.961671471592965,
+      "theta": [
+        -4.605170185988091,
+        1.9999998259129437,
+        -6.907755150913971,
+        -0.6931471805599453,
+        1.123095573489105,
+        0.5320012673103967
+      ]
+    },
+    {
+      "start_index": 1,
+      "success": true,
+      "stored_final_nll": 24.086998756688587,
+      "raw_nnls_norm_nll": 24.086998756688587,
+      "raw_nnls_physical_residual_nll": 24.086998756688594,
+      "scipy_density_at_raw_nnls_coefficients": 24.08699875668859,
+      "independent_active_set_nll": 24.086998756688587,
+      "raw_nnls_coefficients": [
+        0.0,
+        1.1120008529514034
+      ],
+      "whitened_design_condition": 3801828428085.362,
+      "covariance_condition": 11.961669108371005,
+      "theta": [
+        -4.605170185988091,
+        2.0,
+        -6.907755278982137,
+        -0.6931471805599453,
+        1.1230954967861695,
+        0.5320011788042606
+      ]
+    },
+    {
+      "start_index": 2,
+      "success": false,
+      "stored_final_nll": -2.2032024626159696,
+      "raw_nnls_norm_nll": -2.2031953818455,
+      "raw_nnls_physical_residual_nll": -2.2031953818454895,
+      "scipy_density_at_raw_nnls_coefficients": -2.2031953818455037,
+      "independent_active_set_nll": -2.2031953818454966,
+      "raw_nnls_coefficients": [
+        1.0638140812719645,
+        0.00327812337013912
+      ],
+      "whitened_design_condition": 6.500943880769611,
+      "covariance_condition": 8.65273196370793,
+      "theta": [
+        -3.62975575168677,
+        0.6141706686594577,
+        -6.114525941602485,
+        -0.5351482129209776,
+        0.6045522184093305,
+        0.5518735055239176
+      ]
+    }
+  ],
+  "no_detector_rerun_or_policy_change": true,
+  "no_truth_used": true,
+  "interpretation": "Investigate independent discarded-endpoint linear-profile discrepancy; preserve raw endpoint and selected outputs. Do not relax tolerance or repair detector based on this evaluation."
+}

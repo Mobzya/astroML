@@ -117,6 +117,7 @@ def verify(run, allow_partial=False):
         for c in cfg[phase + "_conditions"]
     }
     selected, witnesses, endpoints = 0, 0, 0
+    failed_legacy_endpoint_metadata = []
     maxerror = 0.0
     fail = Counter()
     valid = Counter()
@@ -339,13 +340,35 @@ def verify(run, allow_partial=False):
                             cstart = theta_cov(t, sigma, mode, theta, dim, oracle)
                             check = profiled_nll(t, y, family, theta[:dim], cstart)
                             # No independent KKT claim for discarded non-selected states.
-                            np.testing.assert_allclose(
-                                check,
-                                value,
-                                atol=1e-7,
-                                rtol=1e-9,
-                                err_msg=f"{record['source_id']} {row['key']} {mode} {family} {prefix}",
-                            )
+                            if (
+                                mode == "legacy_estimated"
+                                and prefix == "final"
+                                and not start["success"]
+                            ):
+                                # Failed OptimizeResult.fun need not equal fun(OptimizeResult.x),
+                                # e.g. an unsuccessful line search. It is solver metadata,
+                                # not an independently evaluated physical endpoint NLL.
+                                if not np.isclose(check, value, atol=1e-7, rtol=1e-9):
+                                    failed_legacy_endpoint_metadata.append(
+                                        {
+                                            "source_id": record["source_id"],
+                                            "view": row["key"],
+                                            "family": family,
+                                            "solver_message": start["message"],
+                                            "solver_reported_fun": value,
+                                            "independent_profile_nll_at_returned_x": float(check),
+                                            "absolute_difference": float(abs(check - value)),
+                                            "selected_fit_density_still_checked": True,
+                                        }
+                                    )
+                            else:
+                                np.testing.assert_allclose(
+                                    check,
+                                    value,
+                                    atol=1e-7,
+                                    rtol=1e-9,
+                                    err_msg=f"{record['source_id']} {row['key']} {mode} {family} {prefix}",
+                                )
                             endpoints += 1
                 if len(bics) == 3:
                     np.testing.assert_allclose(
@@ -373,6 +396,7 @@ def verify(run, allow_partial=False):
         "valid_method_sets": dict(valid),
         "scientific_fingerprint": m["scientific_fingerprint"],
         "runtime_seconds": time.perf_counter() - started,
+        "failed_legacy_endpoint_solver_metadata_mismatches": failed_legacy_endpoint_metadata,
         "classification_metrics_computed": False,
         "full_intermediate_parameters_verified": False,
     }

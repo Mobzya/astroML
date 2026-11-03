@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-11-03T05:09:54Z",
+  "is_enabled": true,
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Moscow:20261103T061500\nRRULE:FREQ=HOURLY;INTERVAL=8;COUNT=21\nEND:VEVENT",
+  "timing_mode": "exact_schedule",
+  "last_run_time": "2026-11-03T03:13:45.649740+00:00",
+  "next_run_time": null,
+  "recorded_run_details": {
+    "last_run": null,
+    "latest_result": null,
+    "delivery_status": "unknown"
+  },
+  "changes_to_automation_made_by_this_session": false,
+  "private_ids_omitted": true,
+  "interpretation": "Enablement/schedule confirmed by read-back; null history/next_run_time and delivery unknown do not prove execution or guarantee future delivery. Scientific results are separately evidenced in session report/raw manifests."
+}
