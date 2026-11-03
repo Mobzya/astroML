@@ -1,0 +1,74 @@
+{
+  "sources": [
+    {
+      "id": "C06-L01",
+      "url": "https://users.iems.northwestern.edu/~nocedal/PDFfiles/limited.pdf",
+      "sha256": "44f2a2b2e095f01f415580eac1965ae40a8262659ebd0d5dca7dccc131ee46fb",
+      "bytes": 231802,
+      "read_scope": "Cover and sections1–2, PDF2–4=printed1–3; cover/PDF4 visual; numerical experiments and later sections not read",
+      "accessed_at_utc": "2026-11-03T03:22:47.782192+00:00",
+      "redistributed_full_text": false,
+      "version_read": "Technical Report NAM-08 revised May1994,25PDF pages",
+      "related_journal_doi": "10.1137/0916069",
+      "journal_version_read": false
+    },
+    {
+      "id": "C06-C01",
+      "url": "https://github.com/scipy/scipy/blob/e4e854eaa8f18d807cd3496028e257e36caa93cc/scipy/optimize/_lbfgsb_py.py",
+      "sha256": "61b69554f33a210284d4ae3de7da282152f9302b428eeb16984498b54e381d57",
+      "bytes": 21077,
+      "read_scope": "lines272–327 options and380–465 return/status loop; installed file byte-equal release tag v1.18.1",
+      "accessed_at_utc": "2026-11-03T03:22:47.782192+00:00",
+      "redistributed_full_text": false,
+      "version": "scipy1.18.1",
+      "upstream_commit": "e4e854eaa8f18d807cd3496028e257e36caa93cc"
+    },
+    {
+      "id": "C06-C02",
+      "url": "https://github.com/scipy/scipy/blob/e4e854eaa8f18d807cd3496028e257e36caa93cc/scipy/optimize/_nnls.py",
+      "sha256": "161a01972db79bc840899d24b4e461ff1d4e2498e0592b6603285f6e1a6eccae",
+      "bytes": 2607,
+      "read_scope": "all91 wrapper lines/docstring; compiled _slsqplib internals not audited",
+      "accessed_at_utc": "2026-11-03T03:22:47.782192+00:00",
+      "redistributed_full_text": false,
+      "version": "scipy1.18.1",
+      "upstream_commit": "e4e854eaa8f18d807cd3496028e257e36caa93cc"
+    },
+    {
+      "id": "C06-P01",
+      "url": "https://github.com/Mobzya/astroML/blob/6f88ff7c37470d5e92e8542b590013be4f537d8c/src/microlens/covariance.py",
+      "sha256": "f269f5303fa074e0edf8ea29c539d9b786507e60b7258ff48bd7c18c762ad547",
+      "bytes": 8831,
+      "read_scope": "Full module,222 lines; previous inference numerical implementation only; no old event rows",
+      "accessed_at_utc": "2026-11-03T03:22:47.782192+00:00",
+      "redistributed_full_text": false,
+      "version": "baseline source snapshot6f88ff7"
+    },
+    {
+      "id": "C06-L04-reused",
+      "url": "https://gaussianprocess.org/gpml/chapters/RW5.pdf",
+      "sha256": "38a39db854e36b304a5fb78e70dc261fc6c634014ea1b4004c47d7affcbd8acd",
+      "bytes": 862928,
+      "read_scope": "Existing LIT02 source reused; reread PDF8–9=book112–113 section5.4.1 eq5.8; no new full chapter read claimed",
+      "accessed_at_utc": "2026-11-03T03:22:47.782192+00:00",
+      "redistributed_full_text": false,
+      "version_read": "2006 GPML web2ndprinting",
+      "previous_scope_reference": "research/reading_notes/L03_L04_likelihood.md"
+    },
+    {
+      "id": "C06-L02",
+      "url": "https://doi.org/10.1137/0710036",
+      "title": "The Differentiation of Pseudo-Inverses and Nonlinear Least Squares Problems Whose Variables Separate",
+      "authors": "G.H.Golub; V.Pereyra",
+      "year": 1973,
+      "read_scope": "publisher abstract only, public page lines51–66; full journal text not accessed",
+      "reading_status": "ABSTRACT_ONLY",
+      "accessed_at_utc": "2026-11-03T03:22:47.782192+00:00",
+      "downloaded_file": null,
+      "sha256": null,
+      "limitation": "Unconstrained variable projection/constant-rank framework; not a theorem for changing NNLS active sets."
+    }
+  ],
+  "old_event_level_evaluation_accessed": false,
+  "new_experiment_data_generated": false
+}

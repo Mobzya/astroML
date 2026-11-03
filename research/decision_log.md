@@ -76,3 +76,7 @@ Manuscript/handoff pushed1af2b0f and remote SHA confirmed. Artifact/link audit P
 ## 03.11.2026 — первая научная сессия новой недели
 
 Checkout/fetch/main6f88ff7, IDLE lease and no known live research runner checked. Acquire unique lease and mark W1-DIAG-READ IN_PROGRESS before scientific reading. Work only code/primary sources/published aggregate motivation; old event-level evaluation and truth closed. Target120min, continue next ready tasks sequentially; no new primary/main data generated at start.
+
+### 03.11 — optimizer diagnosis complete
+
+Selected primary-source scope and current code audit saved. opt.success is local stopping status; initial incumbent not retained and best-converged priority may discard lower finite points. Own scale-only derivation gives clipped sqrt(Q/n), same mean profile. These are mathematical/code claims, no new performance results. Continue W1-OPT-SPEC before coding or new data.

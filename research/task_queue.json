@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "W1-DIAG-READ",
-  "next_task_id": "W1-DIAG-READ",
+  "current_task_id": "W1-OPT-SPEC",
+  "next_task_id": "W1-OPT-SPEC",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -200,7 +200,7 @@
     {
       "id": "W1-DIAG-READ",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Объяснить локальные провалы covariance optimization по коду и первичным источникам",
       "depends_on": [
         "W1-SETUP"
@@ -213,12 +213,13 @@
       "next_action": "Use new campaign, read current fitter and selected optimization/GP primary sections; no benchmark or old event-level evaluation access.",
       "target_day": "2026-11-03",
       "started_at_utc": "2026-11-03T03:15:36.894282+00:00",
-      "checkpoint": "Session lease acquired before science. Next: inspect current fitter, primary L-BFGS-B/NNLS and GP likelihood sections; record actually read scopes and falsifiable numerical invariants. No benchmark/main data generated."
+      "checkpoint": "Current fitter + selected NAM08May1994/SciPy1.18.1 sources audited; exact read scopes/hashes and stationary-face/incumbent/scale-only derivations saved. No old event-level data or new experiments used.",
+      "completed_at_utc": "2026-11-03T03:22:47.806115+00:00"
     },
     {
       "id": "W1-OPT-SPEC",
       "campaign_id": "week-2026-11-03-09",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Зафиксировать observation-only warm-start/incumbent и scale-only comparator",
       "depends_on": [
         "W1-DIAG-READ"
@@ -228,7 +229,9 @@
       ],
       "acceptance": "At most2 development candidate variants; starts use observed diagonal/scale-only fits, never truth. Feasible incumbent non-worsening rule, convergence/fallback semantics, NNLS scaling/underflow handling, budgets/bounds and development selection criterion fixed before coding/data.",
       "next_action": "Derive objective/bounds/parameter counts and regression criteria; prioritize numerical likelihood/feasibility/cost, not evaluation AUC/FPR.",
-      "target_day": "2026-11-03"
+      "target_day": "2026-11-03",
+      "started_at_utc": "2026-11-03T03:22:47.806115+00:00",
+      "checkpoint": "Next: freeze <=2 observation-only candidates, q=0/scale-only nesting, incumbent selection and operational fallback semantics; define development pilot/budgets before implementation/data."
     },
     {
       "id": "W1-OPT-DEV",
