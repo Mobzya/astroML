@@ -6,11 +6,11 @@
     "owner_id": "astroml-w1-deef89d7d3454356a049d9c92efc047f",
     "task_id": "W1-COV06-CAL",
     "started_utc": "2026-11-03T03:15:36.894282+00:00",
-    "last_checkpoint_utc": "2026-11-03T04:32:01.325109+00:00",
-    "expires_utc": "2026-11-03T07:32:01.325109+00:00",
-    "fitting_pid": null,
-    "checkpoint": "All prerequisites DONE. New240calibration units/3seeds only;5arms,4views/source, scientific fingerprint0052cec5 frozen. Run bounded resumable batches, independent numerical verifier and immutable rawshards; freeze empirical global policy+push BEFORE evaluation. No evaluation views now.",
-    "fitting_process_start_ticks": null
+    "last_checkpoint_utc": "2026-11-03T04:42:48.785965+00:00",
+    "expires_utc": "2026-11-03T07:42:48.785965+00:00",
+    "fitting_pid": 2586,
+    "checkpoint": "Calibration live: 176/240sources complete; preserve current PID, do not start second process. Pre-evaluation statistics+independent weighted verifier implemented,38unit tests PASS on fixtures; no evaluation observations. Finish numerical verification/archive/frozen global policy next.",
+    "fitting_process_start_ticks": "5598705"
   },
   "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",
   "instructions": "Before scientific work acquire and push a session lease with unique owner_id,started_utc,last_checkpoint_utc,expires_utc,task_id. Fresh foreign lease=>skip; expired lease is not proof a worker died: check liveness, never duplicate a known active process. Heartbeat/push about20min; end releases lease. No fitting in schedule setup."

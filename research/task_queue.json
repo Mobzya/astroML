@@ -347,7 +347,7 @@
       "next_action": "Run bounded resumable calibration; failure=>checkpoint, never silently drop sources. Store compact verified shards using authorized Git if Releases assets unavailable.",
       "target_day": "2026-11-05",
       "started_at_utc": "2026-11-03T04:32:01.325109+00:00",
-      "checkpoint": "All prerequisites DONE. New240calibration units/3seeds only;5arms,4views/source, scientific fingerprint0052cec5 frozen. Run bounded resumable batches, independent numerical verifier and immutable rawshards; freeze empirical global policy+push BEFORE evaluation. No evaluation views now."
+      "checkpoint": "Calibration live: 176/240sources complete; preserve current PID, do not start second process. Pre-evaluation statistics+independent weighted verifier implemented,38unit tests PASS on fixtures; no evaluation observations. Finish numerical verification/archive/frozen global policy next."
     },
     {
       "id": "W1-COV06-EVAL",

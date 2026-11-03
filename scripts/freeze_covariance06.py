@@ -87,6 +87,8 @@ def main():
         ).hexdigest(),
         "freeze_code_sha": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
         "freeze_script_sha256": sha(__file__),
+        "analysis_producer_sha256": sha("scripts/covariance06_statistics.py"),
+        "analysis_code_frozen_before_evaluation": True,
         "target_calibration_fpr": cfg["target_calibration_fpr"],
         "rule": "pool white/Matérn complete Gaussian; invalid=-inf; nextafter ascending ceil(.95*n)-1; no-positive if boundary nonfinite",
         "not_a_population_or_subgroup_fpr_guarantee": True,

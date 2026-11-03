@@ -125,6 +125,26 @@ def verify(run, allow_partial=False):
         assert record["seed"] == expected[index]["seed"] and record["split"] == phase
         truth = json.loads((run / f"truth/source-{index:04d}.json").read_text())
         assert truth["source_id"] == record["source_id"]
+        p = truth["pspl_parameters"]
+        g = truth["gaussian_parameters"]
+        assert (
+            0.15 <= p["u0"] <= 1
+            and 60 <= p["t0"] <= 180
+            and 8 <= p["t_e"] <= 35
+            and 0.3 <= p["f_s"] <= 0.9
+        )
+        np.testing.assert_allclose(p["f_s"] + p["f_b"], 1.0, atol=1e-14)
+        peak = p["f_s"] * ((p["u0"] ** 2 + 2) / np.sqrt(p["u0"] ** 2 * (p["u0"] ** 2 + 4)) - 1)
+        np.testing.assert_allclose(
+            [truth["amplitude"], g["amplitude"], g["center"], g["baseline"]],
+            [peak, peak, p["t0"], 1.0],
+            atol=1e-12,
+        )
+        half = p["t0"] + np.array([-0.5, 0.5]) * truth["fwhm_days"]
+        np.testing.assert_allclose(true_mean(half, "pspl", truth), 1 + peak / 2, atol=1e-11)
+        np.testing.assert_allclose(true_mean(half, "gaussian", truth), 1 + peak / 2, atol=1e-11)
+        hetero = np.asarray(truth["sigma_true"]) * cfg["snr"] / peak
+        assert np.all((hetero >= 0.8) & (hetero <= 1.2))
         assert len(record["views"]) == len(expected_grid)
         assert {(v["noise"], v["family"], v["condition"]) for v in record["views"]} == expected_grid
         residuals = {}
@@ -298,6 +318,14 @@ def verify(run, allow_partial=False):
                                 row["results"]["scale"]["fits"][family]["nll"],
                                 atol=1e-7,
                             )
+                            initial = points[0]["theta"]
+                            np.testing.assert_allclose(
+                                initial[:dim],
+                                row["results"]["diagonal"]["fits"][family]["shape_theta"],
+                                atol=0,
+                                rtol=0,
+                            )
+                            assert initial[dim + 1] == 0
                     for start in fit["starts"]:
                         if mode != "legacy_estimated":
                             assert start["likelihood_evaluations"] <= cfg["maxfun"]
