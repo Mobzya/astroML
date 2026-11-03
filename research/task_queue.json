@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "W1-STRESS-PROTOCOL",
-  "next_task_id": "W1-STRESS-PROTOCOL",
+  "current_task_id": "W1-COV06-CAL",
+  "next_task_id": "W1-COV06-CAL",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -313,7 +313,7 @@
     {
       "id": "W1-COV06-PILOT",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Выполнить CPU smoke и сохранить замороженный scientific code/config до main",
       "depends_on": [
         "W1-COV06-PROTOCOL",
@@ -327,12 +327,13 @@
       "next_action": "Estimate main runtime; aim each indivisible batch<=15min and fit within remaining session; never launch unseen final data just to test the runner.",
       "target_day": "2026-11-04",
       "started_at_utc": "2026-11-03T04:18:16.913027+00:00",
-      "checkpoint": "Smoke4/12sources saved:58.35s,72views/1080fits independent density PASS. Independent start-profiler tiny-column correction documented; scientific fingerprint unchanged. Checkpoint shards complete; restore+resume next8, no refitting4."
+      "checkpoint": "12separate smoke sources/216curves/3240fits,2workers164.031s across2calls; first4 restored/resumed without refit (8hashes unchanged). Independent density/KKT/3427witnesses/19008start states PASS,maxNLL2.05e-12;8corruption/admission controls,24files restored;34unit tests. LosslessLZMA archive1.44MB implies41.1MiB evaluation<50MiB. Combined pilot budget charged240s<900. No main data.",
+      "completed_at_utc": "2026-11-03T04:32:01.325109+00:00"
     },
     {
       "id": "W1-COV06-CAL",
       "campaign_id": "week-2026-11-03-09",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Сгенерировать только новую calibration, заморозить policy и отправить в GitHub",
       "depends_on": [
         "W1-COV06-PILOT"
@@ -344,7 +345,9 @@
       ],
       "acceptance": "Complete calibration/independent numerical verifier; all source IDs/scores/rejections/hash/library versions saved. Candidate not selected on calibration classification metrics. Policy/threshold and fingerprint committed+pushed BEFORE any new evaluation observations.",
       "next_action": "Run bounded resumable calibration; failure=>checkpoint, never silently drop sources. Store compact verified shards using authorized Git if Releases assets unavailable.",
-      "target_day": "2026-11-05"
+      "target_day": "2026-11-05",
+      "started_at_utc": "2026-11-03T04:32:01.325109+00:00",
+      "checkpoint": "All prerequisites DONE. New240calibration units/3seeds only;5arms,4views/source, scientific fingerprint0052cec5 frozen. Run bounded resumable batches, independent numerical verifier and immutable rawshards; freeze empirical global policy+push BEFORE evaluation. No evaluation views now."
     },
     {
       "id": "W1-COV06-EVAL",

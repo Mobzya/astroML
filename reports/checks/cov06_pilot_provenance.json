@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
+  "initial_clean_code_sha": "85f59bc2db97c744ab2ef74411feaf80a534eafa",
+  "resume_metadata_sha": "399f5e12003aaf16ff2e15f1f0ff791720a24a8d",
+  "files_sha256": {
+    "scripts/run_covariance06.py": "6a9fc1020f7c9fe52bc9d659fd01c6f0953352b3ef652ce66d72776a1f1f6a04",
+    "scripts/verify_covariance06.py": "023ae232fc5da68c8d8cfd30b56bc415b3ee902589efb1c5e4d07213347c4310",
+    "scripts/verify_covariance06_development.py": "d757858b50623d077cc62670ac0f0ac2bf4a2add670735a9330c7d11b7031734",
+    "scripts/check_covariance06_pilot_controls.py": "501c537f4f7a310562534bd44cd05c9f6abae920aa54d845a3fe60a9fa0019e6",
+    "scripts/archive_covariance06.py": "2a03db20eed7dc13882fce6dcc14fdb220ac0048ac76997852bc3bd69f63fc47",
+    "scripts/restore_research_shards.py": "fb6b1856540a0a49847e0d12ee1129b3d392e16c1e04e3d5b712a2c56e07891e",
+    "scripts/freeze_covariance06.py": "873e2ba8969344216e06460eba9ecb730689c937c3866542503f397208f04a54",
+    "tests/test_covariance06_reference.py": "df33b5b813d008b76f253e848edf9f119de499421e53216c5ab558e0dab8c677",
+    "tests/test_stress06.py": "6bfec27ef11451a08e8b6435bfa05250b98776dac86befd652a98e49ccc0d550",
+    "tests/test_covariance06_runner.py": "3f3be01db341ba680e328d4937d91b1b03fcfd26d70189311159f54d23012735"
+  },
+  "fitting_wall_seconds": 164.03105321299518,
+  "combined_budget_conservative_seconds": 240,
+  "development_sources": 12,
+  "unconditional_classification_metrics_computed": false,
+  "no_main_data_generated": true,
+  "full_intermediate_trace_parameters_archived": false
+}

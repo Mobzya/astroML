@@ -1,1 +1,35 @@
-{"phase":"pilot","namespace":"astroml-cov06-smoke-20261103-v1","budget_used_seconds":58.353718579994165,"invocations":[{"started_utc":"2026-11-03T04:24:52.209170+00:00","owner":"astroml-w1-deef89d7d3454356a049d9c92efc047f","pid":2388,"process_start_ticks":"5551505","git_sha":"85f59bc2db97c744ab2ef74411feaf80a534eafa","elapsed_seconds":58.353718579994165,"status":"PARTIAL_CHECKPOINT","last_batch_wall_seconds":58.27021839700319,"finished_utc":"2026-11-03T04:25:50.562867+00:00"}],"invocation_in_progress":false}
+{
+  "phase": "pilot",
+  "namespace": "astroml-cov06-smoke-20261103-v1",
+  "budget_used_seconds": 240.0,
+  "invocations": [
+    {
+      "started_utc": "2026-11-03T04:24:52.209170+00:00",
+      "owner": "astroml-w1-deef89d7d3454356a049d9c92efc047f",
+      "pid": 2388,
+      "process_start_ticks": "5551505",
+      "git_sha": "85f59bc2db97c744ab2ef74411feaf80a534eafa",
+      "elapsed_seconds": 58.353718579994165,
+      "status": "PARTIAL_CHECKPOINT",
+      "last_batch_wall_seconds": 58.27021839700319,
+      "finished_utc": "2026-11-03T04:25:50.562867+00:00"
+    },
+    {
+      "started_utc": "2026-11-03T04:27:56.579985+00:00",
+      "owner": "astroml-w1-deef89d7d3454356a049d9c92efc047f",
+      "pid": 2465,
+      "process_start_ticks": "5569934",
+      "git_sha": "399f5e12003aaf16ff2e15f1f0ff791720a24a8d",
+      "elapsed_seconds": 105.67733463300101,
+      "status": "COMPLETE",
+      "last_batch_wall_seconds": 56.5511284230015,
+      "finished_utc": "2026-11-03T04:29:42.257294+00:00"
+    }
+  ],
+  "invocation_in_progress": false,
+  "fit_wall_seconds": 164.03105321299518,
+  "conservative_combined_budget_charge_seconds": 240.0,
+  "validation_and_overhead_reserve_seconds": 75.96894678700482,
+  "logical_pilot_complete": true,
+  "comment": "240s is conservative combined fit/validation/archive/unit/restore charge, not an exact end-to-end stopwatch. Original manifest164.031s is measured fitting wall across2calls."
+}

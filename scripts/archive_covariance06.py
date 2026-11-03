@@ -5,7 +5,7 @@ import hashlib
 import json
 from io import BytesIO
 from pathlib import Path
-from zipfile import ZIP_DEFLATED, ZipFile
+from zipfile import ZIP_LZMA, ZipFile
 
 
 def digest(raw):
@@ -29,7 +29,7 @@ def main():
     groups = []
     for offset in range(0, len(sources), 4):
         data = BytesIO()
-        with ZipFile(data, "w", ZIP_DEFLATED, compresslevel=9) as z:
+        with ZipFile(data, "w", ZIP_LZMA) as z:
             for name in sources[offset : offset + 4]:
                 for file in [name, "truth/" + name]:
                     z.writestr(file, (a.run / file).read_bytes())
@@ -47,6 +47,7 @@ def main():
         "manifest_sha256": digest(raw),
         "artifacts": [],
         "total_compressed_bytes": total,
+        "zip_compression": "LZMA lossless",
     }
     for offset, data, names in groups:
         path = a.destination / f"{a.label}-{offset:04d}-{offset + len(names) - 1:04d}.zip"

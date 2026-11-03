@@ -68,7 +68,7 @@ python -m pytest -q
 python -m ruff check src scripts tests
 ```
 
-29 unit tests, включая независимую физическую сверку с MulensModel и новые COV06 numerical safeguards; CI проверяет код и numerical smoke. Научные verifier отдельно пересчитывают сохранённые результаты:6480 R2 и87480 COV05 evaluation fit rows. Ошибка full-NLL пересчёта COV05 не более6.37×10⁻¹²; это проверка вычислений, не global optimization или survey validity.
+34 unit tests, включая независимую физическую сверку с MulensModel и новые COV06 numerical safeguards; CI проверяет код и numerical smoke. Научные verifier отдельно пересчитывают сохранённые результаты:6480 R2 и87480 COV05 evaluation fit rows. Ошибка full-NLL пересчёта COV05 не более6.37×10⁻¹²; это проверка вычислений, не global optimization или survey validity.
 
 ```bash
 python scripts/restore_covariance05.py --phase evaluation --output artifacts/cov05-verify
@@ -96,3 +96,5 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/verify_covariance05.py a
 Интерфейс, изображения звёздного поля и CV — возможное продолжение после личного освоения результатов. Baseline цикл закончен handoff; новая недельная кампания разрешена отдельно. Текущее подтверждённое состояние своей автоматизации — в [STATUS](research/STATUS.md). [План дальнейших этапов](research/research_plan.md).
 
 Лицензия кода пока не назначена. Публичность не означает произвольное разрешение повторного использования; у сторонних источников собственные условия. Секреты, персональные документы и чужие полные тексты не публикуются.
+
+03.11 COV06 runner smoke: [12-source pilot](reports/cov06_pilot.md), [independent verifier](reports/checks/cov06_pilot_verifier.json), [immutable raw shards](reports/covariance06/pilot/complete/artifacts.json). Main calibration follows; classification results are not yet available.

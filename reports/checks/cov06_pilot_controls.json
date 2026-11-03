@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "wrong_bic",
+      "detected": true,
+      "source_checksum_refreshed": true,
+      "diagnostic_tail": "/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 235, in verify\n    np.testing.assert_allclose(bics[family], fit[\"bic\"], atol=1e-7, rtol=1e-9)\n  File \"/workspace/astroml-microlensing/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 1780, in assert_allclose\n    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),\n  File \"/workspace/astroml-microlensing/.venv/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 988, in assert_array_compare\n    raise AssertionError(msg)\nAssertionError: \nNot equal to tolerance rtol=1e-09, atol=1e-07\n\nMismatched elements: 1 / 1 (100%)\nMax absolute difference among violations: 1.\nMax relative difference among violations: 0.00141549\n ACTUAL: array(705.468569)\n DESIRED: array(706.468569)\n"
+    },
+    {
+      "case": "wrong_history",
+      "detected": true,
+      "source_checksum_refreshed": true,
+      "diagnostic_tail": "Traceback (most recent call last):\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 366, in <module>\n    main()\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 359, in main\n    result = verify(a.run, a.allow_partial)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 258, in verify\n    assert len(history) == fit[\"incumbent_point_count\"] and all(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "case": "wrong_start_theta",
+      "detected": true,
+      "source_checksum_refreshed": true,
+      "diagnostic_tail": "Traceback (most recent call last):\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 366, in <module>\n    main()\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 359, in main\n    result = verify(a.run, a.allow_partial)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 311, in verify\n    cstart = theta_cov(t, sigma, mode, theta, dim, oracle)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 54, in theta_cov\n    assert 0.5 - 1e-12 <= np.exp(a) <= 3 + 1e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "case": "paired_flux",
+      "detected": true,
+      "source_checksum_refreshed": true,
+      "diagnostic_tail": "ges/numpy/testing/_private/utils.py\", line 988, in assert_array_compare\n    raise AssertionError(msg)\nAssertionError: \nNot equal to tolerance rtol=0, atol=0\n\nMismatched elements: 1 / 58 (1.72%)\nMismatch at index:\n [0]: 1.00421412538314 (ACTUAL), 1.01421412538314 (DESIRED)\nMax absolute difference among violations: 0.01\nMax relative difference among violations: 0.00985985\n ACTUAL: array([1.004214, 1.002197, 0.981367, 0.98691 , 0.976024, 0.989117,\n       0.972987, 0.994277, 1.002391, 0.982346, 0.989266, 0.991666,\n       0.98531 , 1.015024, 0.996256, 0.980697, 1.000946, 0.997761,...\n DESIRED: array([1.014214, 1.002197, 0.981367, 0.98691 , 0.976024, 0.989117,\n       0.972987, 0.994277, 1.002391, 0.982346, 0.989266, 0.991666,\n       0.98531 , 1.015024, 0.996256, 0.980697, 1.000946, 0.997761,...\n"
+    },
+    {
+      "case": "oracle_flag",
+      "detected": true,
+      "source_checksum_refreshed": true,
+      "diagnostic_tail": "Traceback (most recent call last):\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 366, in <module>\n    main()\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 359, in main\n    result = verify(a.run, a.allow_partial)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 191, in verify\n    method[\"oracle_only\"] == (mode == \"oracle\")\nAssertionError\n"
+    },
+    {
+      "case": "input_hash",
+      "detected": true,
+      "source_checksum_refreshed": true,
+      "diagnostic_tail": "Traceback (most recent call last):\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 366, in <module>\n    main()\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 359, in main\n    result = verify(a.run, a.allow_partial)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 187, in verify\n    assert h.hexdigest() == row[\"input_hash\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "case": "completed_rerun",
+      "detected": true,
+      "no_fitting_started": true,
+      "diagnostic_tail": "Traceback (most recent call last):\n  File \"/workspace/astroml-microlensing/scripts/run_covariance06.py\", line 524, in <module>\n    main()\n  File \"/workspace/astroml-microlensing/scripts/run_covariance06.py\", line 327, in main\n    assert manifest[\"status\"] != \"COMPLETE\", \"Completed run must not be repeated\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Completed run must not be repeated\n"
+    },
+    {
+      "case": "foreign_owner",
+      "detected": true,
+      "no_fitting_started": true,
+      "diagnostic_tail": "Traceback (most recent call last):\n  File \"/workspace/astroml-microlensing/scripts/run_covariance06.py\", line 524, in <module>\n    main()\n  File \"/workspace/astroml-microlensing/scripts/run_covariance06.py\", line 258, in main\n    lease_check()\n  File \"/workspace/astroml-microlensing/scripts/run_covariance06.py\", line 254, in lease_check\n    assert a and a[\"owner_id\"] == args.owner and a[\"task_id\"] == required\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ],
+  "runtime_seconds": 5.658221828001842,
+  "no_new_fits": true
+}

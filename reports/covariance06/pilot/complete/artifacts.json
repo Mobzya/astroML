@@ -1,0 +1,47 @@
+{
+  "scientific_fingerprint": "0052cec5531f3920346e4624b283cad6752b7e57fb5c783f9f65850ef5e5369c",
+  "code_sha": "85f59bc2db97c744ab2ef74411feaf80a534eafa",
+  "independent_sources": 12,
+  "manifest_path": "reports/covariance06/pilot/complete/run_manifest.json",
+  "manifest_sha256": "659f5dea6f7546cdf00b5ce04991427ed13b35f1c99672b73c3683305ccfe8ed",
+  "artifacts": [
+    {
+      "path": "reports/covariance06/pilot/complete/cov06-smoke-v1-lzma-0000-0003.zip",
+      "sha256": "9df82cce48a6744d775daf202c9a33ed0707ebcee337005418abeaf263b1a099",
+      "bytes": 495143,
+      "source_files": [
+        "source-0000.json",
+        "source-0001.json",
+        "source-0002.json",
+        "source-0003.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/pilot/complete/cov06-smoke-v1-lzma-0004-0007.zip",
+      "sha256": "d6cd7a99abd46758243049d6b62869707dee1e3ecfccccf36e4d04dd02b85420",
+      "bytes": 463516,
+      "source_files": [
+        "source-0004.json",
+        "source-0005.json",
+        "source-0006.json",
+        "source-0007.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/covariance06/pilot/complete/cov06-smoke-v1-lzma-0008-0011.zip",
+      "sha256": "a50976c71a96fda135ea9748d30a88faa29602b64cc58486dc496a86c261d4cb",
+      "bytes": 478973,
+      "source_files": [
+        "source-0008.json",
+        "source-0009.json",
+        "source-0010.json",
+        "source-0011.json"
+      ],
+      "independent_sources": 4
+    }
+  ],
+  "total_compressed_bytes": 1437632,
+  "zip_compression": "LZMA lossless"
+}

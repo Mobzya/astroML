@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "first_call_sources": 4,
+  "resumed_total_sources": 12,
+  "completed_files_unchanged": 8,
+  "fitting_wall_seconds": 164.03105321299518,
+  "first_code_sha": "85f59bc2db97c744ab2ef74411feaf80a534eafa",
+  "resumed_code_sha": "399f5e12003aaf16ff2e15f1f0ff791720a24a8d",
+  "same_scientific_fingerprint": true,
+  "zip_compression": "LZMA lossless",
+  "compressed_pilot_bytes": 1437632,
+  "estimated_evaluation_bytes": 43128960,
+  "evaluation_cap_bytes": 52428800,
+  "storage_estimate_within_cap": true,
+  "all_observed_outputs_retained": true
+}
