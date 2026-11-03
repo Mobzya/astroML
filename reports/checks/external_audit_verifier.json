@@ -1,0 +1,30 @@
+{
+  "status": "PASS_DOCUMENTARY_RECORDS_ONLY",
+  "checked_utc": "2026-11-03T19:54:35.742344+00:00",
+  "verified_scope": "Record consistency and locally available document hashes only",
+  "scientific_or_legal_validation": false,
+  "raw_or_labels_or_crossmatch_verified": false,
+  "files": {
+    "research/reading_notes/external_source_access.json": "b0b89acfe70c812111ce4734b0d0e26d029f11d1c90c0ed3b444b99712973062",
+    "research/external_data_card.md": "f5f07ad5dddd26ad9562af07b80b7ed3d774b2f0a0da8a251ff8d7bd0b799dc6",
+    "reports/external_pilot_feasibility.md": "ea54c9f5ffade42da463ef2b2f2ff758db505cdb9e2400b176deef541f04210d"
+  },
+  "local_cache_hashes_checked": [
+    "ogle_ews_2026",
+    "ztf_release_schedule",
+    "selected_web_rendering_not_pdf_bytes"
+  ],
+  "local_cache_unavailable": [],
+  "external_classification_outcome": "NOT_RUN",
+  "dataset_count": 2,
+  "raw_lightcurves_downloaded": 0,
+  "scientific_inference_runs": 0,
+  "limitations": [
+    "No raw-column schema proven for OGLE epochs/errors.",
+    "UTC/TDB convention not established from reviewed scopes.",
+    "No validated positive/negative telescope cohort.",
+    "No source-level crossmatch performed.",
+    "No external scientific experiment or transformation verification.",
+    "PDF original-byte SHA unavailable; API guide not read."
+  ]
+}

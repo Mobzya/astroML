@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "W1-REAL-AUDIT",
-  "next_task_id": "W1-REAL-AUDIT",
+  "current_task_id": "W1-HANDOFF",
+  "next_task_id": "W1-HANDOFF",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -363,7 +363,7 @@
         "reports/covariance06/artifacts.json"
       ],
       "acceptance": "Same frozen code/policy; new source-disjoint evaluation, all seeds/negative results/start failures. Completed batches never rerun; matching clean/dirty+versions checks on resume, only one live fitting process. Complete raw observations/fits and separate truth restored from Git; no tuning after opening.",
-      "next_action": "Generate after policy push; cap calls/checkpoint between batches; before each compute segment confirm persistent storage and available runtime.",
+      "next_action": "Do not fit. Recover independently supported final-duration/termination evidence for the interrupted fifth invocation, or obtain explicit owner-approved revised resource-accounting scope without tuning code/policy/sample. Then recheck ownership/preflight and preserve195complete+partialsource195 before resuming only missing work; do not reset the unclosed ledger.",
       "target_day": "2026-11-05",
       "started_at_utc": "2026-11-03T04:52:19.166561+00:00",
       "checkpoint": "Recovered195/360complete sources + source195partial(16views);390JSONrestore and52650selected-density/KKT/bounds numerical checks PASS-only, maxNLL2.74e-12. Fitter/config/policy/data unchanged, no new nonlinear fits. Original fifth-call final stopwatch lost at environment reboot; ledger lower bound2809.8159s is NOT actual total, and nominal900s allocation is not a termination measurement. Preserve original in-progress ledger marker; cannot certify remaining7200s wall budget, no reset/guessed charge/duplicate data. Need independently supported termination-duration bound or explicit owner-approved accounting scope before resuming only missing work. Full benchmark/statistics/CI and stress not completed.",
@@ -417,21 +417,24 @@
     {
       "id": "W1-REAL-AUDIT",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Проверить возможность малого внешнего pilot по лицензии, единицам и надёжности меток",
       "depends_on": [
         "W1-SETUP"
       ],
       "artifacts": [
         "research/external_data_card.md",
-        "reports/external_pilot_feasibility.md"
+        "research/reading_notes/external_source_access.json",
+        "reports/external_pilot_feasibility.md",
+        "reports/checks/external_audit_verifier.json"
       ],
       "acceptance": "Audit<=2 candidate public datasets from primary docs/metadata: flux/magnitude/time system, label provenance/negatives, split/leakage, license/download limits. Access/labels insufficient=>explicit NOT_RUN/BLOCKED feasibility decision counts as completed audit, not a completed external experiment. No bulk data or third-party outreach; no telescope performance claim.",
       "next_action": "Read docs/metadata first; <=20 individually justified small curves only if access/license/labels clearly allow and necessary for audit. A classified external benchmark is NOT authorized by this task alone.",
       "target_day": "2026-11-07",
       "independent_fallback": true,
       "started_at_utc": "2026-11-03T19:46:03.732244+00:00",
-      "checkpoint": "Independent fallback after EVAL recovery/runtime block. Audit <=2public candidate datasets: OGLE EWS and ZTF DR, primary docs/metadata only. Check time/flux units, quality, label/negative provenance, astrophysical source split/leakage and exact public-access/reuse terms. No classified telescope benchmark, no outreach/bulk data. Plan0raw curves unless individually necessary and clearly permitted; actual read scope/hashes and feasibility/NOT_RUN decision required."
+      "checkpoint": "Primary documentation audit of exactly OGLE EWS2026 and ZTF DR24 completed;0raw curves/0inference. Data card/access versions/scopes/available hashes and missing PDF-byte hash recorded; API504 not bypassed. Explicit external classification NOT_RUN: labels/access/publication gaps, no telescope claim. Documentary record verifier PASS, not label/legal/data verification.",
+      "completed_at_utc": "2026-11-03T19:55:47.330463+00:00"
     },
     {
       "id": "W1-SYNTHESIS",
@@ -456,7 +459,7 @@
     {
       "id": "W1-HANDOFF",
       "campaign_id": "week-2026-11-03-09",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Передать недельный итог или честный partial checkpoint и завершить только собственное расписание",
       "depends_on": [
         "W1-SETUP"
@@ -471,15 +474,32 @@
       "target_day": "2026-11-09",
       "kind": "campaign_finalization",
       "trigger": "all_campaign_work_done_or_no_useful_ready_work_or_final_slot",
-      "start_no_later_than_utc": "2026-11-09T19:15:00Z"
+      "start_no_later_than_utc": "2026-11-09T19:15:00Z",
+      "started_at_utc": "2026-11-03T19:55:47.330463+00:00",
+      "checkpoint": "Trigger ALL_USEFUL_REMAINING_WORK_BLOCKED, not old baseline or deadline. EVAL blocked by irrecoverable final invocation timer/uncertified cumulative7200s budget after all saved data/numerical recovery. Independent ready audit nowDONE/NOT_RUNexternalexperiment. VERIFY,STRESS-RUN,SYNTHESIS depend on blocked EVAL chain; no other ordinary ready work. Save partial weekly handoff with provenance/gates/pending, verify push, pause only own AstroML schedule, then release own lease. No claim full science completed.",
+      "trigger_evidence": {
+        "reason": "ALL_USEFUL_REMAINING_WORK_BLOCKED",
+        "at_utc": "2026-11-03T19:55:47.330463+00:00",
+        "ordinary_ready_tasks": [],
+        "incomplete_ordinary_tasks": {
+          "W1-COV06-EVAL": "BLOCKED",
+          "W1-COV06-VERIFY": "TODO",
+          "W1-STRESS-RUN": "TODO",
+          "W1-SYNTHESIS": "TODO"
+        },
+        "not_due_to_old_baseline": true,
+        "deadline_reached": false,
+        "independent_fallback_completed": "W1-REAL-AUDIT",
+        "recovery_evidence": "reports/checks/cov06_recovery_1915_preflight.json"
+      }
     }
   ],
   "target_session_minutes": 120,
   "checkpoint_interval_minutes": 20,
   "continue_sequential_ready_tasks_within_session": true,
-  "research_state": "ACTIVE_NEW_SCOPE",
+  "research_state": "PARTIAL_WEEK_HANDOFF_IN_PROGRESS",
   "automation_requested_state": "ENABLED",
-  "next_user_action": "Scheduled agent continues the first ready task in the new weekly campaign; participant learning/registration remain separate and unverified.",
+  "next_user_action": "Blocked: obtain supported interrupted-call duration evidence or explicitly authorize revised resource-accounting scope; full evaluation/stress/synthesis remain incomplete. No model/policy tuning or old-test reuse.",
   "completed_cycles": [
     {
       "id": "baseline-2026-11-02",

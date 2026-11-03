@@ -4,14 +4,14 @@
   "status": "ACTIVE",
   "active_session": {
     "owner_id": "astroml-w1-82ca007c358240619912fd3936bae1f7",
-    "task_id": "W1-REAL-AUDIT",
+    "task_id": "W1-HANDOFF",
     "started_utc": "2026-11-03T19:26:26.642387+00:00",
-    "last_checkpoint_utc": "2026-11-03T19:46:03.732244+00:00",
-    "expires_utc": "2026-11-03T22:46:03.732244+00:00",
+    "last_checkpoint_utc": "2026-11-03T19:55:47.330463+00:00",
+    "expires_utc": "2026-11-03T22:55:47.330463+00:00",
     "fitting_pid": null,
     "fitting_process_start_ticks": null,
-    "work_mode": "DOCUMENTARY_AUDIT_ONLY_NO_FITTING",
-    "checkpoint": "Independent fallback after EVAL recovery/runtime block. Audit <=2public candidate datasets: OGLE EWS and ZTF DR, primary docs/metadata only. Check time/flux units, quality, label/negative provenance, astrophysical source split/leakage and exact public-access/reuse terms. No classified telescope benchmark, no outreach/bulk data. Plan0raw curves unless individually necessary and clearly permitted; actual read scope/hashes and feasibility/NOT_RUN decision required."
+    "work_mode": "PARTIAL_WEEK_HANDOFF_NO_FITTING",
+    "checkpoint": "Trigger ALL_USEFUL_REMAINING_WORK_BLOCKED, not old baseline or deadline. EVAL blocked by irrecoverable final invocation timer/uncertified cumulative7200s budget after all saved data/numerical recovery. Independent ready audit nowDONE/NOT_RUNexternalexperiment. VERIFY,STRESS-RUN,SYNTHESIS depend on blocked EVAL chain; no other ordinary ready work. Save partial weekly handoff with provenance/gates/pending, verify push, pause only own AstroML schedule, then release own lease. No claim full science completed."
   },
   "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",
   "instructions": "Before scientific work acquire and push a session lease with unique owner_id,started_utc,last_checkpoint_utc,expires_utc,task_id. Fresh foreign lease=>skip; expired lease is not proof a worker died: check liveness, never duplicate a known active process. Heartbeat/push about20min; end releases lease. No fitting in schedule setup.",
