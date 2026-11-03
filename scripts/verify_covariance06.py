@@ -82,12 +82,22 @@ def profiled_nll(t, y, family, shape, c):
     return 0.5 * q + np.log(np.diag(lower)).sum() + 0.5 * len(t) * np.log(2 * np.pi)
 
 
-def verify(run, allow_partial=False):
+def verify(run, allow_partial=False, allow_interrupted=False):
     started = time.perf_counter()
     m = json.loads((run / "manifest.json").read_text())
     cfg = m["config"]
     phase = m["phase"]
-    assert m["status"] == "COMPLETE" or (allow_partial and m["status"] == "PARTIAL_CHECKPOINT")
+    interrupted = m["status"] == "INTERRUPTED"
+    assert (
+        m["status"] == "COMPLETE"
+        or (allow_partial and m["status"] == "PARTIAL_CHECKPOINT")
+        or (allow_interrupted and interrupted)
+    ), (
+        "Interrupted recovery requires explicit --allow-interrupted; this cannot certify cost or full evaluation"
+    )
+    if interrupted:
+        assert m["recovery"]["resource_budget_reconciled"] is False
+        assert m["recovery"]["fitting_resume_forbidden"] is True
     for name, h in m["sha256"].items():
         assert sha(run / name) == h, name
     counts = cfg["source_counts_per_seed"]
@@ -384,7 +394,9 @@ def verify(run, allow_partial=False):
         for z in zs[1:]:
             np.testing.assert_allclose(z, zs[0], atol=1e-9)
     return {
-        "status": "PASS",
+        "status": "PASS_NUMERICAL_ONLY_RESOURCE_UNRESOLVED" if interrupted else "PASS",
+        "resource_budget_verified": False if interrupted else None,
+        "fitting_resume_authorized_by_this_verifier": False,
         "phase": phase,
         "independent_sources": len(records),
         "observed_curves": len(records) * len(expected_grid),
@@ -407,8 +419,13 @@ def main():
     p.add_argument("run", type=Path)
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--allow-partial", action="store_true")
+    p.add_argument(
+        "--allow-interrupted",
+        action="store_true",
+        help="Check recovered selected fits, explicitly NOT unknown runtime or a complete benchmark",
+    )
     a = p.parse_args()
-    result = verify(a.run, a.allow_partial)
+    result = verify(a.run, a.allow_partial, a.allow_interrupted)
     a.output.parent.mkdir(parents=True, exist_ok=True)
     a.output.write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps(result))

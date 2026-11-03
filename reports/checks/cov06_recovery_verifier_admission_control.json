@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "ordinary_partial_verifier_refuses_interrupted_unknown_cost_run": true,
+  "no_nonlinear_fit": true,
+  "returncode": 1,
+  "diagnostic_tail": "eback (most recent call last):\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 435, in <module>\n    main()\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 428, in main\n    result = verify(a.run, a.allow_partial, a.allow_interrupted)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/astroml-microlensing/scripts/verify_covariance06.py\", line 92, in verify\n    m[\"status\"] == \"COMPLETE\"\nAssertionError: Interrupted recovery requires explicit --allow-interrupted; this cannot certify cost or full evaluation\n",
+  "runtime_seconds": 1.0114089690000583
+}
