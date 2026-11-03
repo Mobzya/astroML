@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "W1-HANDOFF",
-  "next_task_id": "W1-HANDOFF",
+  "current_task_id": null,
+  "next_task_id": null,
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -459,7 +459,7 @@
     {
       "id": "W1-HANDOFF",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Передать недельный итог или честный partial checkpoint и завершить только собственное расписание",
       "depends_on": [
         "W1-SETUP"
@@ -470,13 +470,13 @@
         "research/automation.json"
       ],
       "acceptance": "Only when all ordinary weekly tasks DONE, all useful work genuinely blocked, or final scheduled slot/deadline. Save exact completed/pending/blocked tasks, source/fit manifests/CI/verifier/SHAs and next minimal action; no blanket DONE for unfinished work. Check successful push and pause only own AstroML job. Other automations unchanged.",
-      "next_action": "Priority finalization from2026-11-09T19:15:00Z; if final session, stop starting new long experiments and secure evidence/handoff. ScheduleCOUNT21 also limits future starts.",
+      "next_action": "No automatic restart. Exact next action is supported interrupted-duration evidence or explicit owner-authorized revised accounting scope before same frozen experiment may resume missing work.",
       "target_day": "2026-11-09",
       "kind": "campaign_finalization",
       "trigger": "all_campaign_work_done_or_no_useful_ready_work_or_final_slot",
       "start_no_later_than_utc": "2026-11-09T19:15:00Z",
       "started_at_utc": "2026-11-03T19:55:47.330463+00:00",
-      "checkpoint": "Trigger ALL_USEFUL_REMAINING_WORK_BLOCKED, not old baseline or deadline. EVAL blocked by irrecoverable final invocation timer/uncertified cumulative7200s budget after all saved data/numerical recovery. Independent ready audit nowDONE/NOT_RUNexternalexperiment. VERIFY,STRESS-RUN,SYNTHESIS depend on blocked EVAL chain; no other ordinary ready work. Save partial weekly handoff with provenance/gates/pending, verify push, pause only own AstroML schedule, then release own lease. No claim full science completed.",
+      "checkpoint": "Partial handoff e3d83611078ad45d522a00ee858a2df9984a91e7 pushed and remoteSHA verified BEFORE own automation pause20:02:10UTC; update/readback confirms false, other jobs untouched. Full scientific scope incomplete. EVAL remainsBLOCKED_RUNTIME_ACCOUNTING; VERIFY/STRESS/SYNTHESIS remainTODO. Recovered195+partial and all evidence preserved; own lease released. This DONE certifies handoff only.",
       "trigger_evidence": {
         "reason": "ALL_USEFUL_REMAINING_WORK_BLOCKED",
         "at_utc": "2026-11-03T19:55:47.330463+00:00",
@@ -491,14 +491,15 @@
         "deadline_reached": false,
         "independent_fallback_completed": "W1-REAL-AUDIT",
         "recovery_evidence": "reports/checks/cov06_recovery_1915_preflight.json"
-      }
+      },
+      "completed_at_utc": "2026-11-03T20:03:07.305290+00:00"
     }
   ],
   "target_session_minutes": 120,
   "checkpoint_interval_minutes": 20,
   "continue_sequential_ready_tasks_within_session": true,
-  "research_state": "PARTIAL_WEEK_HANDOFF_IN_PROGRESS",
-  "automation_requested_state": "ENABLED",
+  "research_state": "PARTIAL_WEEK_HANDED_OFF_BLOCKED",
+  "automation_requested_state": "PAUSED",
   "next_user_action": "Blocked: obtain supported interrupted-call duration evidence or explicitly authorize revised resource-accounting scope; full evaluation/stress/synthesis remain incomplete. No model/policy tuning or old-test reuse.",
   "completed_cycles": [
     {
@@ -525,7 +526,7 @@
   "campaigns": [
     {
       "id": "week-2026-11-03-09",
-      "status": "ACTIVE",
+      "status": "PARTIAL_HANDED_OFF_BLOCKED",
       "plan": "research/WEEK_PLAN_2026-11-03.md",
       "authorized_at_utc": "2026-11-02T20:54:03Z",
       "planned_first_start_utc": "2026-11-03T03:15:00Z",
@@ -557,10 +558,15 @@
       "end_rule": "Full weekly scope completed OR useful tasks blocked OR final slot/deadline; preserve incomplete work honestly and pause only own job. Old SYNTHESIS DONE alone is never a stop condition.",
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Moscow:20261103T061500\nRRULE:FREQ=HOURLY;INTERVAL=8;COUNT=21\nEND:VEVENT",
       "setup_completed_at_utc": "2026-11-02T21:12:46.291715+00:00",
-      "automation_enablement_confirmed_at_utc": "2026-11-02T21:10:15.423066+00:00"
+      "automation_enablement_confirmed_at_utc": "2026-11-02T21:10:15.423066+00:00",
+      "scientific_scope_complete": false,
+      "handoff_completed_at_utc": "2026-11-03T20:03:07.305290+00:00",
+      "handoff_trigger": "ALL_USEFUL_REMAINING_WORK_BLOCKED",
+      "automation_paused_at_utc": "2026-11-03T20:02:12Z",
+      "handoff": "reports/week_2026-11-03_09_handoff.md"
     }
   ],
-  "last_completed_handoff": "reports/research_handoff.md",
+  "last_completed_handoff": "reports/week_2026-11-03_09_handoff.md",
   "active_handoff_target": "reports/week_2026-11-03_09_handoff.md",
-  "recovery_gate": "BLOCKED_RUNTIME_ACCOUNTING forbids new COV06 fitting pending supported duration/accounting evidence; independent read-only W1-REAL-AUDIT is authorized and ready."
+  "recovery_gate": "BLOCKED_RUNTIME_ACCOUNTING persists independently of released lease; automatic fitting/restarts forbidden.195complete+partialsource195 preserved; require supported duration evidence or explicit owner-approved revised accounting scope."
 }

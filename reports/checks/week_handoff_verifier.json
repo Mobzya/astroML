@@ -1,6 +1,6 @@
 {
   "status": "PASS_EVIDENCE_AND_GATE_RECORDS_ONLY",
-  "checked_utc": "2026-11-03T20:01:13.753462+00:00",
+  "checked_utc": "2026-11-03T20:04:07.177738+00:00",
   "resource_budget_certified": false,
   "full_scientific_scope_complete": false,
   "new_fits_or_metric_runs": 0,
@@ -9,12 +9,12 @@
   "scientific_file_hashes_checked": 17,
   "immutable_complete_shards_checked": 49,
   "partial_bundle_member_hashes_checked": 203,
-  "local_document_links_checked": 43,
+  "local_document_links_checked": 45,
   "document_hashes": {
-    "reports/week_2026-11-03_09_handoff.md": "186e857da0c83b75b3214d9c3ba9620e287b04a2c62d036de8f194e42102c0ef",
+    "reports/week_2026-11-03_09_handoff.md": "159a9e3f1de5a7b53027dfc6a31540c5e0da8cbdfcb798e5792abf78afb3e3d2",
     "research/external_data_card.md": "f5f07ad5dddd26ad9562af07b80b7ed3d774b2f0a0da8a251ff8d7bd0b799dc6",
     "reports/external_pilot_feasibility.md": "ea54c9f5ffade42da463ef2b2f2ff758db505cdb9e2400b176deef541f04210d"
   },
-  "pause_and_lease_acceptance_required": false,
-  "runtime_seconds": 0.038156914999945
+  "pause_and_lease_acceptance_required": true,
+  "runtime_seconds": 0.04376967899997908
 }

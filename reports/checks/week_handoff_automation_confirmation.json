@@ -1,7 +1,22 @@
 {
-  "status": "PAUSE_PENDING_HANDOFF_PUSH",
-  "is_enabled": true,
-  "other_automations_modified": 0,
+  "status": "PAUSED_UPDATE_AND_READBACK_CONFIRMED",
+  "confirmed_utc": "2026-11-03T20:02:12Z",
+  "is_enabled": false,
   "same_own_job_and_thread": true,
-  "note": "Preparation state only. Handoff must be pushed and remote SHA checked before own job pause; final service update/read-back evidence replaces this record."
+  "own_jobs_updated": 1,
+  "other_automations_modified": 0,
+  "title": "Продолжать исследование AstroML",
+  "service_updated_at": "2026-11-03T20:02:10.371895+00:00",
+  "schedule_unchanged": true,
+  "prompt_unchanged": true,
+  "environment_selection_unchanged": true,
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Moscow:20261103T061500\nRRULE:FREQ=HOURLY;INTERVAL=8;COUNT=21\nEND:VEVENT",
+  "last_run_time": "2026-11-03T19:16:28.199241+00:00",
+  "next_run_time": null,
+  "delivery_status": "unknown",
+  "last_run_details_available": false,
+  "pause_reason": "W1-HANDOFF trigger ALL_USEFUL_REMAINING_WORK_BLOCKED after recovery and completed independent external audit; scientific scope incomplete.",
+  "handoff_pushed_before_pause": true,
+  "handoff_commit_remote_verified": "e3d83611078ad45d522a00ee858a2df9984a91e7",
+  "no_account_quota_or_reset_visibility": true
 }

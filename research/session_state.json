@@ -1,29 +1,23 @@
 {
   "schema_version": 1,
   "campaign_id": "week-2026-11-03-09",
-  "status": "ACTIVE",
-  "active_session": {
-    "owner_id": "astroml-w1-82ca007c358240619912fd3936bae1f7",
-    "task_id": "W1-HANDOFF",
-    "started_utc": "2026-11-03T19:26:26.642387+00:00",
-    "last_checkpoint_utc": "2026-11-03T20:01:13.674183+00:00",
-    "expires_utc": "2026-11-03T23:01:13.674183+00:00",
-    "fitting_pid": null,
-    "fitting_process_start_ticks": null,
-    "work_mode": "PARTIAL_WEEK_HANDOFF_NO_FITTING",
-    "checkpoint": "Partial weekly handoff/evidence verifier prepared:17frozen scientific hashes,49complete shards,203recovery members,43local links PASS. No ready ordinary work, full scientific scope incomplete; preserve EVALblocked/VERIFY+STRESS+SYNTHESISpending. Push handoff before pausing own schedule; pause not yet performed."
-  },
+  "status": "IDLE",
+  "active_session": null,
   "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",
   "instructions": "Before scientific work acquire and push a session lease with unique owner_id,started_utc,last_checkpoint_utc,expires_utc,task_id. Fresh foreign lease=>skip; expired lease is not proof a worker died: check liveness, never duplicate a known active process. Heartbeat/push about20min; end releases lease. No fitting in schedule setup.",
   "last_campaign_session": {
-    "owner_id": "astroml-w1-deef89d7d3454356a049d9c92efc047f",
-    "finished_utc": "2026-11-03T05:15:32.594633+00:00",
-    "task_id": "W1-COV06-EVAL",
-    "task_remains_in_progress": true,
-    "archived_evaluation_sources": 68,
-    "checkpoint_index": "reports/covariance06/evaluation/checkpoint-0068/artifacts.json",
-    "known_fitting_parent_and_worker_pids_absent": true,
-    "automation_not_paused": true
+    "owner_id": "astroml-w1-82ca007c358240619912fd3936bae1f7",
+    "started_utc": "2026-11-03T19:26:26.642387+00:00",
+    "finished_utc": "2026-11-03T20:03:07.305290+00:00",
+    "task_id": "W1-HANDOFF",
+    "handoff_completed": true,
+    "scientific_campaign_complete": false,
+    "evaluation_status": "BLOCKED_RUNTIME_ACCOUNTING",
+    "complete_evaluation_sources": 195,
+    "partial_source_index": 195,
+    "new_nonlinear_fits_this_session": 0,
+    "automation_paused_and_readback_confirmed": true,
+    "own_lease_released": true
   },
   "recovery_required_before_any_fit": true,
   "prior_unresolved_session": {
