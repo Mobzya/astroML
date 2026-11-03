@@ -84,3 +84,7 @@ Selected primary-source scope and current code audit saved. opt.success is local
 ### 03.11 — COV06-A development specification
 
 Freeze one candidate, not a broad hyperparameter search. q0 exact nested scale-only with direct variance coordinate; diagonal observed width starts, stable positive NNLS column scaling, all feasible improvements retained. Selected converged endpoint allowed only within1e−8 relative objective tolerance of best feasible; otherwise flagged fallback/reject.24 new development pairs, logical cap900s. Main protocol/thresholds remain a separate future gate.
+
+### 03.11 — COV06-A development pilot completed
+
+24source units,3seeds,192views; unchanged legacy estimated compared numerically on fresh sources, not old evaluation. Runtime219.16s,1worker/1BLASthread; logical ledger cumulative and raw immutable shards preserved.28unit tests pass. Continue independent verification before performance protocol; no AUC/FPR-based candidate selection.

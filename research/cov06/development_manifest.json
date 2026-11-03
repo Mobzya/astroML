@@ -1,0 +1,43 @@
+{
+  "logical_pilot_id": "cov06-development-v1",
+  "namespace": "astroml-cov06-dev-20261103-v1",
+  "budget_used_seconds": 219.16159011800482,
+  "source_ids_used": [
+    "astroml-cov06-dev-20261103-v1:610301:00000000",
+    "astroml-cov06-dev-20261103-v1:610301:00000001",
+    "astroml-cov06-dev-20261103-v1:610301:00000002",
+    "astroml-cov06-dev-20261103-v1:610301:00000003",
+    "astroml-cov06-dev-20261103-v1:610301:00000004",
+    "astroml-cov06-dev-20261103-v1:610301:00000005",
+    "astroml-cov06-dev-20261103-v1:610301:00000006",
+    "astroml-cov06-dev-20261103-v1:610301:00000007",
+    "astroml-cov06-dev-20261103-v1:610302:00000000",
+    "astroml-cov06-dev-20261103-v1:610302:00000001",
+    "astroml-cov06-dev-20261103-v1:610302:00000002",
+    "astroml-cov06-dev-20261103-v1:610302:00000003",
+    "astroml-cov06-dev-20261103-v1:610302:00000004",
+    "astroml-cov06-dev-20261103-v1:610302:00000005",
+    "astroml-cov06-dev-20261103-v1:610302:00000006",
+    "astroml-cov06-dev-20261103-v1:610302:00000007",
+    "astroml-cov06-dev-20261103-v1:610303:00000000",
+    "astroml-cov06-dev-20261103-v1:610303:00000001",
+    "astroml-cov06-dev-20261103-v1:610303:00000002",
+    "astroml-cov06-dev-20261103-v1:610303:00000003",
+    "astroml-cov06-dev-20261103-v1:610303:00000004",
+    "astroml-cov06-dev-20261103-v1:610303:00000005",
+    "astroml-cov06-dev-20261103-v1:610303:00000006",
+    "astroml-cov06-dev-20261103-v1:610303:00000007"
+  ],
+  "attempts": [
+    {
+      "output": "artifacts/cov06-dev-v1",
+      "code_sha": "007b9d3c2e7613f2f5f207eb55c15dff923e7bbc",
+      "scientific_fingerprint": "c33b11913f0b0f5638b43596a83a75da20afbcf21c78bf0fdb22c1e9140b4217",
+      "started_utc": "2026-11-03T03:45:36.747532+00:00",
+      "elapsed_seconds": 219.16159011800482,
+      "status": "COMPLETE",
+      "ended_utc": "2026-11-03T03:49:15.909496+00:00"
+    }
+  ],
+  "invocation_in_progress": false
+}

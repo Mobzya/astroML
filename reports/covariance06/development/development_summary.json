@@ -1,0 +1,42 @@
+{
+  "purpose": "development_only_no_classification_selection",
+  "independent_sources": 24,
+  "views": 192,
+  "fit_rows": 2304,
+  "logical_pilot_runtime_seconds": 219.16159011800482,
+  "code_sha": "007b9d3c2e7613f2f5f207eb55c15dff923e7bbc",
+  "git_dirty_at_start": false,
+  "maximum_rss_kib": 86032,
+  "methods": {
+    "diagonal": {
+      "method_sets": 192,
+      "available_valid_sets": 189,
+      "unavailable_fits": 0,
+      "nonconverged_selected_fits": 3,
+      "sum_incremental_elapsed_seconds": 48.33770514299249
+    },
+    "scale": {
+      "method_sets": 192,
+      "available_valid_sets": 189,
+      "unavailable_fits": 0,
+      "nonconverged_selected_fits": 3,
+      "sum_incremental_elapsed_seconds": 0.008967498957645148
+    },
+    "estimated": {
+      "method_sets": 192,
+      "available_valid_sets": 191,
+      "unavailable_fits": 0,
+      "nonconverged_selected_fits": 1,
+      "sum_incremental_elapsed_seconds": 93.34830609802157
+    },
+    "legacy_estimated": {
+      "method_sets": 192,
+      "available_valid_sets": 192,
+      "unavailable_fits": 0,
+      "nonconverged_selected_fits": 0,
+      "sum_incremental_elapsed_seconds": 68.22516994705074
+    }
+  },
+  "independent_numerical_verifier": "PENDING_NEXT_TASK",
+  "classification_metrics_computed": false
+}

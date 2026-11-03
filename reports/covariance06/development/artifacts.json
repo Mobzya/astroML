@@ -1,0 +1,82 @@
+{
+  "purpose": "development_only_no_classification_selection",
+  "scientific_fingerprint": "c33b11913f0b0f5638b43596a83a75da20afbcf21c78bf0fdb22c1e9140b4217",
+  "code_sha": "007b9d3c2e7613f2f5f207eb55c15dff923e7bbc",
+  "independent_sources": 24,
+  "manifest_path": "reports/covariance06/development/run_manifest.json",
+  "manifest_sha256": "2d5187175d9d2d5fca13df9fb4e7c431091c2ac113184223d3342826f9948625",
+  "artifacts": [
+    {
+      "path": "reports/examples/cov06-dev-v1-shard-000-003.zip",
+      "bytes": 871491,
+      "sha256": "ac91804ec834a7c3a6bddb607333ccf38ca25be02c9253ff3c7c3d342654592b",
+      "source_files": [
+        "source-000.json",
+        "source-001.json",
+        "source-002.json",
+        "source-003.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/examples/cov06-dev-v1-shard-004-007.zip",
+      "bytes": 948885,
+      "sha256": "a7f4fbe04c617bd88facb21d5c2abc2762f1b518708c66debe9a340e6b743861",
+      "source_files": [
+        "source-004.json",
+        "source-005.json",
+        "source-006.json",
+        "source-007.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/examples/cov06-dev-v1-shard-008-011.zip",
+      "bytes": 951921,
+      "sha256": "288e4cccf9f72bc5e912a44fac308b4ca3fdba63b2be79235b91b045e1102d05",
+      "source_files": [
+        "source-008.json",
+        "source-009.json",
+        "source-010.json",
+        "source-011.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/examples/cov06-dev-v1-shard-012-015.zip",
+      "bytes": 751918,
+      "sha256": "63b8ec3be032d509006b21cb797502492d258921e4dc6b7e1abb2bf4aaae052d",
+      "source_files": [
+        "source-012.json",
+        "source-013.json",
+        "source-014.json",
+        "source-015.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/examples/cov06-dev-v1-shard-016-019.zip",
+      "bytes": 928704,
+      "sha256": "0c267be73ab351783830aa7a9cad7f0866bfe832c228578ece190d27a1f9d478",
+      "source_files": [
+        "source-016.json",
+        "source-017.json",
+        "source-018.json",
+        "source-019.json"
+      ],
+      "independent_sources": 4
+    },
+    {
+      "path": "reports/examples/cov06-dev-v1-shard-020-023.zip",
+      "bytes": 853854,
+      "sha256": "b1f39b254cf101e5a9c0fe7250349317dc2565ebbd2c655c1f4911e257629b98",
+      "source_files": [
+        "source-020.json",
+        "source-021.json",
+        "source-022.json",
+        "source-023.json"
+      ],
+      "independent_sources": 4
+    }
+  ]
+}

@@ -4,8 +4,8 @@
   "execution_mode": "sequential_same_codex_chat",
   "interval_hours": 8,
   "priority": "research_before_product_implementation",
-  "current_task_id": "W1-OPT-DEV",
-  "next_task_id": "W1-OPT-DEV",
+  "current_task_id": "W1-OPT-VERIFY",
+  "next_task_id": "W1-OPT-VERIFY",
   "tasks": [
     {
       "id": "AUTO-SETUP",
@@ -237,7 +237,7 @@
     {
       "id": "W1-OPT-DEV",
       "campaign_id": "week-2026-11-03-09",
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "goal": "Реализовать новый fitter в отдельных модулях и проверить на новых development sources",
       "depends_on": [
         "W1-OPT-SPEC"
@@ -250,12 +250,13 @@
       "next_action": "Implement observation-only initialization and scale-only; profile/report full NLL; no generation of main calibration/evaluation.",
       "target_day": "2026-11-03",
       "started_at_utc": "2026-11-03T03:31:15.335200+00:00",
-      "checkpoint": "COV06-A module, bounded development runner and7new/28total unit tests PASS. Commit clean implementation before24-source development data; main remains unopened."
+      "checkpoint": "New COV06-A module+runner,28unit tests PASS; development clean007b9d3,24sources/192views/2304selected fits in219.16s (1worker),raw shards/ledger saved. Independent density/KKT/incumbent verifier is next, not yet claimed PASS. No main data.",
+      "completed_at_utc": "2026-11-03T03:50:22.582348+00:00"
     },
     {
       "id": "W1-OPT-VERIFY",
       "campaign_id": "week-2026-11-03-09",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "goal": "Независимо проверить numerical correctness и safeguards нового fitter",
       "depends_on": [
         "W1-OPT-DEV"
@@ -266,7 +267,9 @@
       ],
       "acceptance": "Independent density/KKT/primal bounds, finite guards, input isolation, incumbent NLL non-worsening, scale-only diagonal limit, corruption controls and measured CPU/memory PASS; global optimum not claimed. Select <=1 candidate using development numerical criteria, or document explicit numerical block.",
       "next_action": "Use existing development sources/deterministic fixtures, not old evaluation or new main data; freeze practical candidate before performance evaluation.",
-      "target_day": "2026-11-04"
+      "target_day": "2026-11-04",
+      "started_at_utc": "2026-11-03T03:50:22.582348+00:00",
+      "checkpoint": "Implement and apply independent density/KKT/primal/bounds/input/mask/analytic-scale/incumbent/flag verifier to all2304saved development fits and improvement traces, plus corruption and restore controls. Only afterPASS may select candidate/protocol."
     },
     {
       "id": "W1-COV06-PROTOCOL",
