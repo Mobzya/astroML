@@ -1,0 +1,22 @@
+{
+  "code": "BLOCKED_SESSION_LIVENESS",
+  "detected_utc": "2026-11-03T11:56:29Z",
+  "task_id": "W1-COV06-EVAL",
+  "environment": "selected managed environment unavailable; current runtime status connectivity=offline, observed_phase=running",
+  "transport_error": "write_stdin failed: exec-server transport disconnected; failed to resume exec-server session: recovery timed out after 25s",
+  "runner_liveness": "UNKNOWN; disconnection is not process completion",
+  "last_durable_evaluation_sources": 176,
+  "last_durable_closed_call_fit_wall_seconds": 2569.962094735012,
+  "last_observed_local_completed_sources_lower_bound": 188,
+  "last_local_observation_utc": "2026-11-03T11:50:37Z",
+  "last_observed_provisional_cumulative_fit_wall_seconds": 2745.350978953,
+  "provisional_cost_is_not_final": true,
+  "current_invocation_started_approximately_utc": "2026-11-03T11:47:09Z",
+  "duplicate_runner_started": false,
+  "lease_expiry_does_not_resolve_block": true,
+  "fit_resume_forbidden_until_prior_runner_and_budget_reconciled": true,
+  "latest_durable_index": "reports/covariance06/evaluation/checkpoint-0176/artifacts.json",
+  "recovery": "Restore access to ORIGINAL environment; inspect actual parent/worker liveness, local ledger/receipts and all completed/partial source files after176. Preserve and publish local outputs/cost without nonlinear refits. Only after proven closed process and reconciled elapsed budget may a new owned lease resume missing source work. If original process/output fate remains unknown, remain BLOCKED; do not blindly restore176/reset ledger/start another runner.",
+  "automation_paused": false,
+  "week_finalization_trigger_not_reached": true
+}
