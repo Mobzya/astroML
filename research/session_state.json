@@ -1,8 +1,17 @@
 {
   "schema_version": 1,
   "campaign_id": "week-2026-11-03-09",
-  "status": "IDLE",
-  "active_session": null,
+  "status": "ACTIVE",
+  "active_session": {
+    "owner_id": "astroml-w1-667d6c0e770d458e82b9888a4fea5494",
+    "task_id": "W1-COV06-EVAL",
+    "started_utc": "2026-11-03T11:15:55.907411+00:00",
+    "last_checkpoint_utc": "2026-11-03T11:15:55.907411+00:00",
+    "expires_utc": "2026-11-03T14:15:55.907411+00:00",
+    "fitting_pid": null,
+    "fitting_process_start_ticks": null,
+    "checkpoint": "Resume existing W1-COV06-EVAL,68/360sources already durably archived; no known live runner, closed ledger923.8776s andIDLE lease. New unique owner; keep frozen0052cec5 scientific fingerprint,4028b724 policy,Python3.12.14/NumPy2.5.4/SciPy1.18.1. Preflight hashes/input isolation and continue remaining292at source index68 in <=900s calls,2CPU/1BLAS,source batches4,7200s cumulative phase cap. Checkpoint/push about20min and after calls. Do not compute classification metrics until360complete. Then only next dependency-ready task."
+  },
   "last_finished_baseline_session_utc": "2026-11-02T05:19:43Z",
   "instructions": "Before scientific work acquire and push a session lease with unique owner_id,started_utc,last_checkpoint_utc,expires_utc,task_id. Fresh foreign lease=>skip; expired lease is not proof a worker died: check liveness, never duplicate a known active process. Heartbeat/push about20min; end releases lease. No fitting in schedule setup.",
   "last_campaign_session": {
